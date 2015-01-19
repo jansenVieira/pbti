@@ -11,12 +11,15 @@ public class Bundle {
 	
 	public MontarXml montarXml = new MontarXml();
 	public Attributes attributes = new Attributes();
+	
+	private String nomeBundle;
+	private String type;
 
 	public void montarBundle()
 	{
 		montarBundle= montarXml.getDoc().createElement("Bundle");
-		montarBundle.setAttribute("name", "SIABM_TESTE3");
-		montarBundle.setAttribute("type", "PERFIL");
+		montarBundle.setAttribute("name", getNomeBundle());
+		montarBundle.setAttribute("type", getType());
 		setBundle(montarBundle);
 	}
 	//
@@ -29,5 +32,20 @@ public class Bundle {
 		this.bundle = bundle;
 	}
 	
+	public String getNomeBundle() {
+		return nomeBundle;
+	}
+
+	public void setNomeBundle(String nomeBundle) {
+		this.nomeBundle = nomeBundle;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
 }
 
