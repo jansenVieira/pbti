@@ -8,6 +8,7 @@ public class Attributes {
 
 	
 	private Element attributes;
+	private Element attributes2;
 	private Element montaAttributes;
 
 	public MontaXml montaXml = new MontaXml();
