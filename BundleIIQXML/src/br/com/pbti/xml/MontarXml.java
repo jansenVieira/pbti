@@ -1,5 +1,11 @@
 package br.com.pbti.xml;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -9,7 +15,9 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.stream.StreamResult;
+
 import org.w3c.dom.Document;
+
 import br.com.pbti.dto.Attributes;
 import br.com.pbti.dto.Bundle;
 import br.com.pbti.dto.Inheritance;
@@ -18,7 +26,6 @@ import br.com.pbti.dto.Profiles;
 import br.com.pbti.dto.Selector;
 
 public class MontarXml {
-
 
 	//variaveis/constantes
 	private static DocumentBuilderFactory factory;
@@ -38,7 +45,7 @@ public class MontarXml {
 	public static Profiles profiles = new Profiles();
 	
 	public static void cabecalho() throws ParserConfigurationException,
-	TransformerFactoryConfigurationError, TransformerException
+	TransformerFactoryConfigurationError, TransformerException, FileNotFoundException
 	{
 		setFactory(DocumentBuilderFactory.newInstance());
 
@@ -46,7 +53,7 @@ public class MontarXml {
 
 		setDoc(builder.newDocument());		
 		
-		//chma o metodo que criar o corpo da estrutura
+		//chama o metodo que criar o corpo da estrutura
 		chamarTags();
 
 		//Append atributos
@@ -57,10 +64,15 @@ public class MontarXml {
 		bundle.getBundle().appendChild(selector.getSelector());
 		bundle.getBundle().appendChild(profiles.getProfiles());
 		
+		
+		StreamResult result = new StreamResult(new FileOutputStream("D:\\teste\\teste.xml"));
+		
 		//Cabecalho
-		Transformer trans = TransformerFactory.newInstance().newTransformer();
+		trans = TransformerFactory.newInstance().newTransformer();
+		
 		//retirar o standalone
 		doc.setXmlStandalone(true);
+		
 		
 		trans.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
 		
@@ -72,9 +84,10 @@ public class MontarXml {
 		trans.setOutputProperty(OutputKeys.DOCTYPE_SYSTEM, "sailpoint.dtd");
 
 		trans.transform(new javax.xml.transform.dom.DOMSource(doc),
-				new StreamResult(System.out));
-
+				result);
+		
 	}
+	
 	
 	//metodo que chama todos os metodos
 	public static void chamarTags()
@@ -129,9 +142,3 @@ public class MontarXml {
 	}
 	
 }
-
-	
-	
-	
-	
-
