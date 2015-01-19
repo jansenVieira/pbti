@@ -1,25 +1,25 @@
 package br.com.pbti.dto;
 
 import org.w3c.dom.Element;
-
-import br.com.pbti.xml.MontaXml;
+import br.com.pbti.xml.MontarXml;
 
 public class Bundle {
 
+	//
 	private Element bundle;
-	private Element montaBundle;
-
-	public MontaXml montaXml = new MontaXml();
+	private Element montarBundle;
 	
-	public void montaBundle()
+	public MontarXml montarXml = new MontarXml();
+	public Attributes attributes = new Attributes();
+
+	public void montarBundle()
 	{
-		montaBundle = montaXml.getDoc().createElement("Bundle");
-		montaBundle.setAttribute("name", "SIABM_TESTE");
-		montaBundle.setAttribute("type", "PERFIL");
-		
-		setBundle(montaBundle);
-		
+		montarBundle= montarXml.getDoc().createElement("Bundle");
+		montarBundle.setAttribute("name", "SIABM_TESTE3");
+		montarBundle.setAttribute("type", "PERFIL");
+		setBundle(montarBundle);
 	}
+	//
 
 	public Element getBundle() {
 		return bundle;
@@ -28,4 +28,6 @@ public class Bundle {
 	public void setBundle(Element bundle) {
 		this.bundle = bundle;
 	}
+	
 }
+
