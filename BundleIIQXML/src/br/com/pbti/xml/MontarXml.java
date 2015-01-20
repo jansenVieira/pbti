@@ -2,9 +2,6 @@ package br.com.pbti.xml;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -102,6 +99,7 @@ public class MontarXml {
 	}
 
 
+	@SuppressWarnings("static-access")
 	public void setTrans(Transformer trans) {
 		this.trans = trans;
 	}

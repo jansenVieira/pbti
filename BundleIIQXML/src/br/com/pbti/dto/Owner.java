@@ -16,6 +16,7 @@ public class Owner {
 
 	public MontarXml montarXml = new MontarXml();
 
+	@SuppressWarnings("static-access")
 	public void montarOwner()
 	{
 		montarOwner = montarXml.getDoc().createElement("Owner");
@@ -23,6 +24,7 @@ public class Owner {
 		refence();
 	}
 
+	@SuppressWarnings("static-access")
 	private void refence()
 	{
 		refence = montarXml.getDoc().createElement("Reference");

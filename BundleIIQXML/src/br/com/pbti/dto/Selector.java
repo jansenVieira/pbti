@@ -1,8 +1,5 @@
 package br.com.pbti.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.w3c.dom.Element;
 
 import br.com.pbti.xml.MontarXml;
@@ -36,24 +33,28 @@ public class Selector {
 
 	public MontarXml montarXml = new MontarXml();
 
+	@SuppressWarnings("static-access")
 	public void montarSelector() {
 		montarSelector = montarXml.getDoc().createElement("Selector");
 		setSelector(montarSelector);
 		IdentitySelector();
 	}
 
+	@SuppressWarnings("static-access")
 	private void IdentitySelector() {
 		identityselector = montarXml.getDoc().createElement("IdentitySelector");
 		selector.appendChild(identityselector);
 		CompoundFilter();
 	}
 
+	@SuppressWarnings("static-access")
 	private void CompoundFilter() {
 		compoundfilter = montarXml.getDoc().createElement("CompoundFilter");
 		identityselector.appendChild(compoundfilter);
 		CompositeFilter();
 	}
 
+	@SuppressWarnings("static-access")
 	private void CompositeFilter() {
 		compositefilter = montarXml.getDoc().createElement("CompositeFilter");
 		compositefilter.setAttribute("operation", operacao);

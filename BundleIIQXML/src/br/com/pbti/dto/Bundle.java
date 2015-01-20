@@ -1,6 +1,7 @@
 package br.com.pbti.dto;
 
 import org.w3c.dom.Element;
+
 import br.com.pbti.xml.MontarXml;
 
 public class Bundle {
@@ -15,6 +16,7 @@ public class Bundle {
 	private String nomeBundle;
 	private String type;
 
+	@SuppressWarnings("static-access")
 	public void montarBundle()
 	{
 		montarBundle= montarXml.getDoc().createElement("Bundle");

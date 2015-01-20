@@ -27,6 +27,7 @@ public class Profiles {
 	//Estaciando metodo
 	public MontarXml montarXml = new MontarXml();
 
+	@SuppressWarnings("static-access")
 	public void montarProfiles()
 	{
 		montarProfiles = montarXml.getDoc().createElement("Profiles");
@@ -34,6 +35,7 @@ public class Profiles {
 		profile();
 	}
 
+	@SuppressWarnings("static-access")
 	private void profile()
 	{
 		profile = montarXml.getDoc().createElement("Profile");

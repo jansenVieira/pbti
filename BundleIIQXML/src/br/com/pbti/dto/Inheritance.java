@@ -1,6 +1,7 @@
 package br.com.pbti.dto;
 
 import org.w3c.dom.Element;
+
 import br.com.pbti.xml.MontarXml;
 
 public class Inheritance {
@@ -15,6 +16,7 @@ public class Inheritance {
 
 	public MontarXml montarXml = new MontarXml();
 
+	@SuppressWarnings("static-access")
 	public void montarInheritance()
 	{
 		montarInheritance = montarXml.getDoc().createElement("Inheritance");
@@ -22,6 +24,7 @@ public class Inheritance {
 		refence();
 	}
 
+	@SuppressWarnings("static-access")
 	private void refence()
 	{
 		refence = montarXml.getDoc().createElement("Reference");

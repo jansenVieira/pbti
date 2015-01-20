@@ -18,6 +18,7 @@ public class Attributes {
 
 	public MontarXml montarXml = new MontarXml();
 
+	@SuppressWarnings("static-access")
 	public void montarAttributes() {
 		montarAttributes = montarXml.getDoc().createElement("Attributes");
 		setAttributes(montarAttributes);
@@ -25,12 +26,14 @@ public class Attributes {
 
 	}
 
+	@SuppressWarnings("static-access")
 	public void map() {
 		map = montarXml.getDoc().createElement("Map");
 		attributes.appendChild(map);
 		entry();
 	}
 
+	@SuppressWarnings("static-access")
 	private void entry() {
 		entry = montarXml.getDoc().createElement("entry");
 		entry.setAttribute("key", "Prioridade");
