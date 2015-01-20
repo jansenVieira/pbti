@@ -6,7 +6,7 @@ import br.com.pbti.xml.MontarXml;
 
 public class Profiles {
 	
-	//
+	//Objetos
 	private Element profiles;
 	private Element montarProfiles;
 	private Element profile;
@@ -17,14 +17,14 @@ public class Profiles {
 	private Element value;
 	private Element string;
 	private Element list;
-	//
+	//Variaveis dinamicas
 	private String applicaton = "LDAPSUN";
 	private String parametro = "GESTOR";
 	private String parametro2 = "SIABM";
 	private String parametro3 = "Groups";
 	private String parametro4 = "caixa";
 	private String addDireito = "groups";
-	
+	//Estaciando metodo
 	public MontarXml montarXml = new MontarXml();
 
 	public void montarProfiles()
