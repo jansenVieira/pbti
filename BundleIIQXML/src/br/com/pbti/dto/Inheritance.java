@@ -10,7 +10,7 @@ public class Inheritance {
 	private Element montarInheritance;
 	private Element refence;
 	//
-	private String perfilHerdado= "SIABM";
+	private String nomeSistema;
 
 
 	public MontarXml montarXml = new MontarXml();
@@ -26,19 +26,17 @@ public class Inheritance {
 	{
 		refence = montarXml.getDoc().createElement("Reference");
 		refence.setAttribute("class", "sailpoint.object.Bundle");
-		refence.setAttribute("name", getPerfilHerdado());
+		refence.setAttribute("name", getNomeSistema());
 		inheritance.appendChild(refence);
 		
 	}
 
-	
-	
-	public String getPerfilHerdado() {
-		return perfilHerdado;
+	public String getNomeSistema() {
+		return nomeSistema;
 	}
 
-	public void setPerfilHerdado(String perfilHerdado) {
-		this.perfilHerdado = perfilHerdado;
+	public void setNomeSistema(String nomeSistema) {
+		this.nomeSistema = nomeSistema;
 	}
 
 	public Element getInheritance() {

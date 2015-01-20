@@ -11,7 +11,7 @@ public class Owner {
 	private Element montarOwner;
 	private Element refence;
 	//
-	private String nomeOwner = "spadmin";
+	private String nomeOwner;
 
 
 	public MontarXml montarXml = new MontarXml();
