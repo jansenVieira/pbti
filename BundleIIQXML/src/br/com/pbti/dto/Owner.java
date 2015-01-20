@@ -10,7 +10,8 @@ public class Owner {
 	private Element owner;
 	private Element montarOwner;
 	private Element refence;
-	
+	//
+	private String nomeOwner = "spadmin";
 
 
 	public MontarXml montarXml = new MontarXml();
@@ -26,9 +27,19 @@ public class Owner {
 	{
 		refence = montarXml.getDoc().createElement("Reference");
 		refence.setAttribute("class", "sailpoint.object.Identity");
-		refence.setAttribute("name", "spadmin");
+		refence.setAttribute("name", getNomeOwner());
 		owner.appendChild(refence);
 		
+	}
+
+	
+	
+	public String getNomeOwner() {
+		return nomeOwner;
+	}
+
+	public void setNomeOwner(String nomeOwner) {
+		this.nomeOwner = nomeOwner;
 	}
 
 	public Element getOwner() {

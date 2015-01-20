@@ -11,7 +11,7 @@ public class Bundle {
 	
 	public MontarXml montarXml = new MontarXml();
 	public Attributes attributes = new Attributes();
-	
+	//variaveis dinamicas
 	private String nomeBundle;
 	private String type;
 

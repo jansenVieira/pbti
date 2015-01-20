@@ -18,11 +18,13 @@ public class Profiles {
 	private Element string;
 	private Element list;
 	//
-	String applicaton = "LDAPSUN";
-	String parametro = "cn=GESTOR,cn=SIABM,ou=Groups,o=caixa";
+	private String applicaton = "LDAPSUN";
+	private String parametro = "GESTOR";
+	private String parametro2 = "SIABM";
+	private String parametro3 = "Groups";
+	private String parametro4 = "caixa";
+	private String addDireito = "groups";
 	
-
-
 	public MontarXml montarXml = new MontarXml();
 
 	public void montarProfiles()
@@ -42,7 +44,7 @@ public class Profiles {
 		
 		reference = montarXml.getDoc().createElement("Reference");
 		reference.setAttribute("class", "sailpoint.object.Application");
-		reference.setAttribute("name", applicaton);
+		reference.setAttribute("name", getApplicaton());
 		applicationRef.appendChild(reference);
 		
 		constraints = montarXml.getDoc().createElement("Constraints");
@@ -50,7 +52,7 @@ public class Profiles {
 		
 		filter = montarXml.getDoc().createElement("Filter");
 		filter.setAttribute("operation", "CONTAINS_ALL");
-		filter.setAttribute("property", "groups");
+		filter.setAttribute("property", getAddDireito());
 		constraints.appendChild(filter);
 		
 		value = montarXml.getDoc().createElement("Value");
@@ -58,9 +60,26 @@ public class Profiles {
 		list =  montarXml.getDoc().createElement("List");
 		value.appendChild(list);
 		string = montarXml.getDoc().createElement("String");
-		string.appendChild(montarXml.getDoc().createTextNode(parametro));
+		string.appendChild(montarXml.getDoc().createTextNode("cn="+parametro+","+"cn="+parametro2+","+"ou="+parametro3+","+"o="+parametro4));
 		list.appendChild(string);
 		
+	}
+
+	
+	public String getApplicaton() {
+		return applicaton;
+	}
+
+	public void setApplicaton(String applicaton) {
+		this.applicaton = applicaton;
+	}
+
+	public String getParametro() {
+		return parametro;
+	}
+
+	public void setParametro(String parametro) {
+		this.parametro = parametro;
 	}
 
 	public Element getProfiles() {
@@ -69,6 +88,14 @@ public class Profiles {
 
 	public void setProfiles(Element profiles) {
 		this.profiles = profiles;
+	}
+
+	public String getAddDireito() {
+		return addDireito;
+	}
+
+	public void setAddDireito(String addDireito) {
+		this.addDireito = addDireito;
 	}
 
 	

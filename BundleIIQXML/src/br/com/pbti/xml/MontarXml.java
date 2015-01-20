@@ -27,16 +27,13 @@ import br.com.pbti.dto.Selector;
 
 public class MontarXml {
 
-	//variaveis/constantes
+	//Variaveis/Constantes
 	private static DocumentBuilderFactory factory;
-
 	private static DocumentBuilder builder;
-
 	private static Document doc;
-	
 	private static Transformer trans;
 	
-	//estaciando as classes do pacote tags
+	//Estaciando as classes 
 	public static Bundle bundle = new Bundle();	
 	public static Attributes attributes = new Attributes();
 	public static Inheritance inheritance = new Inheritance();
@@ -64,8 +61,8 @@ public class MontarXml {
 		bundle.getBundle().appendChild(selector.getSelector());
 		bundle.getBundle().appendChild(profiles.getProfiles());
 		
-		
-		StreamResult result = new StreamResult(new FileOutputStream("D:\\teste\\teste.xml"));
+		//Caminho onde é salvo o arquivo xml
+		StreamResult result = new StreamResult(new FileOutputStream("C:\\SIASES\\Criptografia\\arquivo.xml"));
 		
 		//Cabecalho
 		trans = TransformerFactory.newInstance().newTransformer();
@@ -89,7 +86,7 @@ public class MontarXml {
 	}
 	
 	
-	//metodo que chama todos os metodos
+	//Metodo que chama todos os metodos
 	public static void chamarTags()
 	{
 		bundle.montarBundle();

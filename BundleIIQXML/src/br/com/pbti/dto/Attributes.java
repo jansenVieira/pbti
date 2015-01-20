@@ -6,7 +6,7 @@ import br.com.pbti.xml.MontarXml;
 
 public class Attributes {
 
-	//
+	//Objetos
 	private Element attributes;
 	private Element montarAttributes;
 	private Element map;

@@ -10,7 +10,7 @@ import br.com.pbti.xml.MontarXml;
 
 public class Selector {
 
-	//
+	//Objetos
 	private Element selector;
 	private Element montarSelector;
 	private Element identityselector;
