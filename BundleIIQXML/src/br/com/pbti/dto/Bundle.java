@@ -17,7 +17,7 @@ public class Bundle {
 	
 	// variaveis dinamicas
 	private String nomeBundle;
-	private String type;
+	private String type = "PERFIL";
 	
 
 	@SuppressWarnings("static-access")
