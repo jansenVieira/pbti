@@ -18,11 +18,8 @@ public class Profiles {
 	private Element string;
 	private Element list;
 	//Variaveis dinamicas
-	private String applicaton = "LDAPSUN";
-	private String parametro = "GESTOR";
-	private String parametro2 = "SIABM";
-	private String parametro3 = "Groups";
-	private String parametro4 = "caixa";
+	private String applicaton;
+	private String parametro;
 	private String addDireito = "groups";
 	//Estaciando metodo
 	public MontarXml montarXml = new MontarXml();
@@ -62,7 +59,7 @@ public class Profiles {
 		list =  montarXml.getDoc().createElement("List");
 		value.appendChild(list);
 		string = montarXml.getDoc().createElement("String");
-		string.appendChild(montarXml.getDoc().createTextNode("cn="+parametro+","+"cn="+parametro2+","+"ou="+parametro3+","+"o="+parametro4));
+		string.appendChild(montarXml.getDoc().createTextNode(getParametro()));
 		list.appendChild(string);
 		
 	}
