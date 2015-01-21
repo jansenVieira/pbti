@@ -2,6 +2,7 @@ package br.com.pbti.dto;
 
 import org.w3c.dom.Element;
 
+import br.com.pbti.principal.XmlConfig;
 import br.com.pbti.xml.MontarXml;
 
 public class Bundle {
@@ -9,12 +10,15 @@ public class Bundle {
 	//
 	private Element bundle;
 	private Element montarBundle;
-	
+
 	public MontarXml montarXml = new MontarXml();
 	public Attributes attributes = new Attributes();
-	//variaveis dinamicas
+	public XmlConfig xmlConfig = new XmlConfig();
+	
+	// variaveis dinamicas
 	private String nomeBundle;
 	private String type;
+	
 
 	@SuppressWarnings("static-access")
 	public void montarBundle()
@@ -24,6 +28,8 @@ public class Bundle {
 		montarBundle.setAttribute("type", getType());
 		setBundle(montarBundle);
 	}
+	
+
 	//
 
 	public Element getBundle() {
@@ -33,14 +39,6 @@ public class Bundle {
 	public void setBundle(Element bundle) {
 		this.bundle = bundle;
 	}
-	
-	public String getNomeBundle() {
-		return nomeBundle;
-	}
-
-	public void setNomeBundle(String nomeBundle) {
-		this.nomeBundle = nomeBundle;
-	}
 
 	public String getType() {
 		return type;
@@ -49,5 +47,13 @@ public class Bundle {
 	public void setType(String type) {
 		this.type = type;
 	}
-}
 
+	public String getNomeBundle() {
+		return nomeBundle;
+	}
+
+	public void setNomeBundle(String nomeBundle) {
+		this.nomeBundle = nomeBundle;
+	}
+
+}

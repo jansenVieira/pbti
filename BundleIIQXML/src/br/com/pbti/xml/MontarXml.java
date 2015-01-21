@@ -37,6 +37,7 @@ public class MontarXml {
 	public static Owner owner = new Owner();
 	public static Selector selector = new Selector();
 	public static Profiles profiles = new Profiles();
+	public static String nomeXml;
 	
 	public static void cabecalho() throws ParserConfigurationException,
 	TransformerFactoryConfigurationError, TransformerException, FileNotFoundException
@@ -59,7 +60,7 @@ public class MontarXml {
 		bundle.getBundle().appendChild(profiles.getProfiles());
 		
 		//Caminho onde é salvo o arquivo xml
-		StreamResult result = new StreamResult(new FileOutputStream("C:\\SIASES\\Criptografia\\arquivo.xml"));
+		StreamResult result = new StreamResult(new FileOutputStream("D:\\BundleIIQXML\\XML\\"+getNomeXml()+".xml"));
 		
 		//Cabecalho
 		trans = TransformerFactory.newInstance().newTransformer();
@@ -134,6 +135,15 @@ public class MontarXml {
 
 	public static void setFactory(DocumentBuilderFactory factory) {
 		MontarXml.factory = factory;
+	}
+
+
+	public static String getNomeXml() {
+		return nomeXml;
+	}
+
+	public static void setNomeXml(String nomeXml) {
+		MontarXml.nomeXml = nomeXml;
 	}
 	
 }
