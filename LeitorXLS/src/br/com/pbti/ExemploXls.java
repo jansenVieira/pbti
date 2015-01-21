@@ -1,4 +1,4 @@
-package br.com.pbti.leitor;
+package br.com.pbti;
 
 
 public class ExemploXls {

@@ -1,4 +1,4 @@
-package br.com.pbti.leitor;
+package br.com.pbti;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
