@@ -4,9 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactoryConfigurationError;
+
 import br.com.pbti.principal.XmlConfig;
 
 public class lerCSV {
@@ -20,17 +22,32 @@ public class lerCSV {
 	static String tipoUsu;
 	static String codCargo;
 	static String indUnidade;
+	
+	static String COD_SISTEMA;	
+	static String COD_PERFIL;	
+	static String UG_NAME;	
+	static String RSS_NAME;
+	static String FUNCIONALIDADE;	
+	static String STATUS;
+	static String COD_RESTRICAO;	
+	static String QUANTIDADE;	
+	static String RSS_TYPE;
+	
+	
+	static String linha;
+	static String linha2;
+
+	static ArrayList<String> listaLinhas = new ArrayList<String>();
+	static ArrayList<String> listaLinhas2 = new ArrayList<String>();
 
 	public static void main(String[] args) throws FileNotFoundException,
 			ParserConfigurationException, TransformerFactoryConfigurationError,
 			TransformerException {
 
-		String linha;
 
-		ArrayList<String> listaLinhas = new ArrayList<String>();
 
 		Scanner scanner = new Scanner(new FileReader(
-				"C://Users//tic//Desktop//ler xsl//MIP_06-SIAADTeste.csv"))
+				"C://Users//leonardo.moura//Downloads//PBTI//Caixa//SailPoint//MIP_06-SIAAD_TESTE.csv"))
 				.useDelimiter(",");
 
 		while (scanner.hasNext()) {
@@ -40,6 +57,16 @@ public class lerCSV {
 		}
 		
 		
+		
+		Scanner lerp2 = new Scanner(new FileReader(
+				"C://Users//leonardo.moura//Downloads//PBTI//Caixa//SailPoint//MIP_04-SIAAD_TESTE.csv"))
+				.useDelimiter(",");
+
+		while (lerp2.hasNext()) {
+
+			linha2 = lerp2.nextLine();
+			listaLinhas2.add(linha2);
+		}
 		
 		
 		for (String receberListaLinhas : listaLinhas) {
@@ -61,14 +88,53 @@ public class lerCSV {
 			codCargo = recebePalavraSeparados.get(7);
 			indUnidade = recebePalavraSeparados.get(8);
 
-			chamaMetodo();
+			
+			separa2planilha();
+			
+//			chamaMetodo();
+			
 
 		}
 
 	}
 	
-	
+	public static void separa2planilha() throws FileNotFoundException, ParserConfigurationException, TransformerFactoryConfigurationError, TransformerException 
+	{
+		
+		
+		for (String receberListaLinhas : listaLinhas2) {
+			//zera valor do array
+			ArrayList<String> recebePalavraSeparados = new ArrayList<String>();
+				//receber o valor do receberListaLinhas
+				for (String separaCampo : receberListaLinhas.split("\"")) {
+					
+					if(!separaCampo.equals(","))
+					{
+						
+						recebePalavraSeparados.add(separaCampo);
+					}
+					
+					if(recebePalavraSeparados.get(0).equals(""))
+					{
+						recebePalavraSeparados.remove(0);
+					}
+				}
 
+			COD_SISTEMA = recebePalavraSeparados.get(0);
+			COD_PERFIL = recebePalavraSeparados.get(1);
+			UG_NAME = recebePalavraSeparados.get(2);
+			RSS_NAME = recebePalavraSeparados.get(3);
+			FUNCIONALIDADE = recebePalavraSeparados.get(4);
+			STATUS = recebePalavraSeparados.get(5);
+			COD_RESTRICAO = recebePalavraSeparados.get(6);
+			QUANTIDADE = recebePalavraSeparados.get(7);
+			RSS_TYPE = recebePalavraSeparados.get(8);
+			chamaMetodo();
+		}
+	}
+			
+
+	@SuppressWarnings("static-access")
 	public static void chamaMetodo() throws FileNotFoundException,
 			ParserConfigurationException, TransformerFactoryConfigurationError,
 			TransformerException {
@@ -82,6 +148,7 @@ public class lerCSV {
 		xc.setNomeXml(nomeXml);
 		// xc.s
 		xc.bundle.setNomeBundle(codSistema);
+		xc.profiles.setApplicaton(RSS_TYPE);
 
 		xc.montaXml();
 

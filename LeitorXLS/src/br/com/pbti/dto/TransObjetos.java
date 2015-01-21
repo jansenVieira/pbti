@@ -4,11 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactoryConfigurationError;
-
 import br.com.pbti.principal.XmlConfig;
 import br.com.pbti.vo.Variaveis;
 
@@ -18,7 +16,8 @@ public class TransObjetos {
 	private static ArrayList<String> listaLinhas = new ArrayList<String>();
 	//Estanciar classe
 
-	public void abrirCSV() throws FileNotFoundException {
+	public void abrirCSV() throws FileNotFoundException,
+			ParserConfigurationException, TransformerFactoryConfigurationError, TransformerException {
 		// abrir o arquivo csv
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(
@@ -50,6 +49,8 @@ public class TransObjetos {
 			Variaveis.setTipoUsu (recebePalavraSeparados.get(6));
 			Variaveis.setCodCargo (recebePalavraSeparados.get(7));
 			Variaveis.setIndUnidade (recebePalavraSeparados.get(8));
+			
+			chamaMetodo();
 		}
 
 	}
@@ -66,8 +67,10 @@ public class TransObjetos {
 		XmlConfig xc = new XmlConfig();
 
 		xc.setNomeXml(nomeXml);
-		// xc.s
-		xc.bundle.setNomeBundle(Variaveis.getCodSistema());
+		//setando os valores nas variaveis do xml
+		xc.bundle.setNomeBundle(Variaveis.getCodPerfil());
+		xc.inheritance.setNomeSistema(Variaveis.getCodSistema());
+		xc.owner.setNomeOwner("spadmin");
 
 		xc.montaXml();
 

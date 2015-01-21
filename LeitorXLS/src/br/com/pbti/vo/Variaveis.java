@@ -12,16 +12,6 @@ public class Variaveis {
 	static String codCargo;
 	static String indUnidade;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	// Metodos Acessadores
 	public static String getCodSistema() {
 		return codSistema;
