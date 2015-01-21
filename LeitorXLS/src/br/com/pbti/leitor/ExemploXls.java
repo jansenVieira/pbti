@@ -1,18 +1,5 @@
 package br.com.pbti.leitor;
 
-import java.io.File;
-import java.io.IOException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactoryConfigurationError;
-
-import jxl.Cell;
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.read.biff.BiffException;
-import br.com.pbti.dto.Inheritance;
-import br.com.pbti.xml.MontarXml;
 
 public class ExemploXls {
 
