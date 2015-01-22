@@ -11,7 +11,8 @@ public class Selector {
 	private Element montarSelector;
 	private Element identityselector;
 	private Element compoundfilter;
-	private Element compositefilter;
+	private Element compositefilterOr;
+	private Element compositefilterAnd;
 	private Element filter;
 	private Element value;
 	private Element list;
@@ -21,6 +22,7 @@ public class Selector {
 	
 	// variaveis dinamincas
 	private String operacaoCompositer;
+	private String operacaoCompositerOr = "OR";
 	private String operacaoFil1;
 	private String property1;
 	private String value1;
@@ -58,40 +60,44 @@ public class Selector {
 
 	@SuppressWarnings("static-access")
 	private void CompositeFilter() {
-		compositefilter = montarXml.getDoc().createElement("CompositeFilter");
-		compositefilter.setAttribute("operation", operacaoCompositer);
-		compoundfilter.appendChild(compositefilter);
-
-		filter = montarXml.getDoc().createElement("Filter");
-		filter.setAttribute("operation", operacaoFil1);
-		filter.setAttribute("property", property1);
-		filter.setAttribute("value", value1);
-		compositefilter.appendChild(filter);
-
-		filter = montarXml.getDoc().createElement("Filter");
-		filter.setAttribute("operation", operacaoFil2);
-		filter.setAttribute("property", property2);
-		filter.setAttribute("value", value2);
-		compositefilter.appendChild(filter);
-
-		filter = montarXml.getDoc().createElement("Filter");
-		filter.setAttribute("operation", operacaoFil3);
-		filter.setAttribute("property", property3);
-		compositefilter.appendChild(filter);
-
-		value = montarXml.getDoc().createElement("Value");
-		filter.appendChild(value);
-		list = montarXml.getDoc().createElement("List");
-		value.appendChild(list);
-		string = montarXml.getDoc().createElement("String");
-		string.appendChild(montarXml.getDoc().createTextNode(listString));
-		list.appendChild(string);
-		string2 = montarXml.getDoc().createElement("String");
-		string2.appendChild(montarXml.getDoc().createTextNode(listString2));
-		list.appendChild(string2);
-		string3 = montarXml.getDoc().createElement("String");
-		string3.appendChild(montarXml.getDoc().createTextNode(listString3));
-		list.appendChild(string3);
+		compositefilterOr = montarXml.getDoc().createElement("CompositeFilter");
+		compositefilterOr.setAttribute("operation", operacaoCompositerOr);
+		compoundfilter.appendChild(compositefilterOr);
+		
+			compositefilterAnd = montarXml.getDoc().createElement("CompositeFilter");
+			compositefilterAnd.setAttribute("operation", operacaoCompositer);
+			compositefilterOr.appendChild(compositefilterAnd);
+	
+			filter = montarXml.getDoc().createElement("Filter");
+			filter.setAttribute("operation", operacaoFil1);
+			filter.setAttribute("property", property1);
+			filter.setAttribute("value", value1);
+			compositefilterAnd.appendChild(filter);
+	
+			filter = montarXml.getDoc().createElement("Filter");
+			filter.setAttribute("operation", operacaoFil2);
+			filter.setAttribute("property", property2);
+			filter.setAttribute("value", value2);
+			compositefilterAnd.appendChild(filter);
+	
+			filter = montarXml.getDoc().createElement("Filter");
+			filter.setAttribute("operation", operacaoFil3);
+			filter.setAttribute("property", property3);
+			compositefilterAnd.appendChild(filter);
+	
+			value = montarXml.getDoc().createElement("Value");
+			filter.appendChild(value);
+			list = montarXml.getDoc().createElement("List");
+			value.appendChild(list);
+			string = montarXml.getDoc().createElement("String");
+			string.appendChild(montarXml.getDoc().createTextNode(listString));
+			list.appendChild(string);
+			string2 = montarXml.getDoc().createElement("String");
+			string2.appendChild(montarXml.getDoc().createTextNode(listString2));
+			list.appendChild(string2);
+			string3 = montarXml.getDoc().createElement("String");
+			string3.appendChild(montarXml.getDoc().createTextNode(listString3));
+			list.appendChild(string3);
 
 	}
 
@@ -230,7 +236,12 @@ public class Selector {
 	public void setListString3(String listString3) {
 		this.listString3 = listString3;
 	}
-	
-	
 
+	public String getOperacaoCompositerOr() {
+		return operacaoCompositerOr;
+	}
+
+	public void setOperacaoCompositerOr(String operacaoCompositerOr) {
+		this.operacaoCompositerOr = operacaoCompositerOr;
+	}
 }
