@@ -53,6 +53,40 @@ public class XmlConfig extends MontarXml {
 
 		profiles.setApplicaton("Nadaadadsdas");
 		profiles.setParametro("Nadaadadsdas");
+		
+		
+		/*nomeXml = codSistema + "-" + codPerfil + "-" + tipoUnidade;
+
+		XmlConfig xc = new XmlConfig();
+
+		xc.setNomeXml(nomeXml);
+		// xc.s
+		xc.bundle.setNomeBundle(codSistema+"_"+codPerfil);
+		xc.inheritance.setNomeSistema(codSistema);
+		xc.owner.setNomeOwner("spadmin");
+		xc.profiles.setParametro(UG_NAME);
+		xc.profiles.setApplicaton(RSS_TYPE);
+		//setar o valores no selector
+		xc.selector.setOperacao("OR");
+		xc.selector.setOperacao("AND");
+		xc.selector.setOperacaoFil1("EQ");
+		xc.selector.setProperty1("sg_unde_ltco_fisica");
+		xc.selector.setValue1(tipoUnidade);
+		
+		xc.selector.setOperacaoFil2("EQ");
+		xc.selector.setProperty2("tipo_usuario");
+		xc.selector.setValue2(tipoUsu);
+		
+		xc.selector.setOperacaoFil3("IN");
+		xc.selector.setProperty3("funcao");
+		xc.selector.setListString(codFuncao);
+		xc.selector.setListString2(codFuncao);
+		xc.selector.setListString3(codFuncao);
+		
+		
+		xc.montaXml();*/
+		
+		
 	}
 
 	public static String getNomeXml() {
