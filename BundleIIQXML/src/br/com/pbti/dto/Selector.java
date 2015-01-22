@@ -20,16 +20,18 @@ public class Selector {
 	private Element string3;
 	
 	// variaveis dinamincas
-	private String operacao = "AND";
-	private String operacaoFil1 = "EQ";
-	private String property1 = "sg_unde_ltco";
-	private String value1 = "GESET";
-	private String operacaoFil2 = "EQ";
-	private String property2 = "tipo_usuario";
-	private String value2 = "C";
-	private String operacaoFil3 = "IN";
-	private String property3 = "funcao";
-	private String value3 = "";
+	private String operacaoCompositer;
+	private String operacaoFil1;
+	private String property1;
+	private String value1;
+	private String operacaoFil2;
+	private String property2;
+	private String value2;
+	private String operacaoFil3;
+	private String property3;
+	private String listString;
+	private String listString2;
+	private String listString3;
 
 	public MontarXml montarXml = new MontarXml();
 
@@ -57,7 +59,7 @@ public class Selector {
 	@SuppressWarnings("static-access")
 	private void CompositeFilter() {
 		compositefilter = montarXml.getDoc().createElement("CompositeFilter");
-		compositefilter.setAttribute("operation", operacao);
+		compositefilter.setAttribute("operation", operacaoCompositer);
 		compoundfilter.appendChild(compositefilter);
 
 		filter = montarXml.getDoc().createElement("Filter");
@@ -82,13 +84,13 @@ public class Selector {
 		list = montarXml.getDoc().createElement("List");
 		value.appendChild(list);
 		string = montarXml.getDoc().createElement("String");
-		string.appendChild(montarXml.getDoc().createTextNode("278"));
+		string.appendChild(montarXml.getDoc().createTextNode(listString));
 		list.appendChild(string);
 		string2 = montarXml.getDoc().createElement("String");
-		string2.appendChild(montarXml.getDoc().createTextNode("279"));
+		string2.appendChild(montarXml.getDoc().createTextNode(listString2));
 		list.appendChild(string2);
 		string3 = montarXml.getDoc().createElement("String");
-		string3.appendChild(montarXml.getDoc().createTextNode("564"));
+		string3.appendChild(montarXml.getDoc().createTextNode(listString3));
 		list.appendChild(string3);
 
 	}
@@ -102,11 +104,11 @@ public class Selector {
 	}
 
 	public String getOperacao() {
-		return operacao;
+		return operacaoCompositer;
 	}
 
 	public void setOperacao(String operacao) {
-		this.operacao = operacao;
+		this.operacaoCompositer = operacao;
 	}
 
 	public String getOperacaoFil1() {
@@ -173,14 +175,6 @@ public class Selector {
 		this.property3 = property3;
 	}
 
-	public String getValue3() {
-		return value3;
-	}
-
-	public void setValue3(String value3) {
-		this.value3 = value3;
-	}
-
 	public Element getString() {
 		return string;
 	}
@@ -204,5 +198,39 @@ public class Selector {
 	public void setString3(Element string3) {
 		this.string3 = string3;
 	}
+
+	public String getOperacaoCompositer() {
+		return operacaoCompositer;
+	}
+
+	public void setOperacaoCompositer(String operacaoCompositer) {
+		this.operacaoCompositer = operacaoCompositer;
+	}
+
+	public String getListString() {
+		return listString;
+	}
+
+	public void setListString(String listString) {
+		this.listString = listString;
+	}
+
+	public String getListString2() {
+		return listString2;
+	}
+
+	public void setListString2(String listString2) {
+		this.listString2 = listString2;
+	}
+
+	public String getListString3() {
+		return listString3;
+	}
+
+	public void setListString3(String listString3) {
+		this.listString3 = listString3;
+	}
+	
+	
 
 }
