@@ -68,7 +68,7 @@ public class TransObjetos {
 
 		xc.setNomeXml(nomeXml);
 		//setando os valores nas variaveis do xml
-		xc.bundle.setNomeBundle(Variaveis.getCodPerfil());
+		xc.bundle.setNomeBundle(Variaveis.getCodSistema()+"_"+Variaveis.getCodPerfil());
 		xc.inheritance.setNomeSistema(Variaveis.getCodSistema());
 		xc.owner.setNomeOwner("spadmin");
 
