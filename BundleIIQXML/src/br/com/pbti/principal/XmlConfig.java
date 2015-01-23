@@ -1,7 +1,10 @@
 package br.com.pbti.principal;
 
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
@@ -18,7 +21,7 @@ public class XmlConfig extends MontarXml {
 			TransformerFactoryConfigurationError, TransformerException,
 			IOException {
 
-//		testeXml();
+		testeXml();
 
 		montaXml();
 	}
@@ -33,16 +36,16 @@ public class XmlConfig extends MontarXml {
 	}
 
 	public static void testeXml() {
-		bundle.setNomeBundle("Abas");
-		bundle.setType("bestaquadrada");
-
-		inheritance.setNomeSistema("Nadaadadsdas");
-
-		owner.setNomeOwner("spadmin");
-
-		selector.setOperacao("Nadaadadsdas");
-		selector.setOperacaoFil1("Nadaadadsdas");
-		selector.setProperty1("Nadaadadsdas");
+//		bundle.setNomeBundle("Abas");
+//		bundle.setType("bestaquadrada");
+//
+//		inheritance.setNomeSistema("Nadaadadsdas");
+//
+//		owner.setNomeOwner("spadmin");
+//
+//		selector.setOperacao("Nadaadadsdas");
+//		selector.setOperacaoFil1("Nadaadadsdas");
+//		selector.setProperty1("Nadaadadsdas");
 		// String value1 = "GESET";
 		// String operacaoFil2 = "EQ";
 		// String property2 ="tipo_usuario";
@@ -51,42 +54,32 @@ public class XmlConfig extends MontarXml {
 		// String property3 ="funcao";
 		// String value3 = "";
 
-		profiles.setApplicaton("Nadaadadsdas");
-		profiles.setParametro("Nadaadadsdas");
+//		profiles.setApplicaton("Nadaadadsdas");
+//		profiles.setParametro("Nadaadadsdas");
 		
-		
-		/*nomeXml = codSistema + "-" + codPerfil + "-" + tipoUnidade;
-
-		XmlConfig xc = new XmlConfig();
-
-		xc.setNomeXml(nomeXml);
-		// xc.s
-		xc.bundle.setNomeBundle(codSistema+"_"+codPerfil);
-		xc.inheritance.setNomeSistema(codSistema);
-		xc.owner.setNomeOwner("spadmin");
-		xc.profiles.setParametro(UG_NAME);
-		xc.profiles.setApplicaton(RSS_TYPE);
+		setNomeXml("TESTE");
+		bundle.setNomeBundle("ADM-ADM");
+		inheritance.setNomeSistema("SIADD");
+		owner.setNomeOwner("spadmin");
+		profiles.setParametro("LDAPSUN");
+		profiles.setApplicaton("LDAPSUN");
 		//setar o valores no selector
-		xc.selector.setOperacao("OR");
-		xc.selector.setOperacao("AND");
-		xc.selector.setOperacaoFil1("EQ");
-		xc.selector.setProperty1("sg_unde_ltco_fisica");
-		xc.selector.setValue1(tipoUnidade);
+		selector.setOperacaoCompositerOr("OR");
+		selector.setOperacao("OR");
+		selector.setOperacao("AND");
+		selector.setOperacaoFil1("EQ");
+		selector.setProperty1("sg_unde_ltco_fisica");
+		selector.setValue1("GSET");
 		
-		xc.selector.setOperacaoFil2("EQ");
-		xc.selector.setProperty2("tipo_usuario");
-		xc.selector.setValue2(tipoUsu);
+		selector.setOperacaoFil2("EQ");
+		selector.setProperty2("tipo_usuario");
+		selector.setValue2("C");
 		
-		xc.selector.setOperacaoFil3("IN");
-		xc.selector.setProperty3("funcao");
-		xc.selector.setListString(codFuncao);
-		xc.selector.setListString2(codFuncao);
-		xc.selector.setListString3(codFuncao);
-		
-		
-		xc.montaXml();*/
-		
-		
+		selector.setOperacaoFil3("IN");
+		selector.setProperty3("funcao");
+		selector.setListString("474");
+		selector.setListString2("566");
+		selector.setListString3("599");
 	}
 
 	public static String getNomeXml() {
@@ -96,6 +89,24 @@ public class XmlConfig extends MontarXml {
 	public static void setNomeXml(String nomeXml) {
 		XmlConfig.nomeXml = nomeXml;
 	}
+	
+	
+	
+	
+	
+	
+	
+//teste
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	
 	
