@@ -15,7 +15,7 @@ import br.com.pbti.xml.MontarXml;
 
 public class lerCSV extends MontarXml{
 
-	
+	/*
 	
 
 	static String codSistema;
@@ -41,7 +41,7 @@ public class lerCSV extends MontarXml{
 	static String linha;
 
 
-	
+	*/
 	
 	//		setNomeXml("TESTE");
 //	bundle.setNomeBundle("ADM-ADM");
@@ -202,7 +202,7 @@ public static void main(String[] args) throws FileNotFoundException {
 	@SuppressWarnings("resource")
 	public static void lerMIP04() throws FileNotFoundException
 	{
-		Scanner scannerMip04 = new Scanner(new FileReader("C://Users//tic//Desktop//ler xsl//MIP_04-SIAAD_TESTE.csv")).useDelimiter(",");
+		Scanner scannerMip04 = new Scanner(new FileReader("C://Users//leonardo.moura//Downloads//PBTI//Caixa//SailPoint//MIP_04-SIAAD_TESTE.csv")).useDelimiter(",");
 
 		while (scannerMip04.hasNext()) 
 		{
@@ -249,7 +249,7 @@ public static void main(String[] args) throws FileNotFoundException {
 	public static void lerMIP06() throws FileNotFoundException
 	{
 		
-		Scanner scannerMIP06 = new Scanner(new FileReader("C://Users//tic//Desktop//ler xsl//MIP_06-SIAADTeste.csv")).useDelimiter(",");
+		Scanner scannerMIP06 = new Scanner(new FileReader("C://Users//leonardo.moura//Downloads//PBTI//Caixa//SailPoint//MIP_06-SIAAD_TESTE.csv")).useDelimiter(",");
 	
 		while (scannerMIP06.hasNext()) {
 	
@@ -368,8 +368,8 @@ public static void main(String[] args) throws FileNotFoundException {
 			bundle.setNomeBundle(coPerfilMIP06);
 			inheritance.setNomeSistema(coSistemaMIP06);
 			owner.setNomeOwner("spadmin");
-			profiles.setParametro(rssTypeMIP04);
-			profiles.setApplicaton(rssTypeMIP04);
+//			profiles.setParametro(rssTypeMIP04);
+//			profiles.setApplicaton(rssTypeMIP04);
 		
 			
 			
@@ -398,8 +398,8 @@ public static void main(String[] args) throws FileNotFoundException {
 			bundle.setNomeBundle(coPerfilMIP06);
 			inheritance.setNomeSistema(coSistemaMIP06);
 			owner.setNomeOwner("spadmin");
-			profiles.setParametro(rssTypeMIP04);
-			profiles.setApplicaton(rssTypeMIP04);
+//			profiles.setParametro(rssTypeMIP04);
+//			profiles.setApplicaton(rssTypeMIP04);
 			//setar o valores no selector
 //			selector.setOperacaoCompositerOr("OR");
 //			selector.setOperacao("OR");
