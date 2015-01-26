@@ -11,7 +11,7 @@ public class Inheritance {
 	private Element montarInheritance;
 	private Element refence;
 	//
-	private String nomeSistema;
+	private String inheritanceName;
 
 
 	public MontarXml montarXml = new MontarXml();
@@ -29,17 +29,17 @@ public class Inheritance {
 	{
 		refence = montarXml.getDoc().createElement("Reference");
 		refence.setAttribute("class", "sailpoint.object.Bundle");
-		refence.setAttribute("name", getNomeSistema());
+		refence.setAttribute("name", getInheritanceName());
 		inheritance.appendChild(refence);
 		
 	}
 
-	public String getNomeSistema() {
-		return nomeSistema;
+	public String getInheritanceName() {
+		return inheritanceName;
 	}
 
-	public void setNomeSistema(String nomeSistema) {
-		this.nomeSistema = nomeSistema;
+	public void setInheritanceName(String inheritanceName) {
+		this.inheritanceName = inheritanceName;
 	}
 
 	public Element getInheritance() {
