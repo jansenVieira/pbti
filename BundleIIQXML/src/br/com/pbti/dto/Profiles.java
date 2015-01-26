@@ -5,8 +5,8 @@ import org.w3c.dom.Element;
 import br.com.pbti.xml.MontarXml;
 
 public class Profiles {
-	
-	//Objetos
+
+	// Objetos
 	private Element profiles;
 	private Element montarProfiles;
 	private Element profile;
@@ -17,68 +17,66 @@ public class Profiles {
 	private Element value;
 	private Element string;
 	private Element list;
-	//Variaveis dinamicas
-	private String applicaton;
-	private String parametro;
-	private String addDireito = "groups";
-	//Estaciando metodo
+	// Variaveis dinamicas
+	private String applicatonRefName;
+	private String constraintsListString;
+	private String constraintsFilterProperty = "groups";
+	// Estaciando metodo
 	public MontarXml montarXml = new MontarXml();
 
 	@SuppressWarnings("static-access")
-	public void montarProfiles()
-	{
+	public void montarProfiles() {
 		montarProfiles = montarXml.getDoc().createElement("Profiles");
 		setProfiles(montarProfiles);
 		profile();
 	}
 
 	@SuppressWarnings("static-access")
-	private void profile()
-	{
+	private void profile() {
 		profile = montarXml.getDoc().createElement("Profile");
 		profiles.appendChild(profile);
-		
+
 		applicationRef = montarXml.getDoc().createElement("ApplicationRef");
 		profile.appendChild(applicationRef);
-		
+
 		reference = montarXml.getDoc().createElement("Reference");
 		reference.setAttribute("class", "sailpoint.object.Application");
-		reference.setAttribute("name", getApplicaton());
+		reference.setAttribute("name", getApplicatonRefName());
 		applicationRef.appendChild(reference);
-		
+
 		constraints = montarXml.getDoc().createElement("Constraints");
 		profile.appendChild(constraints);
-		
+
 		filter = montarXml.getDoc().createElement("Filter");
 		filter.setAttribute("operation", "CONTAINS_ALL");
-		filter.setAttribute("property", getAddDireito());
+		filter.setAttribute("property", getConstraintsFilterProperty());
 		constraints.appendChild(filter);
-		
+
 		value = montarXml.getDoc().createElement("Value");
 		filter.appendChild(value);
-		list =  montarXml.getDoc().createElement("List");
+		list = montarXml.getDoc().createElement("List");
 		value.appendChild(list);
 		string = montarXml.getDoc().createElement("String");
-		string.appendChild(montarXml.getDoc().createTextNode(getParametro()));
+		string.appendChild(montarXml.getDoc().createTextNode(
+				getConstraintsListString()));
 		list.appendChild(string);
-		
+
 	}
 
-	
-	public String getApplicaton() {
-		return applicaton;
+	public String getApplicatonRefName() {
+		return applicatonRefName;
 	}
 
-	public void setApplicaton(String applicaton) {
-		this.applicaton = applicaton;
+	public void setApplicatonRefName(String applicatonRefName) {
+		this.applicatonRefName = applicatonRefName;
 	}
 
-	public String getParametro() {
-		return parametro;
+	public String getConstraintsListString() {
+		return constraintsListString;
 	}
 
-	public void setParametro(String parametro) {
-		this.parametro = parametro;
+	public void setConstraintsListString(String constraintsListString) {
+		this.constraintsListString = constraintsListString;
 	}
 
 	public Element getProfiles() {
@@ -89,13 +87,12 @@ public class Profiles {
 		this.profiles = profiles;
 	}
 
-	public String getAddDireito() {
-		return addDireito;
+	public String getConstraintsFilterProperty() {
+		return constraintsFilterProperty;
 	}
 
-	public void setAddDireito(String addDireito) {
-		this.addDireito = addDireito;
+	public void setConstraintsFilterProperty(String constraintsFilterProperty) {
+		this.constraintsFilterProperty = constraintsFilterProperty;
 	}
 
-	
 }
