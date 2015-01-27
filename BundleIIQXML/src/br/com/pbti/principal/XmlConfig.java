@@ -59,10 +59,10 @@ public class XmlConfig extends MontarXml {
 		
 		setNomeXml("TESTE");
 		bundle.setNomeBundle("ADM-ADM");
-		inheritance.setNomeSistema("SIADD");
-		owner.setNomeOwner("spadmin");
-		profiles.setParametro("LDAPSUN");
-		profiles.setApplicaton("LDAPSUN");
+//		inheritance.setNomeSistema("SIADD");
+//		owner.setNomeOwner("spadmin");
+//		profiles.setParametro("LDAPSUN");
+//		profiles.setApplicaton("LDAPSUN");
 		//setar o valores no selector
 		selector.setOperacaoCompositerOr("OR");
 		selector.setOperacao("OR");

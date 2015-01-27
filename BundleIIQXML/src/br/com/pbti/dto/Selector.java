@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.w3c.dom.Element;
 
+import br.com.pbti.lerCSV.lerCSV;
 import br.com.pbti.xml.MontarXml;
 
 public class Selector {
@@ -22,7 +23,9 @@ public class Selector {
 	private Element string2;
 	private Element string3;
 	
-	public ArrayList<String> filtroAndArray = new ArrayList<String>();
+	public static ArrayList<String> filtroAndArray = new ArrayList<String>();
+	
+	public static lerCSV lercsv3 = new lerCSV();
 	
 	// variaveis dinamincas
 	private String operacaoCompositerAnd = "AND";
@@ -38,6 +41,7 @@ public class Selector {
 	private String listString;
 	private String listString2;
 	private String listString3;
+	private String codFuncao;
 
 	public MontarXml montarXml = new MontarXml();
 
@@ -61,37 +65,36 @@ public class Selector {
 		identityselector.appendChild(compoundfilter);
 		CompositeFilter();
 	}
-
+	
 	@SuppressWarnings("static-access")
 	private void CompositeFilter() {
+		
+		
 		compositefilterOr = montarXml.getDoc().createElement("CompositeFilter");
 		compositefilterOr.setAttribute("operation", operacaoCompositerOr);
 		compoundfilter.appendChild(compositefilterOr);
 
 		
-		for(String filtroAnd : filtroAndArray )
-		{
 			
 			ArrayList<String> recebePalavraSeparados = new ArrayList<String>();
+			
+			recebePalavraSeparados.addAll(lerCSV.collection);
 			// receber o valor do receberListaLinhas
 			
-			for (String separaCampo : filtroAnd.split(",")) {
-	
-				recebePalavraSeparados.add(separaCampo.replace("\"", ""));
-			}
-			
-						
+			if (lerCSV.coSistemaMIP04.equals(lerCSV.coSistemaMIP06)
+					&& lerCSV.coPerfilMIP04.equals(lerCSV.coPerfilMIP06)) {
+				
 			compositefilterAnd = montarXml.getDoc().createElement("CompositeFilter");
 			compositefilterAnd.setAttribute("operation", operacaoCompositerAnd);
 			compositefilterOr.appendChild(compositefilterAnd);
-			
+		
 			
 			if(!recebePalavraSeparados.get(2).equals("*"))
 				{
 					   
 					setValue1(recebePalavraSeparados.get(2).toString());
 					
-				   if(recebePalavraSeparados.get(8).equals("F"))
+				   if(recebePalavraSeparados.get(7).equals("F"))
 				   {
 						setProperty1("sg_unde_ltco_fisica");
 				   
@@ -102,7 +105,7 @@ public class Selector {
 						compositefilterAnd.appendChild(filter);
 				   }
 				   
-				   if(recebePalavraSeparados.get(8).equals("A"))
+				   if(recebePalavraSeparados.get(7).equals("A"))
 				   {
 						setProperty1("sg_unde_ltco");
 				   
@@ -113,15 +116,15 @@ public class Selector {
 						compositefilterAnd.appendChild(filter);
 				   } else {
 					   
-					   System.out.println("Dado inconsistente na coluna 9 IND_UNIDADE"+recebePalavraSeparados.get(8).toString());
+					   System.out.println("Dado inconsistente na coluna 9 IND_UNIDADE"+recebePalavraSeparados.get(7).toString());
 				   }
 				}	
 	
-			if(!recebePalavraSeparados.get(5).equals("*"))
+			if(!recebePalavraSeparados.get(4).equals("*"))
 			{
-			    setValue1(recebePalavraSeparados.get(5).toString());
+			    setValue1(recebePalavraSeparados.get(4).toString());
 			
-			    if(recebePalavraSeparados.get(8).equals("F"))
+			    if(recebePalavraSeparados.get(7).equals("F"))
 				   {
 						setProperty1("nu_unde_ltco_fisica");
 				   
@@ -132,7 +135,7 @@ public class Selector {
 						compositefilterAnd.appendChild(filter);
 				   }
 				   
-				   if(recebePalavraSeparados.get(8).equals("A"))
+				   if(recebePalavraSeparados.get(7).equals("A"))
 				   {
 						setProperty1("nu_unde_ltco");
 				   
@@ -143,14 +146,14 @@ public class Selector {
 						compositefilterAnd.appendChild(filter);
 				   } else {
 					   
-					   System.out.println("Dado inconsistente na coluna 9 IND_UNIDADE"+recebePalavraSeparados.get(8).toString());
+					   System.out.println("Dado inconsistente na coluna 9 IND_UNIDADE"+recebePalavraSeparados.get(7).toString());
 				   }
 			}	
 			
 			
-			if(!recebePalavraSeparados.get(6).equals("*"))
+			if(!recebePalavraSeparados.get(5).equals("*"))
 			{
-			    setValue1(recebePalavraSeparados.get(6).toString());
+			    setValue1(recebePalavraSeparados.get(5).toString());
 			
 				setProperty1("tipo_usuario");
 				   
@@ -162,9 +165,9 @@ public class Selector {
 					
 			}
 			
-			if(!recebePalavraSeparados.get(7).equals("*"))
+			if(!recebePalavraSeparados.get(6).equals("*"))
 			{
-			    setValue1(recebePalavraSeparados.get(7).toString());
+			    setValue1(recebePalavraSeparados.get(6).toString());
 			
 				setProperty1("co_cargo");
 				   
@@ -175,15 +178,14 @@ public class Selector {
 						compositefilterAnd.appendChild(filter);
 			}	
 			
-				
-			ArrayList<String> arrayCodFuncao = new ArrayList<String>();
+			filter = montarXml.getDoc().createElement("Filter");
+			filter.setAttribute("operation", "IN");
+			filter.setAttribute("property", "funcao");
+			compositefilterAnd.appendChild(filter);
 			
-			arrayCodFuncao.add("474");
-			arrayCodFuncao.add("566");
-			arrayCodFuncao.add("590");
-			arrayCodFuncao.add("599");
-			arrayCodFuncao.add("617");
-			arrayCodFuncao.add("2037");
+			lerCSV lercsv = new lerCSV();	
+			ArrayList<String> arrayCodFuncao = new ArrayList<String>();
+			arrayCodFuncao.addAll(lercsv.teste2);
 			
 			
 			value = montarXml.getDoc().createElement("Value");
@@ -199,9 +201,10 @@ public class Selector {
 				list.appendChild(getString());
 								
 			}
-		}
+			
+		}		
 	}
-
+	
 	public Element getSelector() {
 		return selector;
 	}
@@ -346,4 +349,14 @@ public class Selector {
 	public void setOperacaoCompositerOr(String operacaoCompositerOr) {
 		this.operacaoCompositerOr = operacaoCompositerOr;
 	}
+
+	public String getCodFuncao() {
+		return codFuncao;
+	}
+
+	public void setCodFuncao(String codFuncao) {
+		this.codFuncao = codFuncao;
+	}
+	
+	
 }
