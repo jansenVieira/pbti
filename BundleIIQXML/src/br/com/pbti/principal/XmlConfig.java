@@ -56,32 +56,32 @@ public class XmlConfig extends MontarXml {
 
 //		profiles.setApplicaton("Nadaadadsdas");
 //		profiles.setParametro("Nadaadadsdas");
-		
-		setNomeXml("TESTE");
-		bundle.setNomeBundle("ADM-ADM");
-//		inheritance.setNomeSistema("SIADD");
-//		owner.setNomeOwner("spadmin");
-//		profiles.setParametro("LDAPSUN");
-//		profiles.setApplicaton("LDAPSUN");
-		//setar o valores no selector
-		selector.setOperacaoCompositerOr("OR");
-		selector.setOperacao("OR");
-		selector.setOperacao("AND");
-		selector.setOperacaoFil1("EQ");
-		selector.setProperty1("sg_unde_ltco_fisica");
-		selector.setValue1("GSET");
-		
-		selector.setOperacaoFil2("EQ");
-		selector.setProperty2("tipo_usuario");
-		selector.setValue2("C");
-		
-		selector.setOperacaoFil3("IN");
-		selector.setProperty3("funcao");
-		selector.setListString("474");
-		selector.setListString2("566");
-		selector.setListString3("599");
+//		
+//		setNomeXml("TESTE");
+//		bundle.setNomeBundle("ADM-ADM");
+////		inheritance.setNomeSistema("SIADD");
+////		owner.setNomeOwner("spadmin");
+////		profiles.setParametro("LDAPSUN");
+////		profiles.setApplicaton("LDAPSUN");
+//		//setar o valores no selector
+//		selector.setOperacaoCompositerOr("OR");
+//		selector.setOperacao("OR");
+//		selector.setOperacao("AND");
+//		selector.setOperacaoFil1("EQ");
+//		selector.setProperty1("sg_unde_ltco_fisica");
+//		selector.setValue1("GSET");
+//		
+//		selector.setOperacaoFil2("EQ");
+//		selector.setProperty2("tipo_usuario");
+//		selector.setValue2("C");
+//		
+//		selector.setOperacaoFil3("IN");
+//		selector.setProperty3("funcao");
+//		selector.setListString("474");
+//		selector.setListString2("566");
+//		selector.setListString3("599");
+//	}
 	}
-
 	public static String getNomeXml() {
 		return nomeXml;
 	}
