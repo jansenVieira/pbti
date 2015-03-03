@@ -1,5 +1,6 @@
 package br.com.pbti.xml;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
@@ -38,6 +39,7 @@ public class MontarXml {
 	public static Selector selector = new Selector();
 	public static Profiles profiles = new Profiles();
 	public static String nomeXml;
+	private static String nomeSistema;
 	
 	public static void cabecalho() throws ParserConfigurationException,
 	TransformerFactoryConfigurationError, TransformerException, FileNotFoundException
@@ -60,8 +62,14 @@ public class MontarXml {
 		bundle.getBundle().appendChild(profiles.getProfiles());
 		
 		//Caminho onde é salvo o arquivo xml
-		StreamResult result = new StreamResult(new FileOutputStream("D:\\BundleIIQXML\\XML\\"+getNomeXml()+".xml"));
 		
+		File file = new File("D:\\BundleIIQXML\\XML\\"+getNomeSistema()+"\\");
+		file.mkdirs();
+		
+		StreamResult result = new StreamResult(new FileOutputStream("D:\\BundleIIQXML\\XML\\"+getNomeSistema()+"\\"+getNomeXml()+".xml"));
+		
+						
+				
 		//Cabecalho
 		trans = TransformerFactory.newInstance().newTransformer();
 		
@@ -80,6 +88,8 @@ public class MontarXml {
 
 		trans.transform(new javax.xml.transform.dom.DOMSource(doc),
 				result);
+		
+		
 		
 	}
 	
@@ -145,5 +155,17 @@ public class MontarXml {
 	public static void setNomeXml(String nomeXml) {
 		MontarXml.nomeXml = nomeXml;
 	}
+
+
+	public static String getNomeSistema() {
+		return nomeSistema;
+	}
+
+
+	public static void setNomeSistema(String nomeSistema) {
+		MontarXml.nomeSistema = nomeSistema;
+	}
+	
+	
 	
 }

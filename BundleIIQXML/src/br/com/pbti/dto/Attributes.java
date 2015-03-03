@@ -15,6 +15,7 @@ public class Attributes {
 	private Element bolean;
 	private Element mapInt;
 	private Element entryInt;
+	private String status;
 
 	public MontarXml montarXml = new MontarXml();
 
@@ -35,6 +36,12 @@ public class Attributes {
 
 	@SuppressWarnings("static-access")
 	private void entry() {
+		
+//		ArrayList<Map<String, Object>> listaPerfil = new ArrayList<Map<String, Object>>();
+//
+//		listaPerfil.addAll(XmlConfig.getListaCodFuncao());
+		
+		
 		entry = montarXml.getDoc().createElement("entry");
 		entry.setAttribute("key", "Prioridade");
 		entry.setAttribute("value", "0");
@@ -68,13 +75,14 @@ public class Attributes {
 		entry.setAttribute("value", "false");
 		map.appendChild(entry);
 
+		
 		entry = montarXml.getDoc().createElement("entry");
 		entry.setAttribute("key", "perfilAutomatico");
 		value = montarXml.getDoc().createElement("value");
 		entry.appendChild(value);
 		bolean = montarXml.getDoc().createElement("Boolean");
 		value.appendChild(bolean);
-		bolean.appendChild(montarXml.getDoc().createTextNode(""));
+		bolean.appendChild(montarXml.getDoc().createTextNode(getStatus()));
 		map.appendChild(entry);
 
 		entry = montarXml.getDoc().createElement("entry");
@@ -99,5 +107,13 @@ public class Attributes {
 
 	public void setAttributes(Element attributes) {
 		this.attributes = attributes;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
 	}
 }

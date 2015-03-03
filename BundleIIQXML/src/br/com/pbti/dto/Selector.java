@@ -1,10 +1,12 @@
 package br.com.pbti.dto;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Map;
 
 import org.w3c.dom.Element;
 
-import br.com.pbti.lerCSV.lerCSV;
+import br.com.pbti.principal.XmlConfig;
 import br.com.pbti.xml.MontarXml;
 
 public class Selector {
@@ -19,29 +21,11 @@ public class Selector {
 	private Element filter;
 	private Element value;
 	private Element list;
-	private Element string;
-	private Element string2;
-	private Element string3;
-	
-	public static ArrayList<String> filtroAndArray = new ArrayList<String>();
-	
-	public static lerCSV lercsv3 = new lerCSV();
+	private Element tagString;
 	
 	// variaveis dinamincas
 	private String operacaoCompositerAnd = "AND";
 	private String operacaoCompositerOr = "OR";
-	private String operacaoFil1;
-	private String property1;
-	private String value1;
-	private String operacaoFil2;
-	private String property2;
-	private String value2;
-	private String operacaoFil3;
-	private String property3;
-	private String listString;
-	private String listString2;
-	private String listString3;
-	private String codFuncao;
 
 	public MontarXml montarXml = new MontarXml();
 
@@ -65,146 +49,142 @@ public class Selector {
 		identityselector.appendChild(compoundfilter);
 		CompositeFilter();
 	}
-	
-	@SuppressWarnings("static-access")
+
+	@SuppressWarnings({ "static-access", "unchecked" })
 	private void CompositeFilter() {
-		
-		
+
 		compositefilterOr = montarXml.getDoc().createElement("CompositeFilter");
 		compositefilterOr.setAttribute("operation", operacaoCompositerOr);
 		compoundfilter.appendChild(compositefilterOr);
 
-		
-			
-			ArrayList<String> recebePalavraSeparados = new ArrayList<String>();
-			
-			recebePalavraSeparados.addAll(lerCSV.collection);
-			// receber o valor do receberListaLinhas
-			
-			if (lerCSV.coSistemaMIP04.equals(lerCSV.coSistemaMIP06)
-					&& lerCSV.coPerfilMIP04.equals(lerCSV.coPerfilMIP06)) {
-				
+		ArrayList<Map<String, Object>> listaPerfil = new ArrayList<Map<String, Object>>();
+
+		listaPerfil.addAll(XmlConfig.getListaCodFuncao());
+
+		for (Map<String, Object> listaPerfils : listaPerfil) {
+
 			compositefilterAnd = montarXml.getDoc().createElement("CompositeFilter");
 			compositefilterAnd.setAttribute("operation", operacaoCompositerAnd);
 			compositefilterOr.appendChild(compositefilterAnd);
-		
-			
-			if(!recebePalavraSeparados.get(2).equals("*"))
-				{
-					   
-					setValue1(recebePalavraSeparados.get(2).toString());
-					
-				   if(recebePalavraSeparados.get(7).equals("F"))
-				   {
-						setProperty1("sg_unde_ltco_fisica");
-				   
-						filter = montarXml.getDoc().createElement("Filter");
-						filter.setAttribute("operation", getOperacaoFil1());
-						filter.setAttribute("property", getProperty1());
-						filter.setAttribute("value", getValue1());
-						compositefilterAnd.appendChild(filter);
-				   }
-				   
-				   if(recebePalavraSeparados.get(7).equals("A"))
-				   {
-						setProperty1("sg_unde_ltco");
-				   
-						filter = montarXml.getDoc().createElement("Filter");
-						filter.setAttribute("operation", getOperacaoFil1());
-						filter.setAttribute("property", getProperty1());
-						filter.setAttribute("value", getValue1());
-						compositefilterAnd.appendChild(filter);
-				   } else {
-					   
-					   System.out.println("Dado inconsistente na coluna 9 IND_UNIDADE"+recebePalavraSeparados.get(7).toString());
-				   }
-				}	
-	
-			if(!recebePalavraSeparados.get(4).equals("*"))
-			{
-			    setValue1(recebePalavraSeparados.get(4).toString());
-			
-			    if(recebePalavraSeparados.get(7).equals("F"))
-				   {
-						setProperty1("nu_unde_ltco_fisica");
-				   
-						filter = montarXml.getDoc().createElement("Filter");
-						filter.setAttribute("operation", getOperacaoFil1());
-						filter.setAttribute("property", getProperty1());
-						filter.setAttribute("value", getValue1());
-						compositefilterAnd.appendChild(filter);
-				   }
-				   
-				   if(recebePalavraSeparados.get(7).equals("A"))
-				   {
-						setProperty1("nu_unde_ltco");
-				   
-						filter = montarXml.getDoc().createElement("Filter");
-						filter.setAttribute("operation", getOperacaoFil1());
-						filter.setAttribute("property", getProperty1());
-						filter.setAttribute("value", getValue1());
-						compositefilterAnd.appendChild(filter);
-				   } else {
-					   
-					   System.out.println("Dado inconsistente na coluna 9 IND_UNIDADE"+recebePalavraSeparados.get(7).toString());
-				   }
-			}	
-			
-			
-			if(!recebePalavraSeparados.get(5).equals("*"))
-			{
-			    setValue1(recebePalavraSeparados.get(5).toString());
-			
-				setProperty1("tipo_usuario");
-				   
-						filter = montarXml.getDoc().createElement("Filter");
-						filter.setAttribute("operation", getOperacaoFil1());
-						filter.setAttribute("property", getProperty1());
-						filter.setAttribute("value", getValue1());
-						compositefilterAnd.appendChild(filter);
-					
+
+			String TIPO_UNIDADE = "TIPO_UNIDADE", FUNCAO = "FUNCAO", COD_UNIDADE = "COD_UNIDADE", TIPO_USU = "TIPO_USU", COD_CARGO = "COD_CARGO", 
+					IND_UNIDADE = "IND_UNIDADE", asteri = "*", lotacaoFisica = "F", lotacaoAdm = "A", funcaoSEM = "SEMF", funcaoCOM = "COMF", LIST_FUNCAO = "LIST_FUNCAO";
+
+			if (!listaPerfils.get(TIPO_UNIDADE).equals(asteri)) {
+				if (listaPerfils.get(IND_UNIDADE).equals(lotacaoFisica)) {
+
+					filter = montarXml.getDoc().createElement("Filter");
+					filter.setAttribute("operation", "EQ");
+					filter.setAttribute("property", "sg_unde_ltco_fisica");
+					filter.setAttribute("value", listaPerfils.get(TIPO_UNIDADE)
+							.toString());
+					compositefilterAnd.appendChild(filter);
+				} else if (listaPerfils.get(IND_UNIDADE).equals(lotacaoAdm)) {
+
+					filter = montarXml.getDoc().createElement("Filter");
+					filter.setAttribute("operation", "EQ");
+					filter.setAttribute("property", "sg_unde_ltco");
+					filter.setAttribute("value", listaPerfils.get(TIPO_UNIDADE)
+							.toString());
+					compositefilterAnd.appendChild(filter);
+				} else {
+
+					System.out
+							.println("Dado inconsistente na coluna 9 IND_UNIDADE");
+				}
 			}
-			
-			if(!recebePalavraSeparados.get(6).equals("*"))
-			{
-			    setValue1(recebePalavraSeparados.get(6).toString());
-			
-				setProperty1("co_cargo");
-				   
-						filter = montarXml.getDoc().createElement("Filter");
-						filter.setAttribute("operation", getOperacaoFil1());
-						filter.setAttribute("property", getProperty1());
-						filter.setAttribute("value", getValue1());
-						compositefilterAnd.appendChild(filter);
-			}	
-			
-			filter = montarXml.getDoc().createElement("Filter");
-			filter.setAttribute("operation", "IN");
-			filter.setAttribute("property", "funcao");
-			compositefilterAnd.appendChild(filter);
-			
-			lerCSV lercsv = new lerCSV();	
-			ArrayList<String> arrayCodFuncao = new ArrayList<String>();
-			arrayCodFuncao.addAll(lercsv.teste2);
-			
-			
-			value = montarXml.getDoc().createElement("Value");
-			filter.appendChild(value);
-			list = montarXml.getDoc().createElement("List");
-			value.appendChild(list);
-			
-			
-			for(String codFuncao: arrayCodFuncao)
-			{
-				string = montarXml.getDoc().createElement("String");
-				string.appendChild(montarXml.getDoc().createTextNode(codFuncao));
-				list.appendChild(getString());
-								
+
+			if (!listaPerfils.get(COD_UNIDADE).equals(asteri)) {
+
+				if (listaPerfils.get(IND_UNIDADE).equals(lotacaoFisica)) {
+
+					filter = montarXml.getDoc().createElement("Filter");
+					filter.setAttribute("operation", "EQ");
+					filter.setAttribute("property", "nu_unde_ltco_fisica");
+					filter.setAttribute("value", listaPerfils.get(COD_UNIDADE)
+							.toString());
+					compositefilterAnd.appendChild(filter);
+				} else if (listaPerfils.get(IND_UNIDADE).equals(lotacaoAdm)) {
+
+					filter = montarXml.getDoc().createElement("Filter");
+					filter.setAttribute("operation", "EQ");
+					filter.setAttribute("property", "nu_unde_ltco");
+					filter.setAttribute("value", listaPerfils.get(COD_UNIDADE)
+							.toString());
+					compositefilterAnd.appendChild(filter);
+				} else {
+
+					System.out
+							.println("Dado inconsistente na coluna 9 IND_UNIDADE");
+				}
 			}
-			
-		}		
+
+			if (!listaPerfils.get(TIPO_USU).equals(asteri)) {
+
+				filter = montarXml.getDoc().createElement("Filter");
+				filter.setAttribute("operation", "EQ");
+				filter.setAttribute("property", "tipo_usuario");
+				filter.setAttribute("value", listaPerfils.get(TIPO_USU)
+						.toString());
+				compositefilterAnd.appendChild(filter);
+			}
+
+			if (!listaPerfils.get(COD_CARGO).equals(asteri)) {
+
+				filter = montarXml.getDoc().createElement("Filter");
+				filter.setAttribute("operation", "EQ");
+				filter.setAttribute("property", "co_cargo");
+				filter.setAttribute("value", listaPerfils.get(COD_CARGO)
+						.toString());
+				compositefilterAnd.appendChild(filter);
+			}
+
+			if (!listaPerfils.get(FUNCAO).equals(asteri)) {
+
+				if (listaPerfils.get(FUNCAO).equals(funcaoCOM)) {
+					filter = montarXml.getDoc().createElement("Filter");
+					filter.setAttribute("operation", "NOTNULL");
+					filter.setAttribute("property", "funcao");
+					compositefilterAnd.appendChild(filter);
+				}
+
+				if (listaPerfils.get(FUNCAO).equals(funcaoSEM)) {
+					filter = montarXml.getDoc().createElement("Filter");
+					filter.setAttribute("operation", "ISNULL");
+					filter.setAttribute("property", "funcao");
+					compositefilterAnd.appendChild(filter);
+				}
+			}
+
+			ArrayList<Object> arrayCodFuncao = new ArrayList<Object>();
+			arrayCodFuncao.addAll((Collection<? extends Object>) listaPerfils
+					.get(LIST_FUNCAO));
+
+			if (!arrayCodFuncao.get(0).equals(asteri)) {
+
+				filter = montarXml.getDoc().createElement("Filter");
+				filter.setAttribute("operation", "IN");
+				filter.setAttribute("property", "funcao");
+				compositefilterAnd.appendChild(filter);
+
+				value = montarXml.getDoc().createElement("Value");
+				filter.appendChild(value);
+				list = montarXml.getDoc().createElement("List");
+				value.appendChild(list);
+
+				for (Object codFuncao : arrayCodFuncao) {
+
+					tagString = montarXml.getDoc().createElement("String");
+					tagString.appendChild(montarXml.getDoc().createTextNode(
+							codFuncao.toString()));
+					list.appendChild(getString());
+				}
+
+			}
+		}
+
 	}
-	
+
 	public Element getSelector() {
 		return selector;
 	}
@@ -221,94 +201,14 @@ public class Selector {
 		this.operacaoCompositerAnd = operacao;
 	}
 
-	public String getOperacaoFil1() {
-		return operacaoFil1;
-	}
-
-	public void setOperacaoFil1(String operacaoFil1) {
-		this.operacaoFil1 = operacaoFil1;
-	}
-
-	public String getProperty1() {
-		return property1;
-	}
-
-	public void setProperty1(String property1) {
-		this.property1 = property1;
-	}
-
-	public String getValue1() {
-		return value1;
-	}
-
-	public void setValue1(String value1) {
-		this.value1 = value1;
-	}
-
-	public String getOperacaoFil2() {
-		return operacaoFil2;
-	}
-
-	public void setOperacaoFil2(String operacaoFil2) {
-		this.operacaoFil2 = operacaoFil2;
-	}
-
-	public String getProperty2() {
-		return property2;
-	}
-
-	public void setProperty2(String property2) {
-		this.property2 = property2;
-	}
-
-	public String getValue2() {
-		return value2;
-	}
-
-	public void setValue2(String value2) {
-		this.value2 = value2;
-	}
-
-	public String getOperacaoFil3() {
-		return operacaoFil3;
-	}
-
-	public void setOperacaoFil3(String operacaoFil3) {
-		this.operacaoFil3 = operacaoFil3;
-	}
-
-	public String getProperty3() {
-		return property3;
-	}
-
-	public void setProperty3(String property3) {
-		this.property3 = property3;
-	}
-
+	
 	public Element getString() {
-		return string;
+		return tagString;
 	}
 
 	public void setString(Element string) {
-		this.string = string;
+		this.tagString = string;
 	}
-
-	public Element getString2() {
-		return string2;
-	}
-
-	public void setString2(Element string2) {
-		this.string2 = string2;
-	}
-
-	public Element getString3() {
-		return string3;
-	}
-
-	public void setString3(Element string3) {
-		this.string3 = string3;
-	}
-
 
 	public Element getCompositefilterAnd() {
 		return compositefilterAnd;
@@ -318,30 +218,6 @@ public class Selector {
 		this.compositefilterAnd = compositefilterAnd;
 	}
 
-	public String getListString() {
-		return listString;
-	}
-
-	public void setListString(String listString) {
-		this.listString = listString;
-	}
-
-	public String getListString2() {
-		return listString2;
-	}
-
-	public void setListString2(String listString2) {
-		this.listString2 = listString2;
-	}
-
-	public String getListString3() {
-		return listString3;
-	}
-
-	public void setListString3(String listString3) {
-		this.listString3 = listString3;
-	}
-
 	public String getOperacaoCompositerOr() {
 		return operacaoCompositerOr;
 	}
@@ -349,14 +225,4 @@ public class Selector {
 	public void setOperacaoCompositerOr(String operacaoCompositerOr) {
 		this.operacaoCompositerOr = operacaoCompositerOr;
 	}
-
-	public String getCodFuncao() {
-		return codFuncao;
-	}
-
-	public void setCodFuncao(String codFuncao) {
-		this.codFuncao = codFuncao;
-	}
-	
-	
 }
