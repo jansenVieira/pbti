@@ -68,7 +68,7 @@ public class VoArbor {
 		}
 
 				
-		this.arquivo = arquivo;
+		this.arquivo = arquivo.toUpperCase();
 	}
 
 	public long getDataNumero() {
