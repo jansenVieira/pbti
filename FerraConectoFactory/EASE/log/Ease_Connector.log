@@ -1,0 +1,181 @@
+2015/08/06 14:51:21  ... : Connector version is '1.0.00'
+2015/08/06 14:51:21  ... Entering ConnectorInit ... 
+2015/08/06 14:51:21 ConnectorInit ... : --------- XSA_OperationHash ------------
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_CONNECTOR> value=<Ease>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_FUNCTION> value=<ConnectorInit>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_WORK_DIR> value=<>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_ACTION> value=<INIT>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/08/06 14:51:21 ConnectorInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/08/06 14:51:21 ConnectorInit ... : ----------- END -------------
+2015/08/06 14:51:21 ConnectorInit ... : --------- XSA_ContextHash ------------
+2015/08/06 14:51:21 ConnectorInit ... : ----------- END -------------
+2015/08/06 14:51:21 ConnectorInit ... : ------------------------Connector Init-------------------------------
+2015/08/06 14:51:21 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ConnectorInit Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/08/06 14:51:21 ConnectorInit ... : managedSystemType=Ease
+2015/08/06 14:51:21 ConnectorInit ... : managedSystemName=testConnection
+2015/08/06 14:51:21 ConnectorInit ... : managedSystemConf folder =C:/temp/Ease/testConnection/
+2015/08/06 14:51:21 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadApplicationSchema Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/08/06 14:51:21 ConnectorInit ... : Deleting dtd and namespacereferences if exists
+2015/08/06 14:51:21 ConnectorInit ... : 
+2015/08/06 14:51:21 ConnectorInit ... : Created reader for input file :C:/temp/Ease/testConnection/MSCSTemplate.xml
+2015/08/06 14:51:21 ConnectorInit ... : Created writer for output fie :C:/temp/Ease/testConnection/MSCSTemplate.xml.tmp
+2015/08/06 14:51:21 ConnectorInit ... : Modified line:<resultParameterList listType="mscsTemplate" >
+2015/08/06 14:51:21 ConnectorInit ... : Closed reader and writer
+2015/08/06 14:51:21 ConnectorInit ... : deleted orig file:true
+2015/08/06 14:51:21 ConnectorInit ... : Renamed deleted file:true
+2015/08/06 14:51:21 ConnectorInit ... : 
+2015/08/06 14:51:21 ConnectorInit ... : Created reader for input file :C:/temp/Ease/testConnection/Ease_AppSchema.xml
+2015/08/06 14:51:21 ConnectorInit ... : Created writer for output fie :C:/temp/Ease/testConnection/Ease_AppSchema.xml.tmp
+2015/08/06 14:51:21 ConnectorInit ... : Modified line:
+2015/08/06 14:51:21 ConnectorInit ... : Closed reader and writer
+2015/08/06 14:51:21 ConnectorInit ... : deleted orig file:true
+2015/08/06 14:51:21 ConnectorInit ... : Renamed deleted file:true
+2015/08/06 14:51:21 ConnectorInit ... : Parsing C:/temp/Ease/testConnection/Ease_AppSchema.xml file
+2015/08/06 14:51:21 ConnectorInit ... : Parsed C:/temp/Ease/testConnection/Ease_AppSchema.xml file
+2015/08/06 14:51:21 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadSupportedObjectAttributes Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/08/06 14:51:21 ConnectorInit ... : Retrieving nodes for xpath query://sailpoint/ImportAction/Configuration/Attributes/Map/entry/value/List/Application/Schemas/Schema
+2015/08/06 14:51:21 ConnectorInit ... : Found Schema nodes
+2015/08/06 14:51:21 ConnectorInit ... : Found objectType:account with identityAttribute:CO_USUARIO
+2015/08/06 14:51:21 ConnectorInit ... : Fetching AttributeDefinition
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :CO_USUARIO type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :NO_USUARIO type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :PASSWORD type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :CO_PERFIL type:string multivalued:true size:0
+2015/08/06 14:51:21 ConnectorInit ... : Account Group Connection attribute :CO_PERFIL
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :NO_PERFIL type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :NO_LOTACAO type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Set Schema for objectType:account
+2015/08/06 14:51:21 ConnectorInit ... : Found objectType:group with identityAttribute:CO_PERFIL
+2015/08/06 14:51:21 ConnectorInit ... : Fetching AttributeDefinition
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :CO_PERFIL type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Inserting attribute :NO_PERFIL type:string multivalued: size:0
+2015/08/06 14:51:21 ConnectorInit ... : Set Schema for objectType:group
+2015/08/06 14:51:21 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadSupportedObjectAttributes Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/08/06 14:51:21 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadConnectorClass Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/08/06 14:51:21 ConnectorInit ... : Connector Class Name=EASE
+2015/08/06 14:51:21 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadConnectorClass Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/08/06 14:51:21 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadManageSystemMappingsFromMSCSTemplate Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/08/06 14:51:21 ConnectorInit ... : Found 3 MSCS keywords
+2015/08/06 14:51:21 ConnectorInit ... : Found keyword node
+2015/08/06 14:51:21 ConnectorInit ... : Found keyword node:url
+2015/08/06 14:51:21 ConnectorInit ... : Found metadata node
+2015/08/06 14:51:21 ConnectorInit ... : Found description node
+2015/08/06 14:51:21 ConnectorInit ... : description node has value:test
+2015/08/06 14:51:21 ConnectorInit ... : Inserting key=url  value=url into managedSystemMapping config
+2015/08/06 14:51:21 ConnectorInit ... : Found keyword node
+2015/08/06 14:51:21 ConnectorInit ... : Found keyword node:user
+2015/08/06 14:51:21 ConnectorInit ... : Found metadata node
+2015/08/06 14:51:21 ConnectorInit ... : Found description node
+2015/08/06 14:51:21 ConnectorInit ... : description node has value:Admin
+2015/08/06 14:51:21 ConnectorInit ... : Admin attribute found with val=user
+2015/08/06 14:51:21 ConnectorInit ... : Inserting key=XSA_ADMIN_ID  value=user into managedSystemMapping config
+2015/08/06 14:51:21 ConnectorInit ... : Found keyword node
+2015/08/06 14:51:21 ConnectorInit ... : Found keyword node:password
+2015/08/06 14:51:21 ConnectorInit ... : Found metadata node
+2015/08/06 14:51:21 ConnectorInit ... : Found description node
+2015/08/06 14:51:21 ConnectorInit ... : description node has value:Password
+2015/08/06 14:51:21 ConnectorInit ... : Password attribute found.
+2015/08/06 14:51:21 ConnectorInit ... : Inserting key=XSA_ADMIN_PASSWORD  value=password into managedSystemMapping config
+2015/08/06 14:51:21 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadManageSystemMappingsFromMSCSTemplate Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/08/06 14:51:21 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadApplicationSchema Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/08/06 14:51:21 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ConnectorInit Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/08/06 14:51:21 ConnectorInit ... : ------------------------End Connector Init-------------------------------
+2015/08/06 14:51:21  ... Exiting ConnectorInit with rc=0
+2015/08/06 14:51:21  ... Entering ManageSystemInit ... 
+2015/08/06 14:51:21 ManageSystemInit ... : --------- XSA_OperationHash ------------
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_CONNECTOR> value=<Ease>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_FUNCTION> value=<ManageSystemInit>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_WORK_DIR> value=<>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_ACTION> value=<INIT>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/08/06 14:51:21 ManageSystemInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/08/06 14:51:21 ManageSystemInit ... : ----------- END -------------
+2015/08/06 14:51:21 ManageSystemInit ... : --------- XSA_ContextHash ------------
+2015/08/06 14:51:21 ManageSystemInit ... : ----------- END -------------
+2015/08/06 14:51:21 ManageSystemInit ... : ------------------------Start ManagedSystem Init-------------------------------
+2015/08/06 14:51:21 ManageSystemInit ... : Found 3 MSCS template keys
+2015/08/06 14:51:21 ManageSystemInit ... : Key XSA_ADMIN_ID would depend upon the caller.Delaying populating its value.
+2015/08/06 14:51:21 ManageSystemInit ... : Key XSA_ADMIN_PASSWORD would depend upon the caller.Delaying populating its value.
+2015/08/06 14:51:21 ManageSystemInit ... : Exception: java.lang.Exception: No value specified for MSCSPARM keyword :url
+2015/08/06 14:51:21 ManageSystemInit ... : Exception Stacktrace: 
+2015/08/06 14:51:21 ManageSystemInit ... :       XSA_ConnectorAdaptor.ReadMSCS(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       XSA_ConnectorAdaptor.MangedSystemInit(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       XSA_Connector.ManageSystemInit(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.bmc.security.pmw.PMNative.rssInit(Native Method)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.bmc.security.pmw.PMWrapper.rssInit(PMWrapper.java:140)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.bmc.security.pmTestFramework.AgentFramework.generalOps(AgentFramework.java:1410)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.bmc.security.pmTestFramework.AgentFramework.activateFramework(AgentFramework.java:87)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.initMscs(PMTester.java:448)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.initTest(PMTester.java:359)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.executeTest(PMTester.java:133)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.sailpoint.security.Studio.IDE.steps.pm.TestingStep$ToolbarActions.doRunCommand(TestingStep.java:659)
+2015/08/06 14:51:21 ManageSystemInit ... :       com.sailpoint.security.Studio.IDE.steps.pm.TestingStep$ToolbarActions.actionPerformed(TestingStep.java:513)
+2015/08/06 14:51:21 ManageSystemInit ... :       javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Component.processMouseEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       javax.swing.JComponent.processMouseEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Component.processEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Container.processEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Component.dispatchEventImpl(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Container.dispatchEventImpl(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Component.dispatchEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Container.dispatchEventImpl(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Window.dispatchEventImpl(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.Component.dispatchEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue.access$000(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue$1.run(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue$1.run(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.security.AccessController.doPrivileged(Native Method)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue$2.run(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue$2.run(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.security.AccessController.doPrivileged(Native Method)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventQueue.dispatchEvent(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... :       java.awt.EventDispatchThread.run(Unknown Source)
+2015/08/06 14:51:21 ManageSystemInit ... : Exception: end
+2015/08/06 14:51:21  ... Exiting ManageSystemInit with rc=8
+2015/08/06 14:51:21  ... Entering ConnectorTerm ... 
+2015/08/06 14:51:21 ConnectorTerm ... : --------- XSA_OperationHash ------------
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_CONNECTOR> value=<Ease>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_ADMIN_ID> value=<>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_FUNCTION> value=<ConnectorTerm>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/08/06 14:51:21 ConnectorTerm ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/08/06 14:51:21 ConnectorTerm ... : ----------- END -------------
+2015/08/06 14:51:21 ConnectorTerm ... : --------- XSA_ContextHash ------------
+2015/08/06 14:51:21 ConnectorTerm ... : ----------- END -------------
+2015/08/06 14:51:21 ConnectorTerm ... : ------------------------XSAConnector ConnectorTerm-------------------------------
+2015/08/06 14:51:21 ConnectorTerm ... : ------------------------XSAConnector End ConnectorTerm-------------------------------
+2015/08/06 14:51:21  ... Exiting ConnectorTerm with rc=0

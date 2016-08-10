@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="provisioning,enable,unlock" name="BENNER" type="BENNER">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="BENNER"/>
+					<entry key="formPath" value="benner.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="APELIDO" identityAttribute="APELIDO" objectType="account">
+					<AttributeDefinition name="HANDLE" required="false" type="string"/>
+					<AttributeDefinition name="NOME" required="false" type="string"/>
+					<AttributeDefinition name="APELIDO" required="false" type="string"/>
+					<AttributeDefinition name="INATIVO" required="false" type="string"/>
+					<AttributeDefinition entitlement="true" multi="true" name="NOME_PERFIL" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="NOME" identityAttribute="NOME" objectType="group">
+					<AttributeDefinition name="HANDLE" required="false" type="string"/>
+					<AttributeDefinition name="NOME" required="true" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

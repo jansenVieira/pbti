@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="AUTHENTICATE, ENABLE, UNLOCK, PROVISIONING, PASSWORD" name="SIRIC" type="SIRIC">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="SIRIC"/>
+					<entry key="formPath" value="Siric.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="codigo_usuario" identityAttribute="codigo_usuario" objectType="account">
+					<AttributeDefinition name="codigo_usuario" required="true" type="string"/>
+					<AttributeDefinition name="nome" required="false" type="string"/>
+					<AttributeDefinition name="cod_unid_lotacao" required="false" type="string"/>
+					<AttributeDefinition name="lotacaoid" required="false" type="string"/>
+					<AttributeDefinition name="NU_FUNCAO" required="false" type="string"/>
+					<AttributeDefinition entitlement="true" multi="true" name="NO_GRUPO" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="NO_GRUPO" identityAttribute="NO_GRUPO" objectType="group">
+					<AttributeDefinition name="CO_GRUPO" required="false" type="string"/>
+					<AttributeDefinition multi="true" name="NO_GRUPO" required="false" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

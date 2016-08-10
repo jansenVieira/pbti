@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="AUTHENTICATE, ENABLE, UNLOCK, PROVISIONING, PASSWORD" name="EASE" type="EASE">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="EASE"/>
+					<entry key="formPath" value="Ease.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="CO_USUARIO" identityAttribute="CO_USUARIO" objectType="account">
+					<AttributeDefinition name="CO_USUARIO" required="true" type="string"/>
+					<AttributeDefinition name="NO_USUARIO" required="false" type="string"/>
+					<AttributeDefinition entitlement="true" name="CO_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="NO_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="NO_LOTACAO" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="CO_PERFIL" identityAttribute="CO_PERFIL" objectType="group">
+					<AttributeDefinition name="CO_PERFIL" required="true" type="string"/>
+					<AttributeDefinition name="NO_PERFIL" required="false" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

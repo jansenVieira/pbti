@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="PASSWORD" name="SISFIN" type="SISFIN">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="SISFIN"/>
+					<entry key="formPath" value="Sisfin.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="MATRICULA" identityAttribute="MATRICULA" objectType="account">
+					<AttributeDefinition name="MATRICULA" required="true" type="string"/>
+					<AttributeDefinition name="NOME" required="false" type="string"/>
+					<AttributeDefinition name="UNIDADE" required="false" type="string"/>
+					<AttributeDefinition name="UNIDADE_ADM" required="false" type="string"/>
+					<AttributeDefinition name="FUNC_EFET" required="false" type="string"/>
+					<AttributeDefinition name="FUNC_EVENT" required="false" type="string"/>
+					<AttributeDefinition name="FUNC_EXERC" required="false" type="string"/>
+					<AttributeDefinition name="SIS_PERFIL" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="SIS_PERFIL" identityAttribute="SIS_PERFIL" objectType="group">
+					<AttributeDefinition name="SISTEMA" required="false" type="string"/>
+					<AttributeDefinition name="PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="SIS_PERFIL" required="true" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

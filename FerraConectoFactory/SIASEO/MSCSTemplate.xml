@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultParameterList listType="mscsTemplate" xmlns="http://sailpoint.com/idm/xms/xbean/mscs">
+    <parameter predefine="true">
+        <keyword>MS_TYPE</keyword>
+        <value>#PM#</value>
+        <metadata>
+            <description>PM name for this MSCS (mandatory)</description>
+            <condition>
+                <condKW>protected</condKW>
+            </condition>
+        </metadata>
+    </parameter>
+    <parameter>
+        <keyword>ATTACH_DLL</keyword>
+        <value>SailPointXagCTSAdapter</value>
+        <metadata>
+            <description>PM library name</description>
+            <condition>
+                <condKW>protected</condKW>
+            </condition>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>DEFAULT_ADMIN</keyword>
+        <value/>
+        <metadata>
+            <description>MS default administrator name</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>DEFAULT_ADMIN_PASSWORD</keyword>
+        <value/>
+        <metadata>
+            <description>MS default administrator password</description>
+            <paramType>password</paramType>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>DESCRIPTION</keyword>
+        <value/>
+        <metadata>
+            <paramType>string</paramType>
+            <description>MSCS Description</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>OFLI_INTERCEPT</keyword>
+        <value>Y</value>
+        <metadata>
+            <validValues>
+                <value>Y</value>
+                <value>N</value>
+            </validValues>
+            <description>Use Offline Interceptor?</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>OFLI_INTERVAL</keyword>
+        <value>000000</value>
+        <metadata>
+            <description>The interval that must pass between consecutive activations of the
+                Offline Interceptor (format: hhmmss). If the OFLI_INTERVAL parameter is set to 000000, the Offline
+                Interceptor is never activated automatically.</description>
+            <condition>
+                <condKW>OFLI_INTERCEPT</condKW>
+                <condVal>Y</condVal>
+                <condNullVal>000000</condNullVal>
+            </condition>
+            <mask>######</mask>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>DELETE_INTERCEPT_CHECK</keyword>
+        <value>N</value>
+        <metadata>
+            <validValues>
+                <value>Y</value>
+                <value>N</value>
+            </validValues>
+            <description>When a delete event is detected, whether the Notification Server should call a get function to check that an object was actually deleted on the MS. If the call determines that the object exists, an update event (instead of a delete event) is sent to ESS.</description>
+            <condition>
+                <condKW>ONLI_INTERCEPT</condKW>
+                <condVal>Y</condVal>
+                <condNullVal>N</condNullVal>
+            </condition>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>SYNC_SEMAPHORE</keyword>
+        <value>#PM###MSCS#$SYNC_SEMAPHORE</value>
+        <metadata>
+            <description>The name of the lock obtained while the Offline Interceptor or global synchronization is running (in order to avoid concurrent execution).</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>OFLI_SEMAPHORE</keyword>
+        <value>#PM###MSCS#$OFLI_SEMAPHORE</value>
+        <metadata>
+            <description>The name of the lock obtained while the Offline Interceptor in running. For SM internal use</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>ONLI_SEMAPHORE</keyword>
+        <value>#PM###MSCS#$ONLI_SEMAPHORE</value>
+        <metadata>
+            <description>The name of the lock obtained while the Online Interceptor in running. For SM internal use</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>ADMIN_CASE_SENS</keyword>
+        <value>N</value>
+        <metadata>
+            <validValues>
+                <value>N</value>
+                <value>Y</value>
+            </validValues>
+            <description>Is administrator name case-sensitive?</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>ADMIN_USER_REQ</keyword>
+        <value>Y</value>
+        <metadata>
+            <validValues>
+                <value>N</value>
+                <value>Y</value>
+            </validValues>
+            <description>Is default administrator required?</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>ADMIN_FILE_REQ</keyword>
+        <value>Y</value>
+        <metadata>
+            <validValues>
+                <value>N</value>
+                <value>Y</value>
+            </validValues>
+            <description>Is administrators file required? (password required for administrator?)</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>PASS_PASSWORD</keyword>
+        <value>N</value>
+        <metadata>
+            <validValues>
+                <value>N</value>
+                <value>Y</value>
+            </validValues>
+            <description>Whether the password is passed to pre/post-scripts in update password transactions.</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>WAIT_SCRIPT_PROC</keyword>
+        <value>180000</value>
+        <metadata>
+            <validValues/>
+            <paramType>integer</paramType>
+            <description>Length of time the CS process waits after a Pre/Post-script is run by SA-Agent.</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>SM_ROOT_DIR</keyword>
+        <value>#SMROOT#</value>
+        <metadata>
+            <description>Root directory where the Service manager is installer</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>LOCKED_IS_REVOKED</keyword>
+        <value>Y</value>
+        <metadata>
+            <validValues>
+                <value>N</value>
+                <value>Y</value>
+            </validValues>
+            <description>Whether a locked Windows user is revoked in Enterprise SecurityStation.</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>LIST_ATTRIB_SIZE_LIMIT</keyword>
+        <value>4096</value>
+        <metadata>
+            <description>Maximum size for the list type keyword value allowed by Provisioning Module.</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>USE_CANT_CHANGE_PWD</keyword>
+        <value>N</value>
+        <metadata>
+            <validValues>
+                <value>N</value>
+                <value>Y</value>
+            </validValues>
+            <description>Whether to manage the User cannot change password attribute</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="true">
+        <keyword>CODE_PAGE</keyword>
+        <value>0</value>
+        <metadata>
+            <validValues/>
+            <paramType>integer</paramType>
+            <description>The Platform Code Page - SM translates using this code page to/from UTF8 to ANSI for its communication with the XModule.</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="false">
+        <keyword>url</keyword>
+        <value/>
+        <metadata>
+            <description>test</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="false">
+        <keyword>driverClass</keyword>
+        <value/>
+        <metadata>
+            <description>test</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="false">
+        <keyword>user</keyword>
+        <value/>
+        <metadata>
+            <description>Admin</description>
+        </metadata>
+    </parameter>
+    <parameter predefine="false">
+        <keyword>password</keyword>
+        <value/>
+        <metadata>
+            <description>Password</description>
+        </metadata>
+    </parameter>
+</resultParameterList>

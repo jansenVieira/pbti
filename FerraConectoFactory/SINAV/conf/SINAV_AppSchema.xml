@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="AUTHENTICATE, ENABLE, UNLOCK, PROVISIONING, PASSWORD" name="SINAV" type="SINAV">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="SINAV"/>
+					<entry key="formPath" value="Sinav.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="CD_USUARIO" identityAttribute="CD_USUARIO" objectType="account">
+					<AttributeDefinition name="CD_USUARIO" required="true" type="string"/>
+					<AttributeDefinition name="NO_USUARIO" required="false" type="string"/>
+					<AttributeDefinition name="CD_UNIDADE" required="false" type="string"/>
+					<AttributeDefinition name="CD_SIS_DEFAUL" required="false" type="string"/>
+					<AttributeDefinition name="CD_IMPR_REMOT" required="false" type="string"/>
+					<AttributeDefinition name="CD_SIT_USU" required="false" type="string"/>
+					<AttributeDefinition name="CD_SUREG_LOT" required="false" type="string"/>
+					<AttributeDefinition name="CD_CEADM_AUT" required="false" type="string"/>
+					<AttributeDefinition name="CD_SUREG_AUT" required="false" type="string"/>
+					<AttributeDefinition name="CD_UNID_AUT" required="false" type="string"/>
+					<AttributeDefinition name="ID_DIRETORIA" required="false" type="string"/>
+					<AttributeDefinition name="ID_STATUS" required="false" type="string"/>
+					<AttributeDefinition name="ID_CEF" required="false" type="string"/>
+					<AttributeDefinition name="CD_NO_REMOT" required="false" type="string"/>
+					<AttributeDefinition name="CD_FUNCAO" required="false" type="string"/>
+					<AttributeDefinition name="CO_SEGMENTO" required="false" type="string"/>
+					<AttributeDefinition name="NU_CNPJ" required="false" type="string"/>
+					<AttributeDefinition name="NU_MATR_EMP" required="false" type="string"/>
+					<AttributeDefinition name="NU_CA_EN_FISICA" required="false" type="string"/>
+					<AttributeDefinition entitlement="true" multi="true" name="SIS_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="CD_TERMINAL" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="SIS_PERFIL" identityAttribute="SIS_PERFIL" objectType="group">
+					<AttributeDefinition name="CD_SISTEMA" required="false" type="string"/>
+					<AttributeDefinition name="CD_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="NO_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="SIS_PERFIL" required="true" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

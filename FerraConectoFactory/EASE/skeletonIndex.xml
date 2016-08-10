@@ -1,0 +1,102 @@
+<skeletonIndex>
+    <!-- Skeleton index file for Java projects -->
+	<group id="entityOperations">
+		<displayName>Entity Operations</displayName>
+		<function id="getSupportedFeatures">
+			<displayName>getSupportedFeatures</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>getSupportedFeatures(String objectType)</implStartTag>
+		<implEndTag>@@@GETSUPPFEATURES_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="getSupportedObjectTypes">
+			<displayName>getSupportedFeatures</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>getSupportedObjectTypes()</implStartTag>
+		<implEndTag>@@@GETSUPPOBJECTTYPES_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="testConnection">
+			<displayName>testConnection</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public void testConnection</implStartTag>
+		<implEndTag>@@@TESTCONNECTION_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="discoverSchema">
+			<displayName>discoverSchema</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Schema discoverSchema</implStartTag>
+		<implEndTag>@@@DISCOVER_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="read">
+			<displayName>read</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>read(String nativeIdentifier)</implStartTag>
+		<implEndTag>@@@READ_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="iterate">
+			<displayName>iterate</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>iterate(Filter filter)</implStartTag> 
+			<implEndTag>@@@ITERATE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="create">
+			<displayName>create</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result create</implStartTag>
+		<implEndTag>@@@CREATE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+			<function id="update">
+			<displayName>update</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result update</implStartTag>
+		<implEndTag>@@@UPDATE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="delete">
+			<displayName>delete</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result delete</implStartTag>
+		<implEndTag>@@@DELETE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="enable">
+			<displayName>enable</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result enable</implStartTag>
+		<implEndTag>@@@ENABLE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="disable">
+			<displayName>disable</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result disable</implStartTag>
+		<implEndTag>@@@DISABLE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="unlock">
+			<displayName>unlock</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result unlock</implStartTag>
+		<implEndTag>@@@UNLOCK_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="setPassword">
+			<displayName>setPassword</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result setPassword(String nativeIdentifier</implStartTag>
+		<implEndTag>@@@SETPASSWORD_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="authenticate">
+			<displayName>authenticate</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>authenticate(String identity, String password)</implStartTag>
+		<implEndTag>@@@AUTHENTICATE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="checkStatus">
+			<displayName>checkStatus</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public Result checkStatus</implStartTag>
+		<implEndTag>@@@DISCOVER_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+		<function id="close">
+			<displayName>close</displayName>
+			<implFile>src/EASE.java</implFile>
+			<implStartTag>public void close</implStartTag>
+		<implEndTag>@@@CLOSE_IMPLEMENTATION_END@@@</implEndTag>
+		</function>
+	</group>
+</skeletonIndex>

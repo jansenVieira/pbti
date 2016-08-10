@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="AUTHENTICATE, ENABLE, UNLOCK, PROVISIONING, PASSWORD" name="SIASEO" type="SIASEO">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="SIASEO"/>
+					<entry key="formPath" value="Siaseo.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="CO_USUARIO" identityAttribute="CO_USUARIO" objectType="account">
+					<AttributeDefinition name="CO_USUARIO" required="true" type="string"/>
+					<AttributeDefinition name="NO_USUARIO" required="false" type="string"/>
+					<AttributeDefinition name="IC_STATUS" required="false" type="string"/>
+					<AttributeDefinition name="IC_TIPO" required="false" type="string"/>
+					<AttributeDefinition entitlement="true" multi="true" name="SIS_PERFIL" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="SIS_PERFIL" identityAttribute="SIS_PERFIL" objectType="group">
+					<AttributeDefinition name="CO_SISTEMA" required="false" type="string"/>
+					<AttributeDefinition name="NU_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="NO_PERFIL" required="false" type="string"/>
+					<AttributeDefinition name="SIS_PERFIL" required="true" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<project name="proj" default="archive">
+
+	<property name="java.src" value="src"/>
+	<property name="java.classes" value="classes"/>
+	<property name="java.dist" value="dist"/>
+	<property name="jars.third_party" value="third_party"/>
+	<property name="manifest.version" value="1.0"/>
+	<property name="pm.description" value="SailPoint Identity Provisioning Module ${pm.name}"/>
+	<property name="external.jars.file" value="ExternalLibs.txt"/>
+
+	<tstamp>
+		<format property="current.time" pattern="yyyy/MM/dd HH:mm:ss"/>
+	</tstamp>
+
+
+	<target name="init">
+		<mkdir dir="${java.classes}"/>
+		<mkdir dir="${java.dist}"/>
+		<loadfile property="external.libs"
+			srcFile="ExternalLibs.txt"
+			failonerror="false">
+			<filterchain>
+				<tokenfilter delimoutput=";"/>
+			</filterchain>
+		</loadfile>
+		<path id="compile.classpath">
+			<fileset dir="${jars.third_party}">
+	        		<include name="*.jar"/>
+			</fileset>
+		</path>
+	</target>
+
+	<target name="compile" depends="clean,init">
+		<path id="compile.bootclasspath">
+        	    <pathelement path="${java.home}/jre/lib/rt.jar"/>
+	        </path>
+		<path id="externalLibs">
+        	    <pathelement path="${external.libs}"/>
+	        </path>
+		<javac srcdir="${java.src}" 
+			executable="${java.compiler}"
+			fork="yes"
+		        destdir="${java.classes}">
+			<compilerarg line="-Xmaxerrs 10 -Xmaxwarns 10"/>
+			<classpath refid="compile.classpath"/>
+			<classpath refid="externalLibs"/>
+			<bootclasspath refid="compile.bootclasspath"/>
+		</javac>
+	</target>
+
+	<target name="archive" depends="compile">
+		
+		<jar destfile="${java.dist}/${pm.jar}"
+		         basedir="${java.classes}">
+			<manifest>
+				<attribute name="Manifest-Version" value="${manifest.version}"/>
+				<attribute name="Description" value="${pm.description}"/>
+				<attribute name="Application-Version" value="${pm.version}"/>
+				<attribute name="Created-By" value="${pm.splshTitle}"/>
+				<attribute name="Build-Date" value="${current.time}"/>
+			</manifest>	
+		</jar>
+	</target>
+
+	<target name="clean">
+		<delete dir="${java.classes}"/>
+	</target>
+</project>

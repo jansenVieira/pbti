@@ -1,0 +1,1930 @@
+2015/04/01 11:52:35  ... : Connector version is '1.0.00'
+2015/04/01 11:52:35  ... Entering ConnectorInit ... 
+2015/04/01 11:52:35 ConnectorInit ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_FUNCTION> value=<ConnectorInit>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_ACTION> value=<INIT>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:35 ConnectorInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/04/01 11:52:35 ConnectorInit ... : ----------- END -------------
+2015/04/01 11:52:35 ConnectorInit ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:35 ConnectorInit ... : ----------- END -------------
+2015/04/01 11:52:35 ConnectorInit ... : ------------------------Connector Init-------------------------------
+2015/04/01 11:52:35 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ConnectorInit Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:35 ConnectorInit ... : managedSystemType=SIASES
+2015/04/01 11:52:35 ConnectorInit ... : managedSystemName=TesteSiases
+2015/04/01 11:52:35 ConnectorInit ... : managedSystemConf folder =C:/temp/SIASES/TesteSiases/
+2015/04/01 11:52:35 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadApplicationSchema Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:35 ConnectorInit ... : Deleting dtd and namespacereferences if exists
+2015/04/01 11:52:35 ConnectorInit ... : 
+2015/04/01 11:52:35 ConnectorInit ... : Created reader for input file :C:/temp/SIASES/TesteSiases/MSCSTemplate.xml
+2015/04/01 11:52:35 ConnectorInit ... : Created writer for output fie :C:/temp/SIASES/TesteSiases/MSCSTemplate.xml.tmp
+2015/04/01 11:52:35 ConnectorInit ... : Modified line:<resultParameterList listType="mscsTemplate" >
+2015/04/01 11:52:35 ConnectorInit ... : Closed reader and writer
+2015/04/01 11:52:35 ConnectorInit ... : deleted orig file:true
+2015/04/01 11:52:35 ConnectorInit ... : Renamed deleted file:true
+2015/04/01 11:52:35 ConnectorInit ... : 
+2015/04/01 11:52:35 ConnectorInit ... : Created reader for input file :C:/temp/SIASES/TesteSiases/SIASES_AppSchema.xml
+2015/04/01 11:52:35 ConnectorInit ... : Created writer for output fie :C:/temp/SIASES/TesteSiases/SIASES_AppSchema.xml.tmp
+2015/04/01 11:52:35 ConnectorInit ... : Modified line:
+2015/04/01 11:52:35 ConnectorInit ... : Closed reader and writer
+2015/04/01 11:52:35 ConnectorInit ... : deleted orig file:true
+2015/04/01 11:52:35 ConnectorInit ... : Renamed deleted file:true
+2015/04/01 11:52:35 ConnectorInit ... : Parsing C:/temp/SIASES/TesteSiases/SIASES_AppSchema.xml file
+2015/04/01 11:52:35 ConnectorInit ... : Parsed C:/temp/SIASES/TesteSiases/SIASES_AppSchema.xml file
+2015/04/01 11:52:35 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadSupportedObjectAttributes Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:35 ConnectorInit ... : Retrieving nodes for xpath query://sailpoint/ImportAction/Configuration/Attributes/Map/entry/value/List/Application/Schemas/Schema
+2015/04/01 11:52:35 ConnectorInit ... : Found Schema nodes
+2015/04/01 11:52:35 ConnectorInit ... : Found objectType:account with identityAttribute:CO_USUARIO
+2015/04/01 11:52:35 ConnectorInit ... : Fetching AttributeDefinition
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :CO_USUARIO type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :NO_USUARIO type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :SIS_PERFIL type:string multivalued:true size:0
+2015/04/01 11:52:35 ConnectorInit ... : Account Group Connection attribute :SIS_PERFIL
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :IC_STATUS type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :NU_MATR type:int multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :IC_TIPO type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :CO_SENHA_ACESSO type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Set Schema for objectType:account
+2015/04/01 11:52:35 ConnectorInit ... : Found objectType:group with identityAttribute:SIS_PERFIL
+2015/04/01 11:52:35 ConnectorInit ... : Fetching AttributeDefinition
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :CO_SISTEMA type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :NU_PERFIL type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :NO_PERFIL type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Inserting attribute :SIS_PERFIL type:string multivalued: size:0
+2015/04/01 11:52:35 ConnectorInit ... : Set Schema for objectType:group
+2015/04/01 11:52:35 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadSupportedObjectAttributes Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:35 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadConnectorClass Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:35 ConnectorInit ... : Connector Class Name=SIASES
+2015/04/01 11:52:35 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadConnectorClass Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:35 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadManageSystemMappingsFromMSCSTemplate Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:35 ConnectorInit ... : Found 10 MSCS keywords
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:user
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:Admin
+2015/04/01 11:52:35 ConnectorInit ... : Admin attribute found with val=user
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=XSA_ADMIN_ID  value=user into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:password
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:Password
+2015/04/01 11:52:35 ConnectorInit ... : Password attribute found.
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=XSA_ADMIN_PASSWORD  value=password into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:driverClass
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=driverClass  value=driverClass into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:url
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=url  value=url into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:urlServerCripto
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=urlServerCripto  value=urlServerCripto into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:userServerCripto
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=userServerCripto  value=userServerCripto into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:senhaServerCripto
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=senhaServerCripto  value=senhaServerCripto into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:nameDLL
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=nameDLL  value=nameDLL into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:dominioServerCripto
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=dominioServerCripto  value=dominioServerCripto into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node
+2015/04/01 11:52:35 ConnectorInit ... : Found keyword node:keyCripto
+2015/04/01 11:52:35 ConnectorInit ... : Found metadata node
+2015/04/01 11:52:35 ConnectorInit ... : Found description node
+2015/04/01 11:52:35 ConnectorInit ... : description node has value:test
+2015/04/01 11:52:35 ConnectorInit ... : Inserting key=keyCripto  value=keyCripto into managedSystemMapping config
+2015/04/01 11:52:35 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadManageSystemMappingsFromMSCSTemplate Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:35 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadApplicationSchema Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:35 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ConnectorInit Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:35 ConnectorInit ... : ------------------------End Connector Init-------------------------------
+2015/04/01 11:52:35  ... Exiting ConnectorInit with rc=0
+2015/04/01 11:52:35  ... Entering ManageSystemInit ... 
+2015/04/01 11:52:35 ManageSystemInit ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_FUNCTION> value=<ManageSystemInit>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_ACTION> value=<INIT>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:35 ManageSystemInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/04/01 11:52:35 ManageSystemInit ... : ----------- END -------------
+2015/04/01 11:52:35 ManageSystemInit ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:35 ManageSystemInit ... : ----------- END -------------
+2015/04/01 11:52:35 ManageSystemInit ... : ------------------------Start ManagedSystem Init-------------------------------
+2015/04/01 11:52:35 ManageSystemInit ... : Found 10 MSCS template keys
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=nameDLL  value=CTSACript.CLSCript into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=keyCripto  value=__Sis#Ctrl*ccess{Sec}__ into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=dominioServerCripto  value=labcorpcaixa into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=urlServerCripto  value=10.196.20.145 into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=userServerCripto  value=S000002 into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=driverClass  value=com.sybase.jdbc4.jdbc.SybDriver into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Key XSA_ADMIN_ID would depend upon the caller.Delaying populating its value.
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=senhaServerCripto  value=123456 into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Inserting key=url  value=jdbc:sybase:Tds:10.192.230.59:40000/ASEDB001 into connectorConfig config
+2015/04/01 11:52:35 ManageSystemInit ... : Key XSA_ADMIN_PASSWORD would depend upon the caller.Delaying populating its value.
+2015/04/01 11:52:35 ManageSystemInit ... : ------------------------End ManagedSystem Init-------------------------------
+2015/04/01 11:52:35  ... Exiting ManageSystemInit with rc=0
+2015/04/01 11:52:35  ... Entering SystemActiveQuery ... 
+2015/04/01 11:52:35 SystemActiveQuery ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_FUNCTION> value=<SystemActiveQuery>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_ACTION> value=<QUERY>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:35 SystemActiveQuery ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/04/01 11:52:35 SystemActiveQuery ... : ----------- END -------------
+2015/04/01 11:52:35 SystemActiveQuery ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:35 SystemActiveQuery ... : ----------- END -------------
+2015/04/01 11:52:35 SystemActiveQuery ... : Admin value found
+2015/04/01 11:52:35 SystemActiveQuery ... : Admin Password value found.
+2015/04/01 11:52:35 SystemActiveQuery ... : Inside ReadCredentials
+2015/04/01 11:52:35 SystemActiveQuery ... : Found 10 MSCS template keys
+2015/04/01 11:52:35 SystemActiveQuery ... : Key nameDLL has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Key keyCripto has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Key dominioServerCripto has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Key urlServerCripto has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Key userServerCripto has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Key driverClass has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/04/01 11:52:35 SystemActiveQuery ... : Retrieved value of admin is:SGAL001
+2015/04/01 11:52:35 SystemActiveQuery ... : Inserting key=user  value=SGAL001 into connectorConfig config
+2015/04/01 11:52:35 SystemActiveQuery ... : Key senhaServerCripto has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Key url has already been populated in connector config.
+2015/04/01 11:52:35 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/04/01 11:52:35 SystemActiveQuery ... : value=pwsgal001
+2015/04/01 11:52:35 SystemActiveQuery ... : Retrieved value of password :*****
+2015/04/01 11:52:35 SystemActiveQuery ... : Inserting key=password  value=pwsgal001 into connectorConfig config
+2015/04/01 11:52:35 SystemActiveQuery ... : Inside TestConnection
+2015/04/01 11:52:35 SystemActiveQuery ... : INIT user SGAL001 m_sPasswd pwsgal001 m_sUrl jdbc:sybase:Tds:10.192.230.59:40000/ASEDB001 m_sDriverName com.sybase.jdbc4.jdbc.SybDriver urlServerCripto 10.196.20.145 userServerCripto S000002 senhaServerCripto 123456 nameDLL CTSACript.CLSCript dominioServerCripto labcorpcaixa keyCripto __Sis#Ctrl*ccess{Sec}__
+2015/04/01 11:52:35 SystemActiveQuery ... : driver loaded 
+2015/04/01 11:52:36  ... Exiting SystemActiveQuery with rc=0
+2015/04/01 11:52:36  ... Entering SessionInit ... 
+2015/04/01 11:52:36 SessionInit ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_ENTITY> value=<SESSION>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_FUNCTION> value=<SessionInit>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_ACTION> value=<INIT>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:36 SessionInit ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:36 SessionInit ... : ----------- END -------------
+2015/04/01 11:52:36 SessionInit ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:36 SessionInit ... : ----------- END -------------
+2015/04/01 11:52:36 SessionInit ... : Inside ReadCredentials
+2015/04/01 11:52:36 SessionInit ... : Found 10 MSCS template keys
+2015/04/01 11:52:36 SessionInit ... : Key nameDLL has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Key keyCripto has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Key dominioServerCripto has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Key urlServerCripto has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Key userServerCripto has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Key driverClass has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/04/01 11:52:36 SessionInit ... : Retrieved value of admin is:SGAL001
+2015/04/01 11:52:36 SessionInit ... : Inserting key=user  value=SGAL001 into connectorConfig config
+2015/04/01 11:52:36 SessionInit ... : Key senhaServerCripto has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Key url has already been populated in connector config.
+2015/04/01 11:52:36 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/04/01 11:52:36 SessionInit ... : value=pwsgal001
+2015/04/01 11:52:36 SessionInit ... : Retrieved value of password :*****
+2015/04/01 11:52:36 SessionInit ... : Inserting key=password  value=pwsgal001 into connectorConfig config
+2015/04/01 11:52:36  ... Exiting SessionInit with rc=0
+2015/04/01 11:52:36  ... Entering GroupGet ... 
+2015/04/01 11:52:36 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_FILTER_TYPE> value=<SINGLE>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_GET_STAGE> value=<START>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:36 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:36 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:36 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:36 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_GROUP_NAME> value=<ACT/MASTER>
+2015/04/01 11:52:36 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:36 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:36 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:36 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:36 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:36 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:36 GroupGet ... : GET Type is SINGLE
+2015/04/01 11:52:36 GroupGet ... : filter=XSA_GROUP_NAME EQ ACT/MASTER
+2015/04/01 11:52:36 GroupGet ... : Download stage == START
+2015/04/01 11:52:36 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    iterateWithXSAFilter Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:36 GroupGet ... : Getting SINGLE object
+2015/04/01 11:52:36 GroupGet ... : getGroups - FILTER ACT/MASTER
+2015/04/01 11:52:36 GroupGet ... : query select distinct NU_PERFIL, CO_SISTEMA, NO_PERFIL  from ASEDB001.dbo.ASEVW022_USUARIO_CONEXAO_SAILP where CO_SISTEMA='ACT' AND NO_PERFIL='MASTER'
+2015/04/01 11:52:36 GroupGet ... :  query select distinct NU_PERFIL, CO_SISTEMA, NO_PERFIL  from ASEDB001.dbo.ASEVW022_USUARIO_CONEXAO_SAILP where CO_SISTEMA='ACT' AND NO_PERFIL='MASTER'
+2015/04/01 11:52:36 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:36 GroupGet ... : codSistema ACT
+2015/04/01 11:52:36 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:36 GroupGet ... : perfilComposto ACT/MASTER
+2015/04/01 11:52:36 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  iterateWithXSAFilter Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:36 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:36 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:36 GroupGet ... : Processing object: 0
+2015/04/01 11:52:36 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:36 GroupGet ... : Assigned XSA_GROUP_NAME with val= ACT/MASTER
+2015/04/01 11:52:36 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:36 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:36 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:36 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:36 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ACT
+2015/04/01 11:52:36 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:36 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:36 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:36 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:36 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:36 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:36 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:36 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:36 GroupGet ... : name=<CO_SISTEMA> value=<ACT>
+2015/04/01 11:52:36 GroupGet ... : name=<XSA_GROUP_NAME> value=<ACT/MASTER>
+2015/04/01 11:52:36 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:36 GroupGet ... : Wrote object :0 into ESS
+2015/04/01 11:52:36 GroupGet ... : No objects found to iterate
+2015/04/01 11:52:36 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:36 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:36 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:36  ... Exiting GroupGet with rc=0
+2015/04/01 11:52:36  ... Entering SessionTerm ... 
+2015/04/01 11:52:36 SessionTerm ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_ENTITY> value=<SESSION>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_FUNCTION> value=<SessionTerm>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:36 SessionTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:36 SessionTerm ... : ----------- END -------------
+2015/04/01 11:52:36 SessionTerm ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:36 SessionTerm ... : ----------- END -------------
+2015/04/01 11:52:36  ... Exiting SessionTerm with rc=0
+2015/04/01 11:52:47  ... Entering SystemActiveQuery ... 
+2015/04/01 11:52:47 SystemActiveQuery ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_FUNCTION> value=<SystemActiveQuery>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_ACTION> value=<QUERY>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:47 SystemActiveQuery ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:47 SystemActiveQuery ... : ----------- END -------------
+2015/04/01 11:52:47 SystemActiveQuery ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:47 SystemActiveQuery ... : ----------- END -------------
+2015/04/01 11:52:47 SystemActiveQuery ... : Admin value found
+2015/04/01 11:52:47 SystemActiveQuery ... : Admin Password value found.
+2015/04/01 11:52:47 SystemActiveQuery ... : Inside ReadCredentials
+2015/04/01 11:52:47 SystemActiveQuery ... : Found 10 MSCS template keys
+2015/04/01 11:52:47 SystemActiveQuery ... : Key nameDLL has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Key keyCripto has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Key dominioServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Key urlServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Key userServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Key driverClass has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/04/01 11:52:47 SystemActiveQuery ... : Retrieved value of admin is:SGAL001
+2015/04/01 11:52:47 SystemActiveQuery ... : Inserting key=user  value=SGAL001 into connectorConfig config
+2015/04/01 11:52:47 SystemActiveQuery ... : Key senhaServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Key url has already been populated in connector config.
+2015/04/01 11:52:47 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/04/01 11:52:47 SystemActiveQuery ... : value=pwsgal001
+2015/04/01 11:52:47 SystemActiveQuery ... : Retrieved value of password :*****
+2015/04/01 11:52:47 SystemActiveQuery ... : Inserting key=password  value=pwsgal001 into connectorConfig config
+2015/04/01 11:52:47 SystemActiveQuery ... : Inside TestConnection
+2015/04/01 11:52:47  ... Exiting SystemActiveQuery with rc=0
+2015/04/01 11:52:47  ... Entering SessionInit ... 
+2015/04/01 11:52:47 SessionInit ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_ENTITY> value=<SESSION>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_FUNCTION> value=<SessionInit>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_ACTION> value=<INIT>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:47 SessionInit ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:47 SessionInit ... : ----------- END -------------
+2015/04/01 11:52:47 SessionInit ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:47 SessionInit ... : ----------- END -------------
+2015/04/01 11:52:47 SessionInit ... : Inside ReadCredentials
+2015/04/01 11:52:47 SessionInit ... : Found 10 MSCS template keys
+2015/04/01 11:52:47 SessionInit ... : Key nameDLL has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Key keyCripto has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Key dominioServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Key urlServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Key userServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Key driverClass has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/04/01 11:52:47 SessionInit ... : Retrieved value of admin is:SGAL001
+2015/04/01 11:52:47 SessionInit ... : Inserting key=user  value=SGAL001 into connectorConfig config
+2015/04/01 11:52:47 SessionInit ... : Key senhaServerCripto has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Key url has already been populated in connector config.
+2015/04/01 11:52:47 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/04/01 11:52:47 SessionInit ... : value=pwsgal001
+2015/04/01 11:52:47 SessionInit ... : Retrieved value of password :*****
+2015/04/01 11:52:47 SessionInit ... : Inserting key=password  value=pwsgal001 into connectorConfig config
+2015/04/01 11:52:47  ... Exiting SessionInit with rc=0
+2015/04/01 11:52:47  ... Entering GroupGet ... 
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GET_STAGE> value=<START>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:47 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:47 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:47 GroupGet ... : GET Type is MANY
+2015/04/01 11:52:47 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/04/01 11:52:47 GroupGet ... : Download stage == START
+2015/04/01 11:52:47 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    iterateWithXSAFilter Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:47 GroupGet ... : Getting many objects
+2015/04/01 11:52:47 GroupGet ... : getGroups - FILTER *
+2015/04/01 11:52:47 GroupGet ... : query select distinct NU_PERFIL, CO_SISTEMA, NO_PERFIL from ASEDB001.dbo.ASEVW022_USUARIO_CONEXAO_SAILP
+2015/04/01 11:52:47 GroupGet ... :  query select distinct NU_PERFIL, CO_SISTEMA, NO_PERFIL from ASEDB001.dbo.ASEVW022_USUARIO_CONEXAO_SAILP
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema 101
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto 101/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema 888
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto 888/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema 999
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto 999/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 89
+2015/04/01 11:52:47 GroupGet ... : codSistema ACT
+2015/04/01 11:52:47 GroupGet ... : nomePerfil ADM01
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ACT/ADM01
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema ACT
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ACT/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 136
+2015/04/01 11:52:47 GroupGet ... : codSistema ACT
+2015/04/01 11:52:47 GroupGet ... : nomePerfil TERC01
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ACT/TERC01
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 153
+2015/04/01 11:52:47 GroupGet ... : codSistema ACT
+2015/04/01 11:52:47 GroupGet ... : nomePerfil GEACO01
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ACT/GEACO01
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema AEI
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto AEI/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 3
+2015/04/01 11:52:47 GroupGet ... : codSistema AG2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto AG2/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 8
+2015/04/01 11:52:47 GroupGet ... : codSistema ASE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ASE/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 24
+2015/04/01 11:52:47 GroupGet ... : codSistema ASE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil GRUPO_SIACT
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ASE/GRUPO_SIACT
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 73
+2015/04/01 11:52:47 GroupGet ... : codSistema ASE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil GRUPO_SIMIC
+2015/04/01 11:52:47 GroupGet ... : perfilComposto ASE/GRUPO_SIMIC
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 9999
+2015/04/01 11:52:47 GroupGet ... : codSistema CRE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto CRE/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 10000
+2015/04/01 11:52:47 GroupGet ... : codSistema CRE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil ENCAIXA
+2015/04/01 11:52:47 GroupGet ... : perfilComposto CRE/ENCAIXA
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema FOR
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto FOR/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 6
+2015/04/01 11:52:47 GroupGet ... : codSistema IMP
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto IMP/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema LT1
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto LT1/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema LT2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto LT2/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 13
+2015/04/01 11:52:47 GroupGet ... : codSistema LTE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil GERENCIAL
+2015/04/01 11:52:47 GroupGet ... : perfilComposto LTE/GERENCIAL
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema LTE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto LTE/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema MIC
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MIC/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 2
+2015/04/01 11:52:47 GroupGet ... : codSistema MIC
+2015/04/01 11:52:47 GroupGet ... : nomePerfil GES01
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MIC/GES01
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 40
+2015/04/01 11:52:47 GroupGet ... : codSistema MO2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil EMGEA
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MO2/EMGEA
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema MO2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MO2/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 39
+2015/04/01 11:52:47 GroupGet ... : codSistema MO2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER_WF
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MO2/MASTER_WF
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 14
+2015/04/01 11:52:47 GroupGet ... : codSistema MO2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MOV03BH
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MO2/MOV03BH
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 13
+2015/04/01 11:52:47 GroupGet ... : codSistema MO2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MOV02BH
+2015/04/01 11:52:47 GroupGet ... : perfilComposto MO2/MOV02BH
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema RSI
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto RSI/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 12
+2015/04/01 11:52:47 GroupGet ... : codSistema SAC
+2015/04/01 11:52:47 GroupGet ... : nomePerfil USUARIO_SERVICO
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SAC/USUARIO_SERVICO
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 2
+2015/04/01 11:52:47 GroupGet ... : codSistema SMN
+2015/04/01 11:52:47 GroupGet ... : nomePerfil ADMINISTRADOR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SMN/ADMINISTRADOR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 5
+2015/04/01 11:52:47 GroupGet ... : codSistema SMN
+2015/04/01 11:52:47 GroupGet ... : nomePerfil PUBLICADOR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SMN/PUBLICADOR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 4
+2015/04/01 11:52:47 GroupGet ... : codSistema SMN
+2015/04/01 11:52:47 GroupGet ... : nomePerfil AUTORIZADOR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SMN/AUTORIZADOR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema SOC
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SOC/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 2
+2015/04/01 11:52:47 GroupGet ... : codSistema SPA
+2015/04/01 11:52:47 GroupGet ... : nomePerfil UNIDADE
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SPA/UNIDADE
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 5
+2015/04/01 11:52:47 GroupGet ... : codSistema SPA
+2015/04/01 11:52:47 GroupGet ... : nomePerfil CONSULTA
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SPA/CONSULTA
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 4
+2015/04/01 11:52:47 GroupGet ... : codSistema SPA
+2015/04/01 11:52:47 GroupGet ... : nomePerfil GESTOR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SPA/GESTOR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 3
+2015/04/01 11:52:47 GroupGet ... : codSistema SPA
+2015/04/01 11:52:47 GroupGet ... : nomePerfil ASPAR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SPA/ASPAR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 6
+2015/04/01 11:52:47 GroupGet ... : codSistema SPA
+2015/04/01 11:52:47 GroupGet ... : nomePerfil AUDITOR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto SPA/AUDITOR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema STE
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto STE/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema TEM
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto TEM/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 5
+2015/04/01 11:52:47 GroupGet ... : codSistema WEB
+2015/04/01 11:52:47 GroupGet ... : nomePerfil EMPREG_CARTAO_SUCAR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WEB/EMPREG_CARTAO_SUCAR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema WF2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WF2/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 6
+2015/04/01 11:52:47 GroupGet ... : codSistema WF2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil WFM05_GERENTE
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WF2/WFM05_GERENTE
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 23
+2015/04/01 11:52:47 GroupGet ... : codSistema WF2
+2015/04/01 11:52:47 GroupGet ... : nomePerfil WFM32_AUDITOR
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WF2/WFM32_AUDITOR
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema WFA
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WFA/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema WFM
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WFM/MASTER
+2015/04/01 11:52:47 GroupGet ... : numeroPerfil 1
+2015/04/01 11:52:47 GroupGet ... : codSistema WOC
+2015/04/01 11:52:47 GroupGet ... : nomePerfil MASTER
+2015/04/01 11:52:47 GroupGet ... : perfilComposto WOC/MASTER
+2015/04/01 11:52:47 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  iterateWithXSAFilter Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:47 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 0
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= 101/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:101
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<101>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<101/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :0 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 1
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= 888/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:888
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<888>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<888/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :1 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 2
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= 999/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:999
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<999>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<999/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :2 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 3
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ACT/ADM01
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ACT
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:ADM01
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<ADM01>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ACT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ACT/ADM01>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :3 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 4
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ACT/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ACT
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ACT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ACT/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :4 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 5
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ACT/TERC01
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ACT
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:TERC01
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<TERC01>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ACT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ACT/TERC01>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :5 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 6
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ACT/GEACO01
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ACT
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:GEACO01
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<GEACO01>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ACT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ACT/GEACO01>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :6 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 7
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= AEI/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:AEI
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<AEI>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<AEI/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :7 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 8
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= AG2/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:AG2
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<AG2>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<AG2/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :8 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 9
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ASE/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ASE
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ASE>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ASE/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :9 into ESS
+2015/04/01 11:52:47 GroupGet ... : Still more objects...Storing objects iterator in context hash
+2015/04/01 11:52:47 GroupGet ... : Inserted objectsIterator in Context Hash
+2015/04/01 11:52:47 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:47 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:47 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:47  ... Exiting GroupGet with rc=1
+2015/04/01 11:52:47  ... Entering GroupGet ... 
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GET_STAGE> value=<NEXT>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<objectsIterator> value=<java.util.AbstractList$Itr@1b22abc>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:47 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:47 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:47 GroupGet ... : GET Type is MANY
+2015/04/01 11:52:47 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/04/01 11:52:47 GroupGet ... : Download stage == NEXT
+2015/04/01 11:52:47 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 0
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ASE/GRUPO_SIACT
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ASE
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:GRUPO_SIACT
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<GRUPO_SIACT>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ASE>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ASE/GRUPO_SIACT>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :0 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 1
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= ASE/GRUPO_SIMIC
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:ASE
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:GRUPO_SIMIC
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<GRUPO_SIMIC>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<ASE>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<ASE/GRUPO_SIMIC>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :1 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 2
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= CRE/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:CRE
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<CRE>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<CRE/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :2 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 3
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= CRE/ENCAIXA
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:CRE
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:ENCAIXA
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<ENCAIXA>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<CRE>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<CRE/ENCAIXA>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :3 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 4
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= FOR/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:FOR
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:47 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:47 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:47 GroupGet ... : name=<CO_SISTEMA> value=<FOR>
+2015/04/01 11:52:47 GroupGet ... : name=<XSA_GROUP_NAME> value=<FOR/MASTER>
+2015/04/01 11:52:47 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:47 GroupGet ... : Wrote object :4 into ESS
+2015/04/01 11:52:47 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:47 GroupGet ... : Processing object: 5
+2015/04/01 11:52:47 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:47 GroupGet ... : Assigned XSA_GROUP_NAME with val= IMP/MASTER
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:47 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:47 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:47 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:IMP
+2015/04/01 11:52:47 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:47 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:47 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<IMP>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<IMP/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :5 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 6
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= LT1/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:LT1
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<LT1>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<LT1/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :6 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 7
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= LT2/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:LT2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<LT2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<LT2/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :7 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 8
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= LTE/GERENCIAL
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:LTE
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:GERENCIAL
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<GERENCIAL>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<LTE>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<LTE/GERENCIAL>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :8 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 9
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= LTE/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:LTE
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<LTE>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<LTE/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :9 into ESS
+2015/04/01 11:52:48 GroupGet ... : Still more objects...Storing objects iterator in context hash
+2015/04/01 11:52:48 GroupGet ... : Inserted objectsIterator in Context Hash
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:48  ... Exiting GroupGet with rc=1
+2015/04/01 11:52:48  ... Entering GroupGet ... 
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GET_STAGE> value=<NEXT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<objectsIterator> value=<java.util.AbstractList$Itr@1b22abc>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:48 GroupGet ... : GET Type is MANY
+2015/04/01 11:52:48 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/04/01 11:52:48 GroupGet ... : Download stage == NEXT
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 0
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MIC/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MIC
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MIC>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MIC/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :0 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 1
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MIC/GES01
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MIC
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:GES01
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<GES01>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MIC>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MIC/GES01>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :1 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 2
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MO2/EMGEA
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MO2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:EMGEA
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<EMGEA>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MO2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MO2/EMGEA>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :2 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 3
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MO2/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MO2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MO2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MO2/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :3 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 4
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MO2/MASTER_WF
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MO2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER_WF
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER_WF>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MO2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MO2/MASTER_WF>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :4 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 5
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MO2/MOV03BH
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MO2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MOV03BH
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MOV03BH>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MO2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MO2/MOV03BH>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :5 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 6
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= MO2/MOV02BH
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:MO2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MOV02BH
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MOV02BH>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<MO2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<MO2/MOV02BH>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :6 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 7
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= RSI/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:RSI
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<RSI>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<RSI/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :7 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 8
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SAC/USUARIO_SERVICO
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SAC
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:USUARIO_SERVICO
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<USUARIO_SERVICO>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SAC>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SAC/USUARIO_SERVICO>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :8 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 9
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SMN/ADMINISTRADOR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SMN
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:ADMINISTRADOR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<ADMINISTRADOR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SMN>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SMN/ADMINISTRADOR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :9 into ESS
+2015/04/01 11:52:48 GroupGet ... : Still more objects...Storing objects iterator in context hash
+2015/04/01 11:52:48 GroupGet ... : Inserted objectsIterator in Context Hash
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:48  ... Exiting GroupGet with rc=1
+2015/04/01 11:52:48  ... Entering GroupGet ... 
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GET_STAGE> value=<NEXT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<objectsIterator> value=<java.util.AbstractList$Itr@1b22abc>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:48 GroupGet ... : GET Type is MANY
+2015/04/01 11:52:48 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/04/01 11:52:48 GroupGet ... : Download stage == NEXT
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 0
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SMN/PUBLICADOR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SMN
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:PUBLICADOR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<PUBLICADOR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SMN>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SMN/PUBLICADOR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :0 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 1
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SMN/AUTORIZADOR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SMN
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:AUTORIZADOR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<AUTORIZADOR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SMN>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SMN/AUTORIZADOR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :1 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 2
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SOC/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SOC
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SOC>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SOC/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :2 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 3
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SPA/UNIDADE
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SPA
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:UNIDADE
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<UNIDADE>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SPA>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SPA/UNIDADE>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :3 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 4
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SPA/CONSULTA
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SPA
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:CONSULTA
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<CONSULTA>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SPA>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SPA/CONSULTA>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :4 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 5
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SPA/GESTOR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SPA
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:GESTOR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<GESTOR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SPA>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SPA/GESTOR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :5 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 6
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SPA/ASPAR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SPA
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:ASPAR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<ASPAR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SPA>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SPA/ASPAR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :6 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 7
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= SPA/AUDITOR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:SPA
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:AUDITOR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<AUDITOR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<SPA>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<SPA/AUDITOR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :7 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 8
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= STE/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:STE
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<STE>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<STE/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :8 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 9
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= TEM/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:TEM
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<TEM>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<TEM/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :9 into ESS
+2015/04/01 11:52:48 GroupGet ... : Still more objects...Storing objects iterator in context hash
+2015/04/01 11:52:48 GroupGet ... : Inserted objectsIterator in Context Hash
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:48  ... Exiting GroupGet with rc=1
+2015/04/01 11:52:48  ... Entering GroupGet ... 
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GET_STAGE> value=<NEXT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<objectsIterator> value=<java.util.AbstractList$Itr@1b22abc>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:48 GroupGet ... : GET Type is MANY
+2015/04/01 11:52:48 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/04/01 11:52:48 GroupGet ... : Download stage == NEXT
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 0
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WEB/EMPREG_CARTAO_SUCAR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WEB
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:EMPREG_CARTAO_SUCAR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<EMPREG_CARTAO_SUCAR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WEB>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WEB/EMPREG_CARTAO_SUCAR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :0 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 1
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WF2/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WF2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WF2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WF2/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :1 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 2
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WF2/WFM05_GERENTE
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WF2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:WFM05_GERENTE
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<WFM05_GERENTE>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WF2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WF2/WFM05_GERENTE>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :2 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 3
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WF2/WFM32_AUDITOR
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WF2
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:WFM32_AUDITOR
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<WFM32_AUDITOR>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WF2>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WF2/WFM32_AUDITOR>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :3 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 4
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WFA/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WFA
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WFA>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WFA/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :4 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 5
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WFM/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WFM
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WFM>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WFM/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :5 into ESS
+2015/04/01 11:52:48 GroupGet ... : Objects found in iterator map
+2015/04/01 11:52:48 GroupGet ... : Processing object: 6
+2015/04/01 11:52:48 GroupGet ... : Populating group values into XSA Map
+2015/04/01 11:52:48 GroupGet ... : Assigned XSA_GROUP_NAME with val= WOC/MASTER
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:CO_SISTEMA
+2015/04/01 11:52:48 GroupGet ... : Verifying if CO_SISTEMA is multivalued.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMA is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : CO_SISTEMANo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned CO_SISTEMA found.Assigned value:WOC
+2015/04/01 11:52:48 GroupGet ... : Keyword mismatch.IIQ keyword :NU_PERFIL has not been mapped in ESS
+2015/04/01 11:52:48 GroupGet ... : Value found for attribute:NO_PERFIL
+2015/04/01 11:52:48 GroupGet ... : Verifying if NO_PERFIL is multivalued.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFIL is single valued attribute.
+2015/04/01 11:52:48 GroupGet ... : NO_PERFILNo formatting required.
+2015/04/01 11:52:48 GroupGet ... : Assigned NO_PERFIL found.Assigned value:MASTER
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<MASTER>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<WOC>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<WOC/MASTER>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : Wrote object :6 into ESS
+2015/04/01 11:52:48 GroupGet ... : No objects found to iterate
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:48  ... Exiting GroupGet with rc=0
+2015/04/01 11:52:48  ... Entering GroupGet ... 
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GET_STAGE> value=<END>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<NO_PERFIL> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<CO_SISTEMA> value=<>
+2015/04/01 11:52:48 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/04/01 11:52:48 GroupGet ... : ----------- END -------------
+2015/04/01 11:52:48 GroupGet ... : --------------------------Get Group-----------------------------
+2015/04/01 11:52:48 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/04/01 11:52:48 GroupGet ... : ObjectType to be retrieved: group
+2015/04/01 11:52:48 GroupGet ... : GET Type is MANY
+2015/04/01 11:52:48 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/04/01 11:52:48 GroupGet ... : Download stage == END
+2015/04/01 11:52:48 GroupGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/04/01 11:52:48 GroupGet ... : --------------------------End Get Group-------------------------
+2015/04/01 11:52:48  ... Exiting GroupGet with rc=0
+2015/04/01 11:52:48  ... Entering SessionTerm ... 
+2015/04/01 11:52:48 SessionTerm ... : --------- XSA_OperationHash ------------
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_CONNECTOR> value=<SIASES>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_ENTITY> value=<SESSION>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_ADMIN_ID> value=<SGAL001>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_FUNCTION> value=<SessionTerm>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_SYSTEM> value=<TesteSiases>
+2015/04/01 11:52:48 SessionTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/04/01 11:52:48 SessionTerm ... : ----------- END -------------
+2015/04/01 11:52:48 SessionTerm ... : --------- XSA_ContextHash ------------
+2015/04/01 11:52:48 SessionTerm ... : ----------- END -------------
+2015/04/01 11:52:48  ... Exiting SessionTerm with rc=0

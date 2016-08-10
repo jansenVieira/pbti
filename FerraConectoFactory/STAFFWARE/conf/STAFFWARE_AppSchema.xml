@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+  <Configuration name="ConnectorRegistry">
+    <Attributes>
+      <Map>
+        <entry key="applicationTemplates">
+          <value>
+            <List>
+              <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="AUTHENTICATE, PROVISIONING" name="STAFFWARE" type="STAFFWARE">
+		 		<Attributes>
+                  <Map>
+                    <entry key="connectorClass" value="STAFFWARE"/>
+					<entry key="formPath" value="STAFFWARE.xhtml"/>
+                  </Map>
+                </Attributes>
+                <Schemas>
+				<Schema displayAttribute="CO_USUARIO" identityAttribute="CO_USUARIO" objectType="account">
+					<AttributeDefinition name="CO_USUARIO" required="true" type="string"/>
+					<AttributeDefinition entitlement="true" multi="true" name="CO_GRUPO" required="false" type="string"/>
+				</Schema>
+				<Schema displayAttribute="CO_GRUPO" identityAttribute="CO_GRUPO" objectType="group">
+					<AttributeDefinition name="CO_GRUPO" required="true" type="string"/>
+				</Schema>
+				</Schemas>
+              </Application>
+            </List>
+          </value>
+        </entry>
+      </Map>
+    </Attributes>
+  </Configuration>
+</ImportAction>
+</sailpoint>

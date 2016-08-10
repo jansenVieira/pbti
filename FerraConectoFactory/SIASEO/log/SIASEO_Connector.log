@@ -1,0 +1,424 @@
+2015/03/25 15:50:55  ... : Connector version is '1.0.00'
+2015/03/25 15:50:55  ... Entering ConnectorInit ... 
+2015/03/25 15:50:55 ConnectorInit ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_FUNCTION> value=<ConnectorInit>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_ACTION> value=<INIT>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:55 ConnectorInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/03/25 15:50:55 ConnectorInit ... : ----------- END -------------
+2015/03/25 15:50:55 ConnectorInit ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:55 ConnectorInit ... : ----------- END -------------
+2015/03/25 15:50:55 ConnectorInit ... : ------------------------Connector Init-------------------------------
+2015/03/25 15:50:55 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ConnectorInit Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:55 ConnectorInit ... : managedSystemType=SIASEO
+2015/03/25 15:50:55 ConnectorInit ... : managedSystemName=testConnection
+2015/03/25 15:50:55 ConnectorInit ... : managedSystemConf folder =C:/temp/SIASEO/testConnection/
+2015/03/25 15:50:55 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadApplicationSchema Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:55 ConnectorInit ... : Deleting dtd and namespacereferences if exists
+2015/03/25 15:50:55 ConnectorInit ... : 
+2015/03/25 15:50:55 ConnectorInit ... : Created reader for input file :C:/temp/SIASEO/testConnection/MSCSTemplate.xml
+2015/03/25 15:50:55 ConnectorInit ... : Created writer for output fie :C:/temp/SIASEO/testConnection/MSCSTemplate.xml.tmp
+2015/03/25 15:50:55 ConnectorInit ... : Modified line:<resultParameterList listType="mscsTemplate" >
+2015/03/25 15:50:55 ConnectorInit ... : Closed reader and writer
+2015/03/25 15:50:55 ConnectorInit ... : deleted orig file:true
+2015/03/25 15:50:55 ConnectorInit ... : Renamed deleted file:true
+2015/03/25 15:50:55 ConnectorInit ... : 
+2015/03/25 15:50:55 ConnectorInit ... : Created reader for input file :C:/temp/SIASEO/testConnection/SIASEO_AppSchema.xml
+2015/03/25 15:50:55 ConnectorInit ... : Created writer for output fie :C:/temp/SIASEO/testConnection/SIASEO_AppSchema.xml.tmp
+2015/03/25 15:50:55 ConnectorInit ... : Modified line:
+2015/03/25 15:50:55 ConnectorInit ... : Closed reader and writer
+2015/03/25 15:50:55 ConnectorInit ... : deleted orig file:true
+2015/03/25 15:50:55 ConnectorInit ... : Renamed deleted file:true
+2015/03/25 15:50:55 ConnectorInit ... : Parsing C:/temp/SIASEO/testConnection/SIASEO_AppSchema.xml file
+2015/03/25 15:50:55 ConnectorInit ... : Parsed C:/temp/SIASEO/testConnection/SIASEO_AppSchema.xml file
+2015/03/25 15:50:55 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadSupportedObjectAttributes Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:55 ConnectorInit ... : Retrieving nodes for xpath query://sailpoint/ImportAction/Configuration/Attributes/Map/entry/value/List/Application/Schemas/Schema
+2015/03/25 15:50:55 ConnectorInit ... : Found Schema nodes
+2015/03/25 15:50:55 ConnectorInit ... : Found objectType:account with identityAttribute:CO_USUARIO
+2015/03/25 15:50:55 ConnectorInit ... : Fetching AttributeDefinition
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :CO_USUARIO type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :NO_USUARIO type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :IC_STATUS type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :IC_TIPO type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :SIS_PERFIL type:string multivalued:true size:0
+2015/03/25 15:50:55 ConnectorInit ... : Account Group Connection attribute :SIS_PERFIL
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :CO_SENHA_ACESSO type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Set Schema for objectType:account
+2015/03/25 15:50:55 ConnectorInit ... : Found objectType:group with identityAttribute:SIS_PERFIL
+2015/03/25 15:50:55 ConnectorInit ... : Fetching AttributeDefinition
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :CO_SISTEMA type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :NU_PERFIL type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :NO_PERFIL type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Inserting attribute :SIS_PERFIL type:string multivalued: size:0
+2015/03/25 15:50:55 ConnectorInit ... : Set Schema for objectType:group
+2015/03/25 15:50:55 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadSupportedObjectAttributes Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:50:55 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadConnectorClass Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:55 ConnectorInit ... : Connector Class Name=SIASEO
+2015/03/25 15:50:55 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadConnectorClass Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:50:55 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadManageSystemMappingsFromMSCSTemplate Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:55 ConnectorInit ... : Found 4 MSCS keywords
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node:url
+2015/03/25 15:50:55 ConnectorInit ... : Found metadata node
+2015/03/25 15:50:55 ConnectorInit ... : Found description node
+2015/03/25 15:50:55 ConnectorInit ... : description node has value:test
+2015/03/25 15:50:55 ConnectorInit ... : Inserting key=url  value=url into managedSystemMapping config
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node:driverClass
+2015/03/25 15:50:55 ConnectorInit ... : Found metadata node
+2015/03/25 15:50:55 ConnectorInit ... : Found description node
+2015/03/25 15:50:55 ConnectorInit ... : description node has value:test
+2015/03/25 15:50:55 ConnectorInit ... : Inserting key=driverClass  value=driverClass into managedSystemMapping config
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node:user
+2015/03/25 15:50:55 ConnectorInit ... : Found metadata node
+2015/03/25 15:50:55 ConnectorInit ... : Found description node
+2015/03/25 15:50:55 ConnectorInit ... : description node has value:Admin
+2015/03/25 15:50:55 ConnectorInit ... : Admin attribute found with val=user
+2015/03/25 15:50:55 ConnectorInit ... : Inserting key=XSA_ADMIN_ID  value=user into managedSystemMapping config
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node
+2015/03/25 15:50:55 ConnectorInit ... : Found keyword node:password
+2015/03/25 15:50:55 ConnectorInit ... : Found metadata node
+2015/03/25 15:50:55 ConnectorInit ... : Found description node
+2015/03/25 15:50:55 ConnectorInit ... : description node has value:Password
+2015/03/25 15:50:55 ConnectorInit ... : Password attribute found.
+2015/03/25 15:50:55 ConnectorInit ... : Inserting key=XSA_ADMIN_PASSWORD  value=password into managedSystemMapping config
+2015/03/25 15:50:55 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadManageSystemMappingsFromMSCSTemplate Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:50:55 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadApplicationSchema Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:50:55 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ConnectorInit Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:50:55 ConnectorInit ... : ------------------------End Connector Init-------------------------------
+2015/03/25 15:50:55  ... Exiting ConnectorInit with rc=0
+2015/03/25 15:50:55  ... Entering ManageSystemInit ... 
+2015/03/25 15:50:55 ManageSystemInit ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_FUNCTION> value=<ManageSystemInit>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_ACTION> value=<INIT>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:55 ManageSystemInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/03/25 15:50:55 ManageSystemInit ... : ----------- END -------------
+2015/03/25 15:50:55 ManageSystemInit ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:55 ManageSystemInit ... : ----------- END -------------
+2015/03/25 15:50:55 ManageSystemInit ... : ------------------------Start ManagedSystem Init-------------------------------
+2015/03/25 15:50:55 ManageSystemInit ... : Found 4 MSCS template keys
+2015/03/25 15:50:55 ManageSystemInit ... : Inserting key=driverClass  value=oracle.jdbc.driver.OracleDriver into connectorConfig config
+2015/03/25 15:50:55 ManageSystemInit ... : Key XSA_ADMIN_ID would depend upon the caller.Delaying populating its value.
+2015/03/25 15:50:55 ManageSystemInit ... : Key XSA_ADMIN_PASSWORD would depend upon the caller.Delaying populating its value.
+2015/03/25 15:50:55 ManageSystemInit ... : Inserting key=url  value=jdbc:oracle:thin:@10.192.230.56:1521:ORADES01 into connectorConfig config
+2015/03/25 15:50:55 ManageSystemInit ... : ------------------------End ManagedSystem Init-------------------------------
+2015/03/25 15:50:55  ... Exiting ManageSystemInit with rc=0
+2015/03/25 15:50:55  ... Entering VerifyAdminPassword ... 
+2015/03/25 15:50:55 VerifyAdminPassword ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_ENTITY> value=<ACCOUNT>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_ADMIN_ID> value=<>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_FUNCTION> value=<VerifyAdminPassword>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_ACTION> value=<QUERY>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/03/25 15:50:55 VerifyAdminPassword ... : ----------- END -------------
+2015/03/25 15:50:55 VerifyAdminPassword ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:55 VerifyAdminPassword ... : ----------- END -------------
+2015/03/25 15:50:55 VerifyAdminPassword ... : --------- XSA_GetSearchHash ------------
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_DEF_GROUP> value=<>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_ACCOUNT_NAME> value=<sgal001>
+2015/03/25 15:50:55 VerifyAdminPassword ... : name=<XSA_PASSWORD> value=<****>
+2015/03/25 15:50:55 VerifyAdminPassword ... : ----------- END -------------
+2015/03/25 15:50:55 VerifyAdminPassword ... : Inside ReadCredentials
+2015/03/25 15:50:55 VerifyAdminPassword ... : Found 4 MSCS template keys
+2015/03/25 15:50:55 VerifyAdminPassword ... : Key driverClass has already been populated in connector config.
+2015/03/25 15:50:55 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ACCOUNT_NAME
+2015/03/25 15:50:55 VerifyAdminPassword ... : Retrieved value of admin is:sgal001
+2015/03/25 15:50:55 VerifyAdminPassword ... : Inserting key=user  value=sgal001 into connectorConfig config
+2015/03/25 15:50:55 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_PASSWORD
+2015/03/25 15:50:55 VerifyAdminPassword ... : value=Mudar01
+2015/03/25 15:50:55 VerifyAdminPassword ... : Retrieved value of password :*****
+2015/03/25 15:50:55 VerifyAdminPassword ... : Inserting key=password  value=Mudar01 into connectorConfig config
+2015/03/25 15:50:55 VerifyAdminPassword ... : Key url has already been populated in connector config.
+2015/03/25 15:50:55 VerifyAdminPassword ... : Inside TestConnection
+2015/03/25 15:50:55 VerifyAdminPassword ... : driver loaded 
+2015/03/25 15:50:59  ... Exiting VerifyAdminPassword with rc=0
+2015/03/25 15:50:59  ... Entering VerifyAdminPassword ... 
+2015/03/25 15:50:59 VerifyAdminPassword ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_ENTITY> value=<ACCOUNT>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_ADMIN_ID> value=<>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_FUNCTION> value=<VerifyAdminPassword>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_ACTION> value=<QUERY>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/03/25 15:50:59 VerifyAdminPassword ... : ----------- END -------------
+2015/03/25 15:50:59 VerifyAdminPassword ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:59 VerifyAdminPassword ... : ----------- END -------------
+2015/03/25 15:50:59 VerifyAdminPassword ... : --------- XSA_GetSearchHash ------------
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_DEF_GROUP> value=<>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_ACCOUNT_NAME> value=<sgal001>
+2015/03/25 15:50:59 VerifyAdminPassword ... : name=<XSA_PASSWORD> value=<****>
+2015/03/25 15:50:59 VerifyAdminPassword ... : ----------- END -------------
+2015/03/25 15:50:59 VerifyAdminPassword ... : Inside ReadCredentials
+2015/03/25 15:50:59 VerifyAdminPassword ... : Found 4 MSCS template keys
+2015/03/25 15:50:59 VerifyAdminPassword ... : Key driverClass has already been populated in connector config.
+2015/03/25 15:50:59 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ACCOUNT_NAME
+2015/03/25 15:50:59 VerifyAdminPassword ... : Retrieved value of admin is:sgal001
+2015/03/25 15:50:59 VerifyAdminPassword ... : Inserting key=user  value=sgal001 into connectorConfig config
+2015/03/25 15:50:59 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_PASSWORD
+2015/03/25 15:50:59 VerifyAdminPassword ... : value=Mudar01
+2015/03/25 15:50:59 VerifyAdminPassword ... : Retrieved value of password :*****
+2015/03/25 15:50:59 VerifyAdminPassword ... : Inserting key=password  value=Mudar01 into connectorConfig config
+2015/03/25 15:50:59 VerifyAdminPassword ... : Key url has already been populated in connector config.
+2015/03/25 15:50:59 VerifyAdminPassword ... : Inside TestConnection
+2015/03/25 15:50:59  ... Exiting VerifyAdminPassword with rc=0
+2015/03/25 15:50:59  ... Entering SystemActiveQuery ... 
+2015/03/25 15:50:59 SystemActiveQuery ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_ADMIN_ID> value=<sgal001>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_FUNCTION> value=<SystemActiveQuery>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_ACTION> value=<QUERY>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:59 SystemActiveQuery ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/03/25 15:50:59 SystemActiveQuery ... : ----------- END -------------
+2015/03/25 15:50:59 SystemActiveQuery ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:59 SystemActiveQuery ... : ----------- END -------------
+2015/03/25 15:50:59 SystemActiveQuery ... : Admin value found
+2015/03/25 15:50:59 SystemActiveQuery ... : Admin Password value found.
+2015/03/25 15:50:59 SystemActiveQuery ... : Inside ReadCredentials
+2015/03/25 15:50:59 SystemActiveQuery ... : Found 4 MSCS template keys
+2015/03/25 15:50:59 SystemActiveQuery ... : Key driverClass has already been populated in connector config.
+2015/03/25 15:50:59 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/03/25 15:50:59 SystemActiveQuery ... : Retrieved value of admin is:sgal001
+2015/03/25 15:50:59 SystemActiveQuery ... : Inserting key=user  value=sgal001 into connectorConfig config
+2015/03/25 15:50:59 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/03/25 15:50:59 SystemActiveQuery ... : value=Mudar01
+2015/03/25 15:50:59 SystemActiveQuery ... : Retrieved value of password :*****
+2015/03/25 15:50:59 SystemActiveQuery ... : Inserting key=password  value=Mudar01 into connectorConfig config
+2015/03/25 15:50:59 SystemActiveQuery ... : Key url has already been populated in connector config.
+2015/03/25 15:50:59 SystemActiveQuery ... : Inside TestConnection
+2015/03/25 15:50:59  ... Exiting SystemActiveQuery with rc=0
+2015/03/25 15:50:59  ... Entering SessionInit ... 
+2015/03/25 15:50:59 SessionInit ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_ENTITY> value=<SESSION>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_ADMIN_ID> value=<sgal001>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_FUNCTION> value=<SessionInit>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_ACTION> value=<INIT>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:59 SessionInit ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_USER>
+2015/03/25 15:50:59 SessionInit ... : ----------- END -------------
+2015/03/25 15:50:59 SessionInit ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:59 SessionInit ... : ----------- END -------------
+2015/03/25 15:50:59 SessionInit ... : Inside ReadCredentials
+2015/03/25 15:50:59 SessionInit ... : Found 4 MSCS template keys
+2015/03/25 15:50:59 SessionInit ... : Key driverClass has already been populated in connector config.
+2015/03/25 15:50:59 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/03/25 15:50:59 SessionInit ... : Retrieved value of admin is:sgal001
+2015/03/25 15:50:59 SessionInit ... : Inserting key=user  value=sgal001 into connectorConfig config
+2015/03/25 15:50:59 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/03/25 15:50:59 SessionInit ... : value=Mudar01
+2015/03/25 15:50:59 SessionInit ... : Retrieved value of password :*****
+2015/03/25 15:50:59 SessionInit ... : Inserting key=password  value=Mudar01 into connectorConfig config
+2015/03/25 15:50:59 SessionInit ... : Key url has already been populated in connector config.
+2015/03/25 15:50:59  ... Exiting SessionInit with rc=0
+2015/03/25 15:50:59  ... Entering AccountGet ... 
+2015/03/25 15:50:59 AccountGet ... : --------- XSA_OperationHash ------------
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ENTITY> value=<ACCOUNT>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ADMIN_ID> value=<sgal001>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_FILTER_TYPE> value=<SINGLE>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_FUNCTION> value=<AccountGet>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_GET_STAGE> value=<START>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ACTION> value=<GET>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_USER>
+2015/03/25 15:50:59 AccountGet ... : ----------- END -------------
+2015/03/25 15:50:59 AccountGet ... : --------- XSA_ContextHash ------------
+2015/03/25 15:50:59 AccountGet ... : ----------- END -------------
+2015/03/25 15:50:59 AccountGet ... : --------- XSA_GetSearchHash ------------
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ACCOUNT_NAME> value=<C050866>
+2015/03/25 15:50:59 AccountGet ... : ----------- END -------------
+2015/03/25 15:50:59 AccountGet ... : --------- XSA_GetEntityHash ------------
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_DEF_GROUP> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<CO_SENHA_ACESSO> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_LOCK_STATUS> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_DEF_GROUP_ACTION> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<NO_USUARIO> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_REVOKE_STATUS> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<IC_STATUS> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ADMIN_STATUS> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_PASSWORD_LIFE> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<IC_TIPO> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_ACCOUNT_NAME> value=<>
+2015/03/25 15:50:59 AccountGet ... : name=<SIS_PERFIL> value=<[]>
+2015/03/25 15:50:59 AccountGet ... : name=<XSA_PASSWORD> value=<>
+2015/03/25 15:50:59 AccountGet ... : ----------- END -------------
+2015/03/25 15:50:59 AccountGet ... : -----------------------Get Account--------------------------------
+2015/03/25 15:50:59 AccountGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:59 AccountGet ... : ObjectType to be retrieved: account
+2015/03/25 15:50:59 AccountGet ... : GET Type is SINGLE
+2015/03/25 15:50:59 AccountGet ... : filter=XSA_ACCOUNT_NAME EQ C050866
+2015/03/25 15:50:59 AccountGet ... : Download stage == START
+2015/03/25 15:50:59 AccountGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    iterateWithXSAFilter Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:50:59 AccountGet ... : Getting SINGLE object
+2015/03/25 15:50:59 AccountGet ... : GetAccounts - FILTER C050866
+2015/03/25 15:51:02 AccountGet ... : userid C050866
+2015/03/25 15:51:02 AccountGet ... : NO_USUARIO CARLOS HENRIQUE LEAL                    
+2015/03/25 15:51:02 AccountGet ... : icStatus 0
+2015/03/25 15:51:02 AccountGet ... : icTipo C
+2015/03/25 15:51:02 AccountGet ... : userNameGroupAccount C050866
+2015/03/25 15:51:02 AccountGet ... : userName C050866
+2015/03/25 15:51:03 AccountGet ... : userNameGroupAccount2 C050866
+2015/03/25 15:51:03 AccountGet ... : listaGrupos [WFS/WFS03_SUPERVISOR]
+2015/03/25 15:51:03 AccountGet ... : coUsuario C050866
+2015/03/25 15:51:03 AccountGet ... : noUsuario CARLOS HENRIQUE LEAL                    
+2015/03/25 15:51:03 AccountGet ... : icStatus 0
+2015/03/25 15:51:03 AccountGet ... : icTipo C
+2015/03/25 15:51:03 AccountGet ... : userNameGroupAccount C050866
+2015/03/25 15:51:03 AccountGet ... : userName C050866
+2015/03/25 15:51:03 AccountGet ... : userNameGroupAccount2 C050866
+2015/03/25 15:51:03 AccountGet ... : listaGrupos [WFS/WFS03_SUPERVISOR]
+2015/03/25 15:51:03 AccountGet ... : sisPerfil [WFS/WFS03_SUPERVISOR]
+2015/03/25 15:51:03 AccountGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  iterateWithXSAFilter Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:51:03 AccountGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    PopulateEntityHash Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/03/25 15:51:03 AccountGet ... : Objects found in iterator map
+2015/03/25 15:51:03 AccountGet ... : Processing object: 0
+2015/03/25 15:51:03 AccountGet ... : Populating account values into XSA Map
+2015/03/25 15:51:03 AccountGet ... : Assigned XSA_ACCOUNT_NAME with val= C050866
+2015/03/25 15:51:03 AccountGet ... : Value found for attribute:SIS_PERFIL
+2015/03/25 15:51:03 AccountGet ... : Verifying if SIS_PERFIL is multivalued.
+2015/03/25 15:51:03 AccountGet ... : SIS_PERFIL is multivalued attribute
+2015/03/25 15:51:03 AccountGet ... : Formatting value to ESS List
+2015/03/25 15:51:03 AccountGet ... : Number of elements in list:1
+2015/03/25 15:51:03 AccountGet ... : Formatted string:WFS/WFS03_SUPERVISOR
+2015/03/25 15:51:03 AccountGet ... : Assigned SIS_PERFIL found.Assigned value:WFS/WFS03_SUPERVISOR
+2015/03/25 15:51:03 AccountGet ... : Value found for attribute:NO_USUARIO
+2015/03/25 15:51:03 AccountGet ... : Verifying if NO_USUARIO is multivalued.
+2015/03/25 15:51:03 AccountGet ... : NO_USUARIO is single valued attribute.
+2015/03/25 15:51:03 AccountGet ... : NO_USUARIONo formatting required.
+2015/03/25 15:51:03 AccountGet ... : Assigned NO_USUARIO found.Assigned value:CARLOS HENRIQUE LEAL                    
+2015/03/25 15:51:03 AccountGet ... : Value found for attribute:IC_STATUS
+2015/03/25 15:51:03 AccountGet ... : Verifying if IC_STATUS is multivalued.
+2015/03/25 15:51:03 AccountGet ... : IC_STATUS is single valued attribute.
+2015/03/25 15:51:03 AccountGet ... : IC_STATUSNo formatting required.
+2015/03/25 15:51:03 AccountGet ... : Assigned IC_STATUS found.Assigned value:0
+2015/03/25 15:51:03 AccountGet ... : Value recived for XSA_RU_SUSPENDED ACTIVE
+2015/03/25 15:51:03 AccountGet ... : Value found for attribute:*disabled*
+2015/03/25 15:51:03 AccountGet ... : Assigned XSA_REVOKE_STATUS found.Assigned value:ACTIVE
+2015/03/25 15:51:03 AccountGet ... : Value found for attribute:IC_TIPO
+2015/03/25 15:51:03 AccountGet ... : Verifying if IC_TIPO is multivalued.
+2015/03/25 15:51:03 AccountGet ... : IC_TIPO is single valued attribute.
+2015/03/25 15:51:03 AccountGet ... : IC_TIPONo formatting required.
+2015/03/25 15:51:03 AccountGet ... : Assigned IC_TIPO found.Assigned value:C
+2015/03/25 15:51:03 AccountGet ... : --------- XSA_GetEntityHash ------------
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_DEF_GROUP> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<CO_SENHA_ACESSO> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_LOCK_STATUS> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_DEF_GROUP_ACTION> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<NO_USUARIO> value=<CARLOS HENRIQUE LEAL                    >
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_REVOKE_STATUS> value=<ACTIVE>
+2015/03/25 15:51:03 AccountGet ... : name=<IC_STATUS> value=<0>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_ADMIN_STATUS> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_PASSWORD_LIFE> value=<>
+2015/03/25 15:51:03 AccountGet ... : name=<IC_TIPO> value=<C>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_ACCOUNT_NAME> value=<C050866>
+2015/03/25 15:51:03 AccountGet ... : name=<SIS_PERFIL> value=<WFS/WFS03_SUPERVISOR>
+2015/03/25 15:51:03 AccountGet ... : name=<RU_SUSPENDED> value=<N>
+2015/03/25 15:51:03 AccountGet ... : name=<XSA_PASSWORD> value=<>
+2015/03/25 15:51:03 AccountGet ... : ----------- END -------------
+2015/03/25 15:51:03 AccountGet ... : Wrote object :0 into ESS
+2015/03/25 15:51:03 AccountGet ... : No objects found to iterate
+2015/03/25 15:51:03 AccountGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  PopulateEntityHash Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:51:03 AccountGet ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  GetIdentityObjects Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/03/25 15:51:03 AccountGet ... : -----------------------End Get Account----------------------------
+2015/03/25 15:51:03  ... Exiting AccountGet with rc=0
+2015/03/25 15:51:03  ... Entering SessionTerm ... 
+2015/03/25 15:51:03 SessionTerm ... : --------- XSA_OperationHash ------------
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_ENTITY> value=<SESSION>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_ADMIN_ID> value=<sgal001>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_FUNCTION> value=<SessionTerm>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 15:51:03 SessionTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_USER>
+2015/03/25 15:51:03 SessionTerm ... : ----------- END -------------
+2015/03/25 15:51:03 SessionTerm ... : --------- XSA_ContextHash ------------
+2015/03/25 15:51:03 SessionTerm ... : ----------- END -------------
+2015/03/25 15:51:03  ... Exiting SessionTerm with rc=0
+2015/03/25 16:23:02  ... Entering ManageSystemTerm ... 
+2015/03/25 16:23:02 ManageSystemTerm ... : --------- XSA_OperationHash ------------
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_ADMIN_ID> value=<sgal001>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_FUNCTION> value=<ManageSystemTerm>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 16:23:02 ManageSystemTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_USER>
+2015/03/25 16:23:02 ManageSystemTerm ... : ----------- END -------------
+2015/03/25 16:23:02 ManageSystemTerm ... : --------- XSA_ContextHash ------------
+2015/03/25 16:23:02 ManageSystemTerm ... : ----------- END -------------
+2015/03/25 16:23:02 ManageSystemTerm ... : ------------------------Start ManagedSystem Term-------------------------------
+2015/03/25 16:23:02 ManageSystemTerm ... : ------------------------End ManagedSystem Term-------------------------------
+2015/03/25 16:23:02  ... Exiting ManageSystemTerm with rc=0
+2015/03/25 16:23:02  ... Entering ConnectorTerm ... 
+2015/03/25 16:23:02 ConnectorTerm ... : --------- XSA_OperationHash ------------
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_CONNECTOR> value=<SIASEO>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_ADMIN_ID> value=<sgal001>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_FUNCTION> value=<ConnectorTerm>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_SYSTEM> value=<testConnection>
+2015/03/25 16:23:02 ConnectorTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_USER>
+2015/03/25 16:23:02 ConnectorTerm ... : ----------- END -------------
+2015/03/25 16:23:02 ConnectorTerm ... : --------- XSA_ContextHash ------------
+2015/03/25 16:23:02 ConnectorTerm ... : ----------- END -------------
+2015/03/25 16:23:02 ConnectorTerm ... : ------------------------XSAConnector ConnectorTerm-------------------------------
+2015/03/25 16:23:02 ConnectorTerm ... : ------------------------XSAConnector End ConnectorTerm-------------------------------
+2015/03/25 16:23:02  ... Exiting ConnectorTerm with rc=0

@@ -1,0 +1,511 @@
+2015/07/09 15:00:33  ... : Connector version is '1.0.00'
+2015/07/09 15:00:33  ... Entering ConnectorInit ... 
+2015/07/09 15:00:33 ConnectorInit ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_FUNCTION> value=<ConnectorInit>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_ACTION> value=<INIT>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:33 ConnectorInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/07/09 15:00:33 ConnectorInit ... : ----------- END -------------
+2015/07/09 15:00:33 ConnectorInit ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:33 ConnectorInit ... : ----------- END -------------
+2015/07/09 15:00:33 ConnectorInit ... : ------------------------Connector Init-------------------------------
+2015/07/09 15:00:33 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ConnectorInit Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:33 ConnectorInit ... : managedSystemType=SIRIC
+2015/07/09 15:00:33 ConnectorInit ... : managedSystemName=teste
+2015/07/09 15:00:33 ConnectorInit ... : managedSystemConf folder =C:/temp/SIRIC/teste/
+2015/07/09 15:00:33 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadApplicationSchema Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:33 ConnectorInit ... : Deleting dtd and namespacereferences if exists
+2015/07/09 15:00:33 ConnectorInit ... : 
+2015/07/09 15:00:33 ConnectorInit ... : Created reader for input file :C:/temp/SIRIC/teste/MSCSTemplate.xml
+2015/07/09 15:00:33 ConnectorInit ... : Created writer for output fie :C:/temp/SIRIC/teste/MSCSTemplate.xml.tmp
+2015/07/09 15:00:33 ConnectorInit ... : Modified line:<resultParameterList listType="mscsTemplate" >
+2015/07/09 15:00:33 ConnectorInit ... : Closed reader and writer
+2015/07/09 15:00:33 ConnectorInit ... : deleted orig file:true
+2015/07/09 15:00:33 ConnectorInit ... : Renamed deleted file:true
+2015/07/09 15:00:33 ConnectorInit ... : 
+2015/07/09 15:00:33 ConnectorInit ... : Created reader for input file :C:/temp/SIRIC/teste/SIRIC_AppSchema.xml
+2015/07/09 15:00:33 ConnectorInit ... : Created writer for output fie :C:/temp/SIRIC/teste/SIRIC_AppSchema.xml.tmp
+2015/07/09 15:00:33 ConnectorInit ... : Modified line:
+2015/07/09 15:00:33 ConnectorInit ... : Closed reader and writer
+2015/07/09 15:00:33 ConnectorInit ... : deleted orig file:true
+2015/07/09 15:00:33 ConnectorInit ... : Renamed deleted file:true
+2015/07/09 15:00:33 ConnectorInit ... : Parsing C:/temp/SIRIC/teste/SIRIC_AppSchema.xml file
+2015/07/09 15:00:33 ConnectorInit ... : Parsed C:/temp/SIRIC/teste/SIRIC_AppSchema.xml file
+2015/07/09 15:00:33 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadSupportedObjectAttributes Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:33 ConnectorInit ... : Retrieving nodes for xpath query://sailpoint/ImportAction/Configuration/Attributes/Map/entry/value/List/Application/Schemas/Schema
+2015/07/09 15:00:33 ConnectorInit ... : Found Schema nodes
+2015/07/09 15:00:33 ConnectorInit ... : Found objectType:account with identityAttribute:codigo_usuario
+2015/07/09 15:00:33 ConnectorInit ... : Fetching AttributeDefinition
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :codigo_usuario type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :nome type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :cod_unid_lotacao type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :lotacaoid type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :NU_FUNCAO type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :NO_GRUPO type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Account Group Connection attribute :NO_GRUPO
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :STATUS_GRUPO type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :CO_GRUPO type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Set Schema for objectType:account
+2015/07/09 15:00:33 ConnectorInit ... : Found objectType:group with identityAttribute:NO_GRUPO
+2015/07/09 15:00:33 ConnectorInit ... : Fetching AttributeDefinition
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :CO_GRUPO type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Inserting attribute :NO_GRUPO type:string multivalued: size:0
+2015/07/09 15:00:33 ConnectorInit ... : Set Schema for objectType:group
+2015/07/09 15:00:33 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadSupportedObjectAttributes Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/07/09 15:00:33 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadConnectorClass Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:33 ConnectorInit ... : Connector Class Name=SIRIC
+2015/07/09 15:00:33 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadConnectorClass Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/07/09 15:00:33 ConnectorInit ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    ReadManageSystemMappingsFromMSCSTemplate Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:33 ConnectorInit ... : Found 9 MSCS keywords
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:user
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:Admin
+2015/07/09 15:00:33 ConnectorInit ... : Admin attribute found with val=user
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=XSA_ADMIN_ID  value=user into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:password
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:Password
+2015/07/09 15:00:33 ConnectorInit ... : Password attribute found.
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=XSA_ADMIN_PASSWORD  value=password into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:url
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=url  value=url into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:driverClass
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=driverClass  value=driverClass into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:urlServerCripto
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=urlServerCripto  value=urlServerCripto into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:userServerCripto
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=userServerCripto  value=userServerCripto into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:senhaServerCripto
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=senhaServerCripto  value=senhaServerCripto into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:nameDLL
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=nameDLL  value=nameDLL into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node
+2015/07/09 15:00:33 ConnectorInit ... : Found keyword node:dominioServerCripto
+2015/07/09 15:00:33 ConnectorInit ... : Found metadata node
+2015/07/09 15:00:33 ConnectorInit ... : Found description node
+2015/07/09 15:00:33 ConnectorInit ... : description node has value:test
+2015/07/09 15:00:33 ConnectorInit ... : Inserting key=dominioServerCripto  value=dominioServerCripto into managedSystemMapping config
+2015/07/09 15:00:33 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadManageSystemMappingsFromMSCSTemplate Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/07/09 15:00:33 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ReadApplicationSchema Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/07/09 15:00:33 ConnectorInit ... : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  ConnectorInit Exit <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2015/07/09 15:00:33 ConnectorInit ... : ------------------------End Connector Init-------------------------------
+2015/07/09 15:00:33  ... Exiting ConnectorInit with rc=0
+2015/07/09 15:00:33  ... Entering ManageSystemInit ... 
+2015/07/09 15:00:33 ManageSystemInit ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_ADMIN_ID> value=<>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_FUNCTION> value=<ManageSystemInit>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_ACTION> value=<INIT>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:33 ManageSystemInit ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/07/09 15:00:33 ManageSystemInit ... : ----------- END -------------
+2015/07/09 15:00:33 ManageSystemInit ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:33 ManageSystemInit ... : ----------- END -------------
+2015/07/09 15:00:33 ManageSystemInit ... : ------------------------Start ManagedSystem Init-------------------------------
+2015/07/09 15:00:34 ManageSystemInit ... : Found 9 MSCS template keys
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=nameDLL  value=SGALCriptoSenhaSIRIC.clsCriptoSIRIC into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=dominioServerCripto  value=labcorpcaixa into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=urlServerCripto  value=10.196.20.145 into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=userServerCripto  value=S000002 into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=driverClass  value=com.sybase.jdbc4.jdbc.SybDriver into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Key XSA_ADMIN_ID would depend upon the caller.Delaying populating its value.
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=senhaServerCripto  value=123456 into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Inserting key=url  value=jdbc:sybase:Tds:10.192.230.59:55000/RICDB001 into connectorConfig config
+2015/07/09 15:00:34 ManageSystemInit ... : Key XSA_ADMIN_PASSWORD would depend upon the caller.Delaying populating its value.
+2015/07/09 15:00:34 ManageSystemInit ... : ------------------------End ManagedSystem Init-------------------------------
+2015/07/09 15:00:34  ... Exiting ManageSystemInit with rc=0
+2015/07/09 15:00:34  ... Entering VerifyAdminPassword ... 
+2015/07/09 15:00:34 VerifyAdminPassword ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_ENTITY> value=<ACCOUNT>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_ADMIN_ID> value=<>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_FUNCTION> value=<VerifyAdminPassword>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_ACTION> value=<QUERY>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/07/09 15:00:34 VerifyAdminPassword ... : ----------- END -------------
+2015/07/09 15:00:34 VerifyAdminPassword ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:34 VerifyAdminPassword ... : ----------- END -------------
+2015/07/09 15:00:34 VerifyAdminPassword ... : --------- XSA_GetSearchHash ------------
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_DEF_GROUP> value=<>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_ACCOUNT_NAME> value=<siric_des>
+2015/07/09 15:00:34 VerifyAdminPassword ... : name=<XSA_PASSWORD> value=<****>
+2015/07/09 15:00:34 VerifyAdminPassword ... : ----------- END -------------
+2015/07/09 15:00:34 VerifyAdminPassword ... : Inside ReadCredentials
+2015/07/09 15:00:34 VerifyAdminPassword ... : Found 9 MSCS template keys
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key nameDLL has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key dominioServerCripto has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key urlServerCripto has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key userServerCripto has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key driverClass has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ACCOUNT_NAME
+2015/07/09 15:00:34 VerifyAdminPassword ... : Retrieved value of admin is:siric_des
+2015/07/09 15:00:34 VerifyAdminPassword ... : Inserting key=user  value=siric_des into connectorConfig config
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key senhaServerCripto has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Key url has already been populated in connector config.
+2015/07/09 15:00:34 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_PASSWORD
+2015/07/09 15:00:34 VerifyAdminPassword ... : value=warp11
+2015/07/09 15:00:34 VerifyAdminPassword ... : Retrieved value of password :*****
+2015/07/09 15:00:34 VerifyAdminPassword ... : Inserting key=password  value=warp11 into connectorConfig config
+2015/07/09 15:00:34 VerifyAdminPassword ... : Inside TestConnection
+2015/07/09 15:00:34 VerifyAdminPassword ... : INIT user siric_des m_sPasswd warp11 m_sUrl jdbc:sybase:Tds:10.192.230.59:55000/RICDB001 m_sDriverName com.sybase.jdbc4.jdbc.SybDriver urlServerCripto 10.196.20.145 userServerCripto S000002 senhaServerCripto 123456 nameDLL SGALCriptoSenhaSIRIC.clsCriptoSIRIC dominioServerCripto labcorpcaixa
+2015/07/09 15:00:34 VerifyAdminPassword ... : driver loaded 
+2015/07/09 15:00:37  ... Exiting VerifyAdminPassword with rc=0
+2015/07/09 15:00:37  ... Entering VerifyAdminPassword ... 
+2015/07/09 15:00:37 VerifyAdminPassword ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_ENTITY> value=<ACCOUNT>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_ADMIN_ID> value=<>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_FUNCTION> value=<VerifyAdminPassword>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_ACTION> value=<QUERY>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/07/09 15:00:37 VerifyAdminPassword ... : ----------- END -------------
+2015/07/09 15:00:37 VerifyAdminPassword ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:37 VerifyAdminPassword ... : ----------- END -------------
+2015/07/09 15:00:37 VerifyAdminPassword ... : --------- XSA_GetSearchHash ------------
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_DEF_GROUP> value=<>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_ACCOUNT_NAME> value=<siric_des>
+2015/07/09 15:00:37 VerifyAdminPassword ... : name=<XSA_PASSWORD> value=<****>
+2015/07/09 15:00:37 VerifyAdminPassword ... : ----------- END -------------
+2015/07/09 15:00:37 VerifyAdminPassword ... : Inside ReadCredentials
+2015/07/09 15:00:37 VerifyAdminPassword ... : Found 9 MSCS template keys
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key nameDLL has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key dominioServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key urlServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key userServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key driverClass has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ACCOUNT_NAME
+2015/07/09 15:00:37 VerifyAdminPassword ... : Retrieved value of admin is:siric_des
+2015/07/09 15:00:37 VerifyAdminPassword ... : Inserting key=user  value=siric_des into connectorConfig config
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key senhaServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Key url has already been populated in connector config.
+2015/07/09 15:00:37 VerifyAdminPassword ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_PASSWORD
+2015/07/09 15:00:37 VerifyAdminPassword ... : value=warp11
+2015/07/09 15:00:37 VerifyAdminPassword ... : Retrieved value of password :*****
+2015/07/09 15:00:37 VerifyAdminPassword ... : Inserting key=password  value=warp11 into connectorConfig config
+2015/07/09 15:00:37 VerifyAdminPassword ... : Inside TestConnection
+2015/07/09 15:00:37  ... Exiting VerifyAdminPassword with rc=0
+2015/07/09 15:00:37  ... Entering SystemActiveQuery ... 
+2015/07/09 15:00:37 SystemActiveQuery ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_ADMIN_ID> value=<siric_des>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_FUNCTION> value=<SystemActiveQuery>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_SERVICE_TYPE> value=<\>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_ACTION> value=<QUERY>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:37 SystemActiveQuery ... : name=<XSA_TRANSACTION_TYPE> value=<\>
+2015/07/09 15:00:37 SystemActiveQuery ... : ----------- END -------------
+2015/07/09 15:00:37 SystemActiveQuery ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:37 SystemActiveQuery ... : ----------- END -------------
+2015/07/09 15:00:37 SystemActiveQuery ... : Admin value found
+2015/07/09 15:00:37 SystemActiveQuery ... : Admin Password value found.
+2015/07/09 15:00:37 SystemActiveQuery ... : Inside ReadCredentials
+2015/07/09 15:00:37 SystemActiveQuery ... : Found 9 MSCS template keys
+2015/07/09 15:00:37 SystemActiveQuery ... : Key nameDLL has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Key dominioServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Key urlServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Key userServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Key driverClass has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/07/09 15:00:37 SystemActiveQuery ... : Retrieved value of admin is:siric_des
+2015/07/09 15:00:37 SystemActiveQuery ... : Inserting key=user  value=siric_des into connectorConfig config
+2015/07/09 15:00:37 SystemActiveQuery ... : Key senhaServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Key url has already been populated in connector config.
+2015/07/09 15:00:37 SystemActiveQuery ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/07/09 15:00:37 SystemActiveQuery ... : value=warp11
+2015/07/09 15:00:37 SystemActiveQuery ... : Retrieved value of password :*****
+2015/07/09 15:00:37 SystemActiveQuery ... : Inserting key=password  value=warp11 into connectorConfig config
+2015/07/09 15:00:37 SystemActiveQuery ... : Inside TestConnection
+2015/07/09 15:00:37  ... Exiting SystemActiveQuery with rc=0
+2015/07/09 15:00:37  ... Entering SessionInit ... 
+2015/07/09 15:00:37 SessionInit ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_ENTITY> value=<SESSION>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_ADMIN_ID> value=<siric_des>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_FUNCTION> value=<SessionInit>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_ACTION> value=<INIT>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:37 SessionInit ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/07/09 15:00:37 SessionInit ... : ----------- END -------------
+2015/07/09 15:00:37 SessionInit ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:37 SessionInit ... : ----------- END -------------
+2015/07/09 15:00:37 SessionInit ... : Inside ReadCredentials
+2015/07/09 15:00:37 SessionInit ... : Found 9 MSCS template keys
+2015/07/09 15:00:37 SessionInit ... : Key nameDLL has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Key dominioServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Key urlServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Key userServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Key driverClass has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_ID using hashkeywrd:XSA_ADMIN_ID
+2015/07/09 15:00:37 SessionInit ... : Retrieved value of admin is:siric_des
+2015/07/09 15:00:37 SessionInit ... : Inserting key=user  value=siric_des into connectorConfig config
+2015/07/09 15:00:37 SessionInit ... : Key senhaServerCripto has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Key url has already been populated in connector config.
+2015/07/09 15:00:37 SessionInit ... : Retrieving value for keyword:XSA_ADMIN_PASSWORD using hashkeywrd:XSA_ADMIN_PASSWORD
+2015/07/09 15:00:37 SessionInit ... : value=warp11
+2015/07/09 15:00:37 SessionInit ... : Retrieved value of password :*****
+2015/07/09 15:00:37 SessionInit ... : Inserting key=password  value=warp11 into connectorConfig config
+2015/07/09 15:00:37  ... Exiting SessionInit with rc=0
+2015/07/09 15:00:37  ... Entering GroupGet ... 
+2015/07/09 15:00:37 GroupGet ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_ENTITY> value=<GROUP>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_ADMIN_ID> value=<siric_des>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_FILTER_TYPE> value=<MANY>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_FUNCTION> value=<GroupGet>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_GET_STAGE> value=<START>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_ACTION> value=<GET>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/07/09 15:00:37 GroupGet ... : ----------- END -------------
+2015/07/09 15:00:37 GroupGet ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:37 GroupGet ... : ----------- END -------------
+2015/07/09 15:00:37 GroupGet ... : --------- XSA_GetSearchHash ------------
+2015/07/09 15:00:37 GroupGet ... : ----------- END -------------
+2015/07/09 15:00:37 GroupGet ... : --------- XSA_GetEntityHash ------------
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_PARENT_GROUP> value=<>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_PARENT_CONTAINER> value=<>
+2015/07/09 15:00:37 GroupGet ... : name=<XSA_GROUP_NAME> value=<>
+2015/07/09 15:00:37 GroupGet ... : ----------- END -------------
+2015/07/09 15:00:37 GroupGet ... : --------------------------Get Group-----------------------------
+2015/07/09 15:00:37 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    GetIdentityObjects Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:37 GroupGet ... : ObjectType to be retrieved: group
+2015/07/09 15:00:37 GroupGet ... : GET Type is MANY
+2015/07/09 15:00:37 GroupGet ... : filter=XSA_GROUP_NAME EQ *
+2015/07/09 15:00:37 GroupGet ... : Download stage == START
+2015/07/09 15:00:37 GroupGet ... : >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>    iterateWithXSAFilter Enter  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2015/07/09 15:00:37 GroupGet ... : Getting many objects
+2015/07/09 15:00:37 GroupGet ... : getGroups - FILTER *
+2015/07/09 15:00:37 GroupGet ... :  query 
+2015/07/09 15:00:37 GroupGet ... : Exception occured 
+2015/07/09 15:00:37 GroupGet ... : Exception: java.lang.NullPointerException
+2015/07/09 15:00:37 GroupGet ... : Exception Stacktrace: 
+2015/07/09 15:00:37 GroupGet ... :       SIRIC.getGroups(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       SIRIC.iterate(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_ConnectorAdaptor.iterate(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_ConnectorAdaptor.iterateWithXSAFilter(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_ConnectorAdaptor.GetIdentityObjects(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_Connector.GroupGet(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmw.PMNative.getGroups(Native Method)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmw.PMWrapper.getGroups(PMWrapper.java:483)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmTestFramework.AgentFramework.getGroups(AgentFramework.java:543)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmTestFramework.AgentFramework.getAndPrintGroups(AgentFramework.java:628)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmTestFramework.AgentFramework.getGroups(AgentFramework.java:609)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.getGroups(PMTester.java:639)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.executeTest(PMTester.java:232)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.TestingStep$ToolbarActions.doRunCommand(TestingStep.java:659)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.TestingStep$ToolbarActions.actionPerformed(TestingStep.java:513)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.processMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.JComponent.processMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.processEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Container.processEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Container.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Container.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Window.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue.access$000(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$1.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$1.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessController.doPrivileged(Native Method)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$2.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$2.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessController.doPrivileged(Native Method)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... : Exception: end
+2015/07/09 15:00:37 GroupGet ... : Exception in GetIdentityObjects method: openconnector.ConnectorException: java.lang.NullPointerException
+2015/07/09 15:00:37 GroupGet ... : Exception occurred while group GET.Message:java.lang.NullPointerException
+2015/07/09 15:00:37 GroupGet ... : Exception: openconnector.ConnectorException: java.lang.NullPointerException
+2015/07/09 15:00:37 GroupGet ... : Exception Stacktrace: 
+2015/07/09 15:00:37 GroupGet ... :       SIRIC.getGroups(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       SIRIC.iterate(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_ConnectorAdaptor.iterate(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_ConnectorAdaptor.iterateWithXSAFilter(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_ConnectorAdaptor.GetIdentityObjects(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       XSA_Connector.GroupGet(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmw.PMNative.getGroups(Native Method)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmw.PMWrapper.getGroups(PMWrapper.java:483)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmTestFramework.AgentFramework.getGroups(AgentFramework.java:543)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmTestFramework.AgentFramework.getAndPrintGroups(AgentFramework.java:628)
+2015/07/09 15:00:37 GroupGet ... :       com.bmc.security.pmTestFramework.AgentFramework.getGroups(AgentFramework.java:609)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.getGroups(PMTester.java:639)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.test.PMTester.executeTest(PMTester.java:232)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.TestingStep$ToolbarActions.doRunCommand(TestingStep.java:659)
+2015/07/09 15:00:37 GroupGet ... :       com.sailpoint.security.Studio.IDE.steps.pm.TestingStep$ToolbarActions.actionPerformed(TestingStep.java:513)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.processMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       javax.swing.JComponent.processMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.processEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Container.processEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Container.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Container.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Window.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.Component.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue.access$000(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$1.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$1.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessController.doPrivileged(Native Method)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$2.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue$2.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessController.doPrivileged(Native Method)
+2015/07/09 15:00:37 GroupGet ... :       java.security.AccessControlContext$1.doIntersectionPrivilege(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventQueue.dispatchEvent(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... :       java.awt.EventDispatchThread.run(Unknown Source)
+2015/07/09 15:00:37 GroupGet ... : Exception: end
+2015/07/09 15:00:37  ... Exiting GroupGet with rc=8
+2015/07/09 15:00:37  ... Entering SessionTerm ... 
+2015/07/09 15:00:37 SessionTerm ... : --------- XSA_OperationHash ------------
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_ENTITY> value=<SESSION>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_ADMIN_ID> value=<siric_des>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_FUNCTION> value=<SessionTerm>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 15:00:37 SessionTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/07/09 15:00:37 SessionTerm ... : ----------- END -------------
+2015/07/09 15:00:37 SessionTerm ... : --------- XSA_ContextHash ------------
+2015/07/09 15:00:37 SessionTerm ... : ----------- END -------------
+2015/07/09 15:00:37  ... Exiting SessionTerm with rc=0
+2015/07/09 17:03:02  ... Entering ManageSystemTerm ... 
+2015/07/09 17:03:02 ManageSystemTerm ... : --------- XSA_OperationHash ------------
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_ENTITY> value=<SYSTEM>
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_ADMIN_ID> value=<siric_des>
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_FUNCTION> value=<ManageSystemTerm>
+2015/07/09 17:03:02 ManageSystemTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/07/09 17:03:03 ManageSystemTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 17:03:03 ManageSystemTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/07/09 17:03:03 ManageSystemTerm ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 17:03:03 ManageSystemTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/07/09 17:03:03 ManageSystemTerm ... : ----------- END -------------
+2015/07/09 17:03:03 ManageSystemTerm ... : --------- XSA_ContextHash ------------
+2015/07/09 17:03:03 ManageSystemTerm ... : ----------- END -------------
+2015/07/09 17:03:03 ManageSystemTerm ... : ------------------------Start ManagedSystem Term-------------------------------
+2015/07/09 17:03:03 ManageSystemTerm ... : ------------------------End ManagedSystem Term-------------------------------
+2015/07/09 17:03:03  ... Exiting ManageSystemTerm with rc=0
+2015/07/09 17:03:03  ... Entering ConnectorTerm ... 
+2015/07/09 17:03:03 ConnectorTerm ... : --------- XSA_OperationHash ------------
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_CONNECTOR> value=<SIRIC>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_ENTITY> value=<CONNECTOR>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_ADMIN_ID> value=<siric_des>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_PROCESS_NAME> value=<>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_ADMIN_PASSWORD> value=<****>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_FUNCTION> value=<ConnectorTerm>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_SERVICE_TYPE> value=<SERVICE_GET_OBJECT>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_WORK_DIR> value=<>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_ACTION> value=<TERM>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_SYSTEM> value=<teste>
+2015/07/09 17:03:03 ConnectorTerm ... : name=<XSA_TRANSACTION_TYPE> value=<TRANSACTION_GET_GROUP>
+2015/07/09 17:03:03 ConnectorTerm ... : ----------- END -------------
+2015/07/09 17:03:03 ConnectorTerm ... : --------- XSA_ContextHash ------------
+2015/07/09 17:03:03 ConnectorTerm ... : ----------- END -------------
+2015/07/09 17:03:03 ConnectorTerm ... : ------------------------XSAConnector ConnectorTerm-------------------------------
+2015/07/09 17:03:03 ConnectorTerm ... : ------------------------XSAConnector End ConnectorTerm-------------------------------
+2015/07/09 17:03:03  ... Exiting ConnectorTerm with rc=0
