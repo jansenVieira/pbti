@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/teste/axis.jar"/>
+	<classpathentry kind="lib" path="D:/teste/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="D:/teste/javax.activation_1.1.0.v201105071233.jar"/>
+	<classpathentry kind="lib" path="D:/teste/javax.mail_1.4.0.v201005080615.jar"/>
+	<classpathentry kind="lib" path="D:/teste/javax.wsdl_1.6.2.v201012040545.jar"/>
+	<classpathentry kind="lib" path="D:/teste/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="D:/teste/org.apache.commons.logging_1.0.4.v201101211617.jar"/>
+	<classpathentry kind="lib" path="D:/teste/saaj.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/EASE/third_party/openconnector.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/EASE/third_party/XSA_OpenConnectorAdaptor.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

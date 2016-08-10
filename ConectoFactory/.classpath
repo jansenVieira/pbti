@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/ant.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/ant-launcher.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/BMCCommonUILF.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/classes12.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/forms-1.0.5.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jconn2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jh.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jsr173_1.0_api.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jtds-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/log4j-1.2.9.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/looks-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/resolver.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/SailPointXagKwd2DbXbean.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/SailpointXagPmWrapper.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/SailPointXagStudio.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/SailPointXagStudioXbean.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/sc.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xalan.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xbean.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xbean_xpath.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xercesImpl-2.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xmlParserAPIs-2.6.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/xmlpublic.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jboss/jsr173_1.0_api.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jboss/resolver.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jboss/xbean.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jboss/xbean_xpath.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jboss/xmlpublic.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jdbc_drivers/classes12.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jdbc_drivers/jconn2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jdbc_drivers/jtds-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/jdbc_drivers/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/weblogic/jsr173_1.0_api.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/weblogic/resolver.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/weblogic/xbean.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/weblogic/xbean_xpath.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/weblogic/xmlpublic.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/websphere/jsr173_1.0_api.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/websphere/resolver.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/websphere/xbean.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/websphere/xbean_xpath.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jars/websphere/xmlpublic.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/jsdk/src.zip"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SIASES/third_party/openconnector.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SIASES/third_party/XSA_OpenConnectorAdaptor.jar"/>
+	<classpathentry kind="lib" path="C:/Dados/PBTI/SailPoint/lib/identityiq.jar"/>
+	<classpathentry kind="lib" path="C:/Dados/Desenvolvimento/IDE/lib/J-Interop/jcifs-1.2.19.jar"/>
+	<classpathentry kind="lib" path="C:/Dados/Desenvolvimento/IDE/lib/J-Interop/j-interop.jar"/>
+	<classpathentry kind="lib" path="C:/Dados/Desenvolvimento/IDE/lib/J-Interop/j-interopdeps.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/EASE/third_party/EaseWeb2.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SISFIN/third_party/commons-net-3.3.jar"/>
+	<classpathentry kind="lib" path="C:/Dados/Desenvolvimento/IDE/lib/commons-codec-1.10-bin/commons-codec-1.10/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Dados/PBTI/SailPoint/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="D:/SINAV/framework-2.0.1-DES (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/tic/Downloads/framework-2.0.1-DES (2).jar"/>
+	<classpathentry kind="lib" path="H:/jasperreports-javaflow-4.5.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
