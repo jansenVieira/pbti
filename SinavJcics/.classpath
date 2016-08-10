@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SINAV/third_party/db2jcc.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SINAV/third_party/db2jcc_license_cisuz.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SINAV/third_party/db2jcc_license_cu.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SINAV/third_party/framework-2.0.1-DES (1).jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SINAV/third_party/openconnector.jar"/>
+	<classpathentry kind="lib" path="D:/Sailpoint/IdentityIQ Connector Factory/projects/SINAV/third_party/XSA_OpenConnectorAdaptor.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
