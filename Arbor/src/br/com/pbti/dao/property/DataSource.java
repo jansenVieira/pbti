@@ -47,8 +47,9 @@ public class DataSource {
 		// Conexao Arquivo MM7
 		serverMM7 = "10.61.178.240";
 		portMM7 = 21;
-		userMM7 = "SBAOM6001";
+		userMM7 = "sbaom6001";
 		passwordMM7 = "Jq5An8BE";
+		//passwordMM7 = "1q2w3e4r5t";
 		remoteFileMM7 = "/sftpprd1/u006/InputMediacao/spotifire/";
 		downloadFileMM7 = "D:\\Arbor\\MM7\\Dados\\";
 

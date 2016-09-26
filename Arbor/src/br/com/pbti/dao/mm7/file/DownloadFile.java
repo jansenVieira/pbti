@@ -21,31 +21,71 @@ public class DownloadFile {
 	public DataSource ds = new DataSource();
 
 	private FTPClient ftpClient;
-	private ArrayList<Map<String, String>> arrayFile = new ArrayList<Map<String, String>>();
+	private String[] arrayFile = null;
 	Logger logger = Logger.getLogger(DownloadFile.class);
 
 	public void retrieveFile() throws IOException {
 
 		try {
 
-			for (Map<String, String> map : readFile()) {
+			for (String arquivo : readFile()) {
 
-				String nome = map.get("nome");
-				String caminho = map.get("caminho");
+				logger.debug("Arquivo: " + arquivo);
 
-				File file = new File(ds.getDownloadFileMM7() + nome);
-				OutputStream outputStream = new BufferedOutputStream(new FileOutputStream(file));
-				boolean success = ftpClient.retrieveFile(caminho, outputStream);
+				if (arquivo.startsWith("DISTARBOR")) {
 
-				if (success && file.exists()) {
-					logger.debug("Arquivo " + file.getName() + " trasferido com sucesso");
-					ftpClient.dele(caminho);
-					logger.debug("Arquivo " + caminho + " deletado da origem");
+					String server = "10.61.178.240";
+					int port = 21;
+					String user = "sbaom6001";
+					String pass = "Jq5An8BE";
+
+					FTPClient ftpClient = new FTPClient();
+
+					try {
+
+						ftpClient.connect(server, port);
+						ftpClient.login(user, pass);
+						ftpClient.enterLocalPassiveMode();
+						ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
+
+						// APPROACH #1: using retrieveFile(String, OutputStream)
+						String remoteFile1 = ds.getRemoteFileMM7() + arquivo;
+						File downloadFile1 = new File(ds.getDownloadFileMM7() + arquivo);
+						OutputStream outputStream1 = new BufferedOutputStream(new FileOutputStream(downloadFile1));
+						boolean success = ftpClient.retrieveFile(remoteFile1, outputStream1);
+						outputStream1.close();
+
+						if (success) {
+							logger.debug("Download com sucesso do arquivo: " + arquivo);
+							
+//							boolean successDelete = ftpClient.deleteFile(ds.getRemoteFileMM7() + arquivo);
+//							if(successDelete)
+//							{
+//							   logger.debug("Arquivo Deleatado Com sucesso: " + arquivo);
+//							} else {
+//								logger.debug("Erro ao Deletar arquivo: " + arquivo);
+//							}
+						}
+
+					} catch (IOException ex) {
+						logger.debug("Error: " + ex.getMessage());
+						ex.printStackTrace();
+					} finally {
+						try {
+							if (ftpClient.isConnected()) {
+								ftpClient.logout();
+								ftpClient.disconnect();
+							}
+						} catch (IOException ex) {
+							ex.printStackTrace();
+						}
+					}
+
+				} else {
+					logger.debug("Arquivo errado para dowload " + arquivo);
 				}
-			}
 
-		} catch (IOException ex) {
-			logger.debug("Error: " + ex);
+			}
 
 		} finally {
 			try {
@@ -59,57 +99,37 @@ public class DownloadFile {
 		}
 	}
 
-	public FTPClient conectioFtp() {
+	public String[] readFile() {
 
-		if (ftpClient != null && ftpClient.isConnected()) {
-			return ftpClient;
-		} else {
-
-			ftpClient = new FTPClient();
-
-			try {
-				ftpClient.connect(ds.getServerMM7(), ds.getPortMM7());
-				ftpClient.login(ds.getUserMM7(), ds.getPasswordMM7());
-				ftpClient.enterLocalPassiveMode();
-				ftpClient.setFileType(FTP.BINARY_FILE_TYPE);
-
-			} catch (SocketException e) {
-				logger.debug("Error: " + e);
-			} catch (IOException e) {
-				logger.debug("Error: " + e);
-			}
-		}
-		return ftpClient;
-	}
-
-	public ArrayList<Map<String, String>> readFile() {
-
-		String[] listFile = null;
+		FTPClient ftp = new FTPClient();
 
 		try {
-			listFile = conectioFtp().listNames(ds.getRemoteFileMM7());
+			ftp.connect(ds.getServerMM7());
+			ftp.login(ds.getUserMM7(), ds.getPasswordMM7());
+			logger.debug("conectado: " + ftp.isConnected());
+			ftp.enterLocalPassiveMode();
 
-			Map<String, String> mapFile;
+			ftp.changeWorkingDirectory(ds.getRemoteFileMM7());
 
-			for (String name : listFile) {
+			logger.debug("Status: " + ftp.getStatus());
+			logger.debug(ftp.printWorkingDirectory());
 
-				mapFile = new HashMap<String, String>();
-
-				mapFile.put("caminho", name);
-
-				String[] arrArquivo = name.split("/");
-
-				mapFile.put("nome", arrArquivo[3]);
-
-				arrayFile.add(mapFile);
-			}
+			arrayFile = ftp.listNames();
 
 		} catch (IOException e) {
 			logger.debug("Error: " + e);
 		} catch (Exception e) {
 			logger.debug("Erro ao conseguir conectar no ftp");
+		} finally {
+			try {
+				if (ftp != null && ftp.isConnected()) {
+					ftp.logout();
+					ftp.disconnect();
+				}
+			} catch (IOException ex) {
+				logger.debug("Error: " + ex);
+			}
 		}
-
 		return arrayFile;
 
 	}

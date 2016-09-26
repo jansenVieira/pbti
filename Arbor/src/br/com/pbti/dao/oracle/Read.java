@@ -31,7 +31,7 @@ public class Read {
 					+ "trunc(mps_miu_dt) entrada_em_critica, " + "trunc(file_process_dt) dt_processamento, "
 					+ "miu_error_code1 codigo_da_critica, " + "no_bill, " + "miu_disp_status, " + "miu_disp_code, "
 					+ "count ( * ) quantidade " + "from   cdr_data_work a, file_status b "
-					+ "where   b.entry_create_dt > TO_DATE(SYSDATE-1, 'DD-MM-YY') and a.file_id = b.file_id "
+					+ "where   b.entry_create_dt > TO_DATE(SYSDATE-9, 'DD-MM-YY') and a.file_id = b.file_id "
 					+ "group by   trunc (entry_create_dt), " + "trim (substr(file_name,5,80)), " + "total_records, "
 					+ "trunc(mps_miu_dt), " + "trunc(file_process_dt), " + "no_bill, " + "miu_error_code1, "
 					+ "miu_disp_status, " + "miu_disp_code order by  1,2,6");

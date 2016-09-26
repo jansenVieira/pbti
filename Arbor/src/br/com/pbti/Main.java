@@ -15,6 +15,7 @@ import br.com.pbti.dao.mm7.Insert;
 import br.com.pbti.dao.mm7.file.DownloadFile;
 import br.com.pbti.dao.mm7.file.FileTransfers;
 import br.com.pbti.dao.mm7.file.FileZipe;
+import br.com.pbti.dao.oracle.InsertFaturamento;
 import br.com.pbti.dao.property.DataSource;
 import br.com.pbti.dao.time.DeleteArbor;
 import br.com.pbti.dao.time.DeleteMM7;
@@ -49,6 +50,9 @@ public class Main {
 		
 		br.com.pbti.dao.oracle.Insert isOracle = new br.com.pbti.dao.oracle.Insert();
 		isOracle.insertDados();
+		
+		InsertFaturamento isFaturamento = new InsertFaturamento();
+		isFaturamento.insertDados();
 
 		long tempoFinal = System.currentTimeMillis();
 		logger.debug(String.format("Tempo de Execusao da Aplicacao: "+ "%.3f ms%n ", (tempoFinal - tempoInicial) / 1000d));
